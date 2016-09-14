@@ -161,3 +161,16 @@ body {
     width: 700px;
   }
 }
+
+/* Styles for schedule page */
+.enormous-schedule-pseudo-table {
+  font-size: 200%;
+}
+.enormous-schedule-pseudo-table .row {
+  margin-bottom: 0.5rem;
+}
+
+.enormous-schedule-pseudo-table .description {
+  font-size: 50%;
+  margin-bottom: 0.5rem;
+}
