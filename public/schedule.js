@@ -11,8 +11,6 @@ $(document).ready(function() {
   var update = function () {
     var timeID = timeToID();
 
-    var formatted = getFormattedTime();
-
     if (timeID !== currentSection) {
       var offset = $('#' + timeID).offset();
       if (offset === undefined) return;
