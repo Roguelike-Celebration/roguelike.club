@@ -3,18 +3,15 @@ $(document).ready(function() {
   var currentSection = '';
   var updateInterval = 30000;
 
-  // if current section is less than 
-  var getFormattedTime = function () {
-    return date.getHours() * 100 + date.getMinutes();
-  };
-
   var timeToID = function () {
     var date = new Date();
-    return 'session-' + currentTime;
+    return 'session-' + date.getHours() + date.getMinutes();
   };
 
   var update = function () {
     var timeID = timeToID();
+
+    var formatted = getFormattedTime();
 
     if (timeID !== currentSection) {
       var offset = $('#' + timeID).offset();
