@@ -11,10 +11,13 @@ The website is automatically deployed whenever new commits are pushed to the `ma
 
 ```bash
 #!/usr/local/bin/bash
+bold=$'\e[1m'
+green=$'\e[32m'
+reset=$'\e[0m'
 while read oldrev newrev ref; do
     if [[ $ref =~ .*/master$ ]]; then
         git --work-tree=/usr/local/www/roguelike.club --git-dir=/home/git/gogs-repositories/roguelike.club/roguelike.club.git checkout -f
-        echo 'Deployed branch master to https://roguelike.club/'
+        echo "Deployed branch $bold${green}master$reset to ${bold}https://roguelike.club/$reset"
     fi
 done
 ```
