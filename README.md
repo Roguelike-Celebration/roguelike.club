@@ -16,7 +16,7 @@ green=$'\e[32m'
 reset=$'\e[0m'
 while read oldrev newrev ref; do
     if [[ $ref =~ .*/master$ ]]; then
-        git --work-tree=/usr/local/www/roguelike.club --git-dir=/home/git/gogs-repositories/roguelike.club/roguelike.club.git checkout -f
+        git --work-tree=/usr/local/www/roguelike.club --git-dir=/var/db/gogs/repositories/roguelike.club/roguelike.club.git checkout -f
         echo "Deployed branch $bold${green}master$reset to ${bold}https://roguelike.club/$reset"
     fi
 done
