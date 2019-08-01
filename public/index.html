@@ -28,9 +28,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <script>
       var slideIndex = 1;
       var justChanged = false;
+      var maxSlides = 21;
       setTimeout(() => {
         showDivs(slideIndex);
       });
@@ -60,6 +63,12 @@
         }
         // x[slideIndex - 1].style.display = "block";
         x[slideIndex - 1].style.opacity = 1;
+
+        if (x.length < maxSlides && n >= x.length - 3) {
+          for (var i = x.length + 1; i < n + 3; i++) {
+            $('<img class="mySlides" src="./photos/slideshow/' + i + '.jpg" />').insertAfter("#slidesContainer > img:last");
+          }
+        }
       }
     
     </script>
@@ -92,28 +101,9 @@
 
           <div class="inner cover">
 
-            <div class="slidesContainer">
+            <div class="slidesContainer" id="slidesContainer">
               <img class="mySlides" src="./photos/slideshow/1.jpg">
               <img class="mySlides" src="./photos/slideshow/2.jpg">
-              <img class="mySlides" src="./photos/slideshow/3.jpg">
-              <img class="mySlides" src="./photos/slideshow/4.jpg">
-              <!-- <img class="mySlides" src="./photos/slideshow/5.jpg">
-              <img class="mySlides" src="./photos/slideshow/6.jpg">
-              <img class="mySlides" src="./photos/slideshow/7.jpg">
-              <img class="mySlides" src="./photos/slideshow/8.jpg">
-              <img class="mySlides" src="./photos/slideshow/9.jpg">
-              <img class="mySlides" src="./photos/slideshow/10.jpg">
-              <img class="mySlides" src="./photos/slideshow/11.jpg">
-              <img class="mySlides" src="./photos/slideshow/12.jpg">
-              <img class="mySlides" src="./photos/slideshow/13.jpg">
-              <img class="mySlides" src="./photos/slideshow/14.jpg">
-              <img class="mySlides" src="./photos/slideshow/15.jpg">
-              <img class="mySlides" src="./photos/slideshow/16.jpg">
-              <img class="mySlides" src="./photos/slideshow/17.jpg">
-              <img class="mySlides" src="./photos/slideshow/18.jpg">
-              <img class="mySlides" src="./photos/slideshow/19.jpg">
-              <img class="mySlides" src="./photos/slideshow/20.jpg">
-              <img class="mySlides" src="./photos/slideshow/21.jpg"> -->
               <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
               <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
@@ -217,6 +207,14 @@
             <p>Is your organization interested in sponsoring Roguelike Celebration? Check out our <a
               href="sponsor.html">sponsorship page</a>!
 
+            <!-- Adventure Pro: https://www.twitch.tv/playdungeonmans
+            apro_logo_blue.png
+
+            Freehold Games: 
+
+            Asymmetric: westofloathing.com -->
+
+
             <p style="text-align: center"><a href="https://github.com/"><img src="sponsors/GitHub_Logo_White.png" alt="GitHub logo" height="37" /></a><br/><a href="https://github.com/">GitHub</a> is donating use of their office event space for Roguelike Celebration 2019, including sponsoring food and recording video and audio for the talks.</p>
 
             <p style="text-align: center"><a href="https://www.noisebridge.net/"><img src="sponsors/NB-logo-red-black-med.png" alt="Noisebridge logo" height="37" /><img src="sponsors/NoisebridgeCursive.png" height="37" alt="Noisebridge word logo" /></a><br/><a href="https://www.noisebridge.net/">Noisebridge</a> is a hackerspace for technical-creative projects, doocratically run by its members. It is a non-profit educational institution intended for public benefit. We're grateful they serve as our <a href="https://en.wikipedia.org/wiki/Fiscal_sponsorship">fiscal sponsor</a>.</p>
@@ -245,8 +243,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script> -->
     <script src="/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
