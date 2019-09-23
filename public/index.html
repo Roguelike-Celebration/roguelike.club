@@ -1,286 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Roguelike Celebration</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Roguelike Celebration</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="./docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- Custom styles for this template -->
+  <link href="cover.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script>
-      var slideIndex = 1;
-      var justChanged = false;
-      var maxSlides = 21;
-      setTimeout(() => {
-        showDivs(slideIndex);
-      });
+  <script>
+    var slideIndex = 1;
+    var justChanged = false;
+    var maxSlides = 21;
+    setTimeout(() => {
+      showDivs(slideIndex);
+    });
 
-      setInterval(() => {
-        if (justChanged) {
-          justChanged = false;
-        } else {
-          showDivs(slideIndex += 1);
-        }
-      }, 4000);
-
-      function plusDivs(n) {
-        justChanged = true;
-        showDivs(slideIndex += n);
+    setInterval(() => {
+      if (justChanged) {
+        justChanged = false;
+      } else {
+        showDivs(slideIndex += 1);
       }
+    }, 4000);
 
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        x[0].style.position = "relative";
-        if (n > x.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = x.length };
-        for (i = 0; i < x.length; i++) {
-          // x[i].style.display = "none";
-          x[i].style.opacity = 0;
-        }
-        // x[slideIndex - 1].style.display = "block";
-        x[slideIndex - 1].style.opacity = 1;
+    function plusDivs(n) {
+      justChanged = true;
+      showDivs(slideIndex += n);
+    }
 
-        if (x.length < maxSlides && n >= x.length - 3) {
-          for (var i = x.length + 1; i < n + 3; i++) {
-            $('<img class="mySlides" src="./photos/slideshow/' + i + '.jpg" />').insertAfter("#slidesContainer > img:last");
-          }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      x[0].style.position = "relative";
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      };
+      for (i = 0; i < x.length; i++) {
+        // x[i].style.display = "none";
+        x[i].style.opacity = 0;
+      }
+      // x[slideIndex - 1].style.display = "block";
+      x[slideIndex - 1].style.opacity = 1;
+
+      if (x.length < maxSlides && n >= x.length - 3) {
+        for (var i = x.length + 1; i < n + 3; i++) {
+          $('<img class="mySlides" src="./photos/slideshow/' + i + '.jpg" />').insertAfter(
+            "#slidesContainer > img:last");
         }
       }
-    
-    </script>
-  </head>
+    }
+  </script>
+</head>
 
-  <body>
+<body>
   <!-- gini was here -->
-    <div class="site-wrapper">
+  <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+    <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+      <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Roguelike Celebration @@@</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="./">Intro</a></li>
-                  <li><a href="./event2019.html">2019</a></li>
-                  <li><a href="./event2018.html">2018</a></li>
-                  <li><a href="./event2017.html">2017</a></li>
-                  <li><a href="./event.html">2016</a></li>
-                  <li><a href="./who.html">About us</a></li>
-                  <li><a href="./roguelikes.html">Roguelikes?</a></li>
-                </ul>
-              </nav>
-            </div>
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Roguelike Celebration @@@</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="./">Intro</a></li>
+                <li><a href="./event2019.html">2019</a></li>
+                <li><a href="./event2018.html">2018</a></li>
+                <li><a href="./event2017.html">2017</a></li>
+                <li><a href="./event.html">2016</a></li>
+                <li><a href="./who.html">About us</a></li>
+                <li><a href="./roguelikes.html">Roguelikes?</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+
+          <div class="slidesContainer" id="slidesContainer">
+            <img class="mySlides" src="./photos/slideshow/1.jpg">
+            <img class="mySlides" src="./photos/slideshow/2.jpg">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
           </div>
 
-          <div class="inner cover">
+          <h1 id="thing" class="cover-heading">A celebration of roguelike games</h1>
+          <p class="lead">The Roguelike Celebration is happening on Saturday and Sunday <strong>October 5th and 6th,
+              2019</strong> at the <strong><a
+                href="https://www.google.com/maps/place/88+Colin+P+Kelly+Jr+St,+San+Francisco,+CA+94107/@37.7822671,-122.3934366,17z/data=!3m1!4b1!4m5!3m4!1s0x80858077fe6ae953:0x1cf829f1248fb8f4!8m2!3d37.7822671!4d-122.3912479">GitHub
+                office</a></strong> in <strong>San Francisco</strong>.</p>
 
-            <div class="slidesContainer" id="slidesContainer">
-              <img class="mySlides" src="./photos/slideshow/1.jpg">
-              <img class="mySlides" src="./photos/slideshow/2.jpg">
-              <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-            </div>
+          <p>
+            <a href="https://www.eventbrite.com/e/roguelike-celebration-2019-tickets-66123028759?aff=website"
+              class="btn btn-primary btn-lg" role="button">Buy Tickets Here!</a>
+          </p>
 
-            <h1 id="thing" class="cover-heading">A celebration of roguelike games</h1>
-            <p class="lead">The Roguelike Celebration is happening on Saturday and Sunday <strong>October 5th and 6th, 2019</strong> at the <strong><a href="https://www.google.com/maps/place/88+Colin+P+Kelly+Jr+St,+San+Francisco,+CA+94107/@37.7822671,-122.3934366,17z/data=!3m1!4b1!4m5!3m4!1s0x80858077fe6ae953:0x1cf829f1248fb8f4!8m2!3d37.7822671!4d-122.3912479">GitHub office</a></strong> in <strong>San Francisco</strong>.</p>
+          <p>The Roguelike Celebration is a community-generated weekend of talks, games, and conversations about
+            roguelikes and related topics, including procedural generation and game design. It's for fans, players,
+            developers, scholars, and everyone else, including people new to this type of game!</p>
 
-            <p>
-              <a href="https://www.eventbrite.com/e/roguelike-celebration-2019-tickets-66123028759?aff=website" class="btn btn-primary btn-lg"
-                role="button">Buy Tickets Here!</a>
-            </p>
+          <p>If you or your company would like to sponsor this event, please send us a message at <a
+              href="mailto:contact@roguelike.club">contact@roguelike.club</a> (see <a href="./sponsor.html">sponsorship
+              levels</a>).</p>
 
-            <p>The Roguelike Celebration is a community-generated weekend of talks, games, and conversations about roguelikes and related topics, including procedural generation and game design. It's for fans, players, developers, scholars, and everyone else, including people new to this type of game!</p>
+          <h1>2019 Speakers</h1>
+          <P>We are still finalizing the schedule, but this year's speakers will include:</P>
+          <UL>
+            <LI><A HREF="http://www.benberman.com/" TARGET="_blank" REL="nofollow noopener noreferrer">Benjamin
+                Berman</A> - <SPAN>Tips, Tricks and History for Card Game Roguelike Design</SPAN></LI>
+            <LI><A HREF="https://twitter.com/schemafactor" TARGET="_blank" REL="nofollow noopener noreferrer">Leif
+                Bloomquist</A> - <SPAN>Updates to Commodore 64 and Retro Multiplayer Roguelike Development</SPAN></LI>
+            <LI><A HREF="https://twitter.com/unormal" TARGET="_blank" REL="nofollow noopener noreferrer">Brian
+                Bucklew</A> - <SPAN>Dungeon Generation via Wave Function Collapse</SPAN></LI>
+            <LI><A HREF="https://twitter.com/pdev110" TARGET="_blank" REL="nofollow noopener noreferrer">Patrick
+                Devine</A> - <SPAN>2D Sprites with Unicode and Golang</SPAN></LI>
+            <LI><A HREF="https://twitter.com/spenceregart" TARGET="_blank" REL="nofollow noopener noreferrer">Spencer
+                Egart</A> - <SPAN>Procedurally Generated Ritual Spell Systems</SPAN></LI>
+            <LI><A HREF="https://twitter.com/toddfurmanski" TARGET="_blank" REL="nofollow noopener noreferrer">Todd
+                Furmanski</A> - <SPAN>1 Button, 2 sprites, 4 directions, 8 Creatures, 16 Kilobytes: Experiences Making
+                "Dragon's Descent," a Roguelike Action Game for the Atari 2600.</SPAN></LI>
+            <LI><A HREF="https://twitter.com/adrianherbez" TARGET="_blank" REL="nofollow noopener noreferrer">Adrian
+                Herbez</A> - <SPAN>Procgen Petals: procedural flowers in WebGL</SPAN></LI>
+            <LI><A HREF="https://maxhawkins.me" TARGET="_blank" REL="nofollow noopener noreferrer">Max Hawkins</A> -
+              <SPAN>Mapping Activity Space - Adventures in Randomized Living</SPAN></LI>
+            <LI><A HREF="https://twitter.com/andreintg" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea
+                Interguglielmi</A> - <SPAN>Designing a turn based roguelike inside a real time simulated environment,
+                and the many headaches that come after.</SPAN></LI>
+            <LI><A HREF="https://twitter.com/mrj_games" TARGET="_blank" REL="nofollow noopener noreferrer">Mark R
+                Johnson</A> - <SPAN>Speech Generation in a Procedurally Generated World</SPAN></LI>
+            <LI><A HREF="https://twitter.com/proc_gen" TARGET="_blank" REL="nofollow noopener noreferrer">Isaac
+                Karth</A> - <SPAN>Why Do You Want to Generate That? A Vocabulary For Talking About Procedural
+                Generation</SPAN></LI>
+            <LI><A HREF="https://twitter.com/kawaiidragoness" TARGET="_blank"
+                REL="nofollow noopener noreferrer">Kawa</A> - <SPAN>Yet Another Conduct Conversation: a history of
+                conducts in roguelikes</SPAN></LI>
+            <LI><A HREF="http://cutfree.net" TARGET="_blank" REL="nofollow noopener noreferrer">Scott Kovach</A> -
+              <SPAN>Managing Game Logic With Rule Systems - Using Relational Programming to Build Games</SPAN></LI>
+            <LI><A HREF="https://twitter.com/maxkreminski" TARGET="_blank" REL="nofollow noopener noreferrer">Max
+                Kreminski</A> - <SPAN>Generators that Read</SPAN></LI>
+            <LI><A HREF="https://twitter.com/vectorpoem" TARGET="_blank" REL="nofollow noopener noreferrer">JP
+                LeBreton</A> - <SPAN>All Possible Glyphs: Playscii, an ASCII art, animation, and game creation
+                tool</SPAN></LI>
+            <LI><A HREF="https://twitter.com/StellaMazeika" TARGET="_blank" REL="nofollow noopener noreferrer">Stella
+                Mazeika</A> - <SPAN>Is This Even Randomized?: Turning Classic Games Into Multiplayer Roguelike
+                Experiences</SPAN></LI>
+            <LI>Evan Ovadia - <SPAN>ASCII vs Tiles vs Symbolic</SPAN></LI>
+            <LI><A HREF="https://twitter.com/ampepers" TARGET="_blank" REL="nofollow noopener noreferrer">Alexei
+                Pepers</A> - <SPAN>A Guide to Proc Gen Practitioners</SPAN></LI>
+            <LI><A HREF="https://twitter.com/everestpipkin" TARGET="_blank" REL="nofollow noopener noreferrer">Everest
+                Pipkin</A> - Corpora as medium: on the work of curating a poetic textual dataset</LI>
+            </LI>
+            <LI><A HREF="https://twitter.com/TanookiFruit" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea
+                Roberts</A> - <SPAN>That's the Way the Ball Bounces: Using Physics to Manifest Chance in
+                Roundguard</SPAN></LI>
+            <LI><A HREF="https://twitter.com/standardcombo" TARGET="_blank" REL="nofollow noopener noreferrer">Gabriel
+                Santos</A> - <SPAN>ASCII Art Techniques &amp; Animation</SPAN></LI>
+            <LI><A HREF="https://twitter.com/RobinsonSRL" TARGET="_blank" REL="nofollow noopener noreferrer">Aaron
+                Santos</A> - <SPAN>Optimizing procgen parameters using mini-batch gradient descent</SPAN></LI>
+            <LI><A HREF="https://twitter.com/madjackmcmad" TARGET="_blank" REL="nofollow noopener noreferrer">Jim
+                Shepard</A> - <SPAN>Blooming on the Battlefield: Relationships, Rivals, and Romance in Gameplay</SPAN>
+            </LI>
+            <LI><A HREF="https://twitter.com/robinsloan" TARGET="_blank" REL="nofollow noopener noreferrer">Robin
+                Sloan</A> - <SPAN>Writing with the machine: GPT-2 and text generation</SPAN><BR></LI>
+            <LI>And more to come!</LI>
+          </UL>
 
-            <p>If you or your company would like to sponsor this event, please send us a message at <a href="mailto:contact@roguelike.club">contact@roguelike.club</a> (see <a href="./sponsor.html">sponsorship levels</a>).</p>
+          <h1 id="sponsors" class="cover-heading">Sponsors</h1>
 
-            <h1>2019 Speakers</h1>
-            <P>We are still finalizing the schedule, but this year's speakers will include:</P>
-            <UL>
-                <LI><A HREF="http://www.benberman.com/" TARGET="_blank" REL="nofollow noopener noreferrer">Benjamin Berman</A> -  <SPAN>Tips, Tricks and History for Card Game Roguelike Design</SPAN></LI>
-                <LI><A HREF="https://twitter.com/schemafactor" TARGET="_blank" REL="nofollow noopener noreferrer">Leif Bloomquist</A> -  <SPAN>Updates to Commodore 64 and Retro Multiplayer Roguelike Development</SPAN></LI>
-                <LI><A HREF="https://twitter.com/unormal" TARGET="_blank" REL="nofollow noopener noreferrer">Brian Bucklew</A> -  <SPAN>Dungeon Generation via Wave Function Collapse</SPAN></LI>
-                <LI><A HREF="https://twitter.com/pdev110" TARGET="_blank" REL="nofollow noopener noreferrer">Patrick Devine</A> -  <SPAN>2D Sprites with Unicode and Golang</SPAN></LI>
-                <LI><A HREF="https://twitter.com/spenceregart" TARGET="_blank" REL="nofollow noopener noreferrer">Spencer Egart</A> -  <SPAN>Procedurally Generated Ritual Spell Systems</SPAN></LI>
-                <LI><A HREF="https://twitter.com/toddfurmanski" TARGET="_blank" REL="nofollow noopener noreferrer">Todd Furmanski</A> -  <SPAN>1 Button, 2 sprites, 4 directions, 8 Creatures, 16 Kilobytes: Experiences Making "Dragon's Descent," a Roguelike Action Game for the Atari 2600.</SPAN></LI>
-                <LI><A HREF="https://twitter.com/adrianherbez" TARGET="_blank" REL="nofollow noopener noreferrer">Adrian Herbez</A> -  <SPAN>Procgen Petals: procedural flowers in WebGL</SPAN></LI>
-                <LI><A HREF="https://maxhawkins.me" TARGET="_blank" REL="nofollow noopener noreferrer">Max Hawkins</A> -  <SPAN>Mapping Activity Space - Adventures in Randomized Living</SPAN></LI>
-                <LI><A HREF="https://twitter.com/andreintg" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea Interguglielmi</A> -  <SPAN>Designing a turn based roguelike inside a real time simulated environment, and the many headaches that come after.</SPAN></LI>
-                <LI><A HREF="https://twitter.com/mrj_games" TARGET="_blank" REL="nofollow noopener noreferrer">Mark R Johnson</A> -  <SPAN>Speech Generation in a Procedurally Generated World</SPAN></LI>
-                <LI><A HREF="https://twitter.com/proc_gen" TARGET="_blank" REL="nofollow noopener noreferrer">Isaac Karth</A> -  <SPAN>Why Do You Want to Generate That? A Vocabulary For Talking About Procedural Generation</SPAN></LI>
-                <LI><A HREF="https://twitter.com/kawaiidragoness" TARGET="_blank" REL="nofollow noopener noreferrer">Kawa</A> -  <SPAN>Yet Another Conduct Conversation: a history of conducts in roguelikes</SPAN></LI>
-                <LI><A HREF="http://cutfree.net" TARGET="_blank" REL="nofollow noopener noreferrer">Scott Kovach</A> -  <SPAN>Managing Game Logic With Rule Systems - Using Relational Programming to Build Games</SPAN></LI>
-                <LI><A HREF="https://twitter.com/maxkreminski" TARGET="_blank" REL="nofollow noopener noreferrer">Max Kreminski</A> -  <SPAN>Generators that Read</SPAN></LI>
-                <LI><A HREF="https://twitter.com/vectorpoem" TARGET="_blank" REL="nofollow noopener noreferrer">JP LeBreton</A> -  <SPAN>All Possible Glyphs: Playscii, an ASCII art, animation, and game creation tool</SPAN></LI>
-                <LI><A HREF="https://twitter.com/StellaMazeika" TARGET="_blank" REL="nofollow noopener noreferrer">Stella Mazeika</A> -  <SPAN>Is This Even Randomized?: Turning Classic Games Into Multiplayer Roguelike Experiences</SPAN></LI>
-                <LI>Evan Ovadia -  <SPAN>ASCII vs Tiles vs Symbolic</SPAN></LI>
-                <LI><A HREF="https://twitter.com/ampepers" TARGET="_blank" REL="nofollow noopener noreferrer">Alexei Pepers</A> -  <SPAN>A Guide to Proc Gen Practitioners</SPAN></LI>
-                <LI><A HREF="https://twitter.com/everestpipkin" TARGET="_blank" REL="nofollow noopener noreferrer">Everest Pipkin</A> - Corpora as medium: on the work of curating a poetic textual dataset</LI>                </LI>
-                <LI><A HREF="https://twitter.com/TanookiFruit" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea Roberts</A> -  <SPAN>That's the Way the Ball Bounces: Using Physics to Manifest Chance in Roundguard</SPAN></LI>
-                <LI><A HREF="https://twitter.com/standardcombo" TARGET="_blank" REL="nofollow noopener noreferrer">Gabriel Santos</A> -  <SPAN>ASCII Art Techniques &amp; Animation</SPAN></LI>
-                <LI><A HREF="https://twitter.com/RobinsonSRL" TARGET="_blank" REL="nofollow noopener noreferrer">Aaron Santos</A> -  <SPAN>Optimizing procgen parameters using mini-batch gradient descent</SPAN></LI>
-                <LI><A HREF="https://twitter.com/madjackmcmad" TARGET="_blank" REL="nofollow noopener noreferrer">Jim Shepard</A> -  <SPAN>Blooming on the Battlefield: Relationships, Rivals, and Romance in Gameplay</SPAN></LI>
-                <LI><A HREF="https://twitter.com/robinsloan" TARGET="_blank" REL="nofollow noopener noreferrer">Robin Sloan</A> - <SPAN>Writing with the machine: GPT-2 and text generation</SPAN><BR></LI>
-                <LI>And more to come!</LI>
-            </UL>
+          <br />
+          <p style="text-align: center">
+            <a href="https://opensource.google.com">
+              <img src="sponsors/google-white.png" alt="Google Open Source" style="width: 100%" />
+            </a>
+          </p>
+          <br />
 
-            <h1 id="sponsors" class="cover-heading">Sponsors</h1>
-            
-            <br />
-            <p style="text-align: center">
-              <a href="https://opensource.google.com">
-                <img src="sponsors/google-white.png" alt="Google Open Source" style="width: 100%" />
-              </a>
-            </p>
-            <br />
-          
-            <p style="text-align: center">
-              <a href="http://www.freeholdgames.com">
-                <img src="sponsors/freehold.png" alt="Freehold Games" style="width: 25%" />
-              </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="http://westofloathing.com">
-                <img src="sponsors/asym.png" alt="Asymmetric" style="width: 30%" />
-              </a>
-            </p>
+          <p style="text-align: center">
+            <a href="http://www.freeholdgames.com">
+              <img src="sponsors/freehold.png" alt="Freehold Games" style="width: 25%" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://improbable.io">
+              <img src="sponsors/improbable.png" alt="Improbable" style="width: 30%" />
+            </a>
+          </p>
 
-            <p style="text-align: center">
-              <a href="http://www.bay12games.com/dwarves/">
-                <img src="sponsors/DF_Logo_White.png" alt="Dwarf Fortress" style="width: 35%" />
-              </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://www.twitch.tv/playdungeonmans">
-                <img src="sponsors/apro_logo_blue.png" alt="Adventure Pro" style="width: 30%" />
-              </a>
-            </p>
-            <br />
+          <p style="text-align: center">
+            <a href="http://www.bay12games.com/dwarves/">
+              <img src="sponsors/DF_Logo_White.png" alt="Dwarf Fortress" style="width: 35%" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.twitch.tv/playdungeonmans">
+              <img src="sponsors/apro_logo_blue.png" alt="Adventure Pro" style="width: 30%" />
+            </a>
+          </p>
+          <br />
 
-            <p style="text-align: center"><a href="https://github.com/"><img src="sponsors/GitHub_Logo_White.png"
-                  alt="GitHub logo" height="37" /></a><br /><a href="https://github.com/">GitHub</a> is donating use of their
-              office event space for Roguelike Celebration 2019, including sponsoring food and recording video and audio for the
-              talks.</p>
-            <br />
-          
-            <p style="text-align: center"><a href="https://www.noisebridge.net/"><img src="sponsors/NB-logo-red-black-med.png"
-                  alt="Noisebridge logo" height="37" /><img src="sponsors/NoisebridgeCursive.png" height="37"
-                  alt="Noisebridge word logo" /></a><br /><a href="https://www.noisebridge.net/">Noisebridge</a> is a hackerspace
-              for technical-creative projects, doocratically run by its members. It is a non-profit educational institution
-              intended for public benefit. We're grateful they serve as our <a
-                href="https://en.wikipedia.org/wiki/Fiscal_sponsorship">fiscal sponsor</a>.</p>
-            <br />
+          <p style="text-align: center"><a href="https://github.com/"><img src="sponsors/GitHub_Logo_White.png"
+                alt="GitHub logo" height="37" /></a><br /><a href="https://github.com/">GitHub</a> is donating use of
+            their
+            office event space for Roguelike Celebration 2019, including recording video and audio for the
+            talks.</p>
+          <br />
 
-            <p>Is your organization interested in sponsoring Roguelike Celebration? Check out our <a href="sponsor.html">sponsorship
-                page</a>!</p>
+          <p style="text-align: center"><a href="https://www.noisebridge.net/"><img
+                src="sponsors/NB-logo-red-black-med.png" alt="Noisebridge logo" height="37" /><img
+                src="sponsors/NoisebridgeCursive.png" height="37" alt="Noisebridge word logo" /></a><br /><a
+              href="https://www.noisebridge.net/">Noisebridge</a> is a hackerspace
+            for technical-creative projects, doocratically run by its members. It is a non-profit educational
+            institution
+            intended for public benefit. We're grateful they serve as our <a
+              href="https://en.wikipedia.org/wiki/Fiscal_sponsorship">fiscal sponsor</a>.</p>
+          <br />
 
-<h1 id="updates" class="cover-heading">Want to get updates?</h1>
+          <p>Is your organization interested in sponsoring Roguelike Celebration? Check out our <a
+              href="sponsor.html">sponsorship
+              page</a>!</p>
 
-            <h2>Email</h2>
+          <h1 id="updates" class="cover-heading">Want to get updates?</h1>
 
-            <p>Sign up for occasional email updates about upcoming Roguelike Celebration events.</p>
+          <h2>Email</h2>
 
-            <!-- Begin MailChimp Signup Form -->
-            <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-    #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; color:#fff; margin-bottom: 1em;}
-    #mc_embed_signup .button {background-color: #337ab7; border-color: #2e6da4;}
-        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+          <p>Sign up for occasional email updates about upcoming Roguelike Celebration events.</p>
+
+          <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+            #mc_embed_signup {
+              clear: left;
+              font: 14px Helvetica, Arial, sans-serif;
+              color: #fff;
+              margin-bottom: 1em;
+            }
+
+            #mc_embed_signup .button {
+              background-color: #337ab7;
+              border-color: #2e6da4;
+            }
+
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
+          </style>
 
-            <div id="mc_embed_signup">
-                <form action="//club.us13.list-manage.com/subscribe/post?u=41f26ffad4b9a572620eb234e&amp;id=b86f4f4e82" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                                <label for="mce-EMAIL">Subscribe to our mailing list:</label>
-                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_41f26ffad4b9a572620eb234e_b86f4f4e82" tabindex="-1" value=""></div>
-                                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary"></div>
-                                                    </div>
-                </form>
-            </div>
+          <div id="mc_embed_signup">
+            <form action="//club.us13.list-manage.com/subscribe/post?u=41f26ffad4b9a572620eb234e&amp;id=b86f4f4e82"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to our mailing list:</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                  required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                    name="b_41f26ffad4b9a572620eb234e_b86f4f4e82" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                    class="button btn btn-primary"></div>
+              </div>
+            </form>
+          </div>
 
-            <h2>Twitter</h2>
+          <h2>Twitter</h2>
 
-            <p>Use the <a href="https://twitter.com/search?q=%23roguelikecel">#roguelikecel</a> hashtag on twitter!
-            </p>
+          <p>Use the <a href="https://twitter.com/search?q=%23roguelikecel">#roguelikecel</a> hashtag on twitter!
+          </p>
 
-            <p>Follow us on twitter: <a href="https://twitter.com/roguelike_cel">@Roguelike_Cel</a></p>
+          <p>Follow us on twitter: <a href="https://twitter.com/roguelike_cel">@Roguelike_Cel</a></p>
 
-            <a class="twitter-timeline" data-height="600" data-theme="dark"
-              href="https://twitter.com/roguelike_cel?ref_src=twsrc%5Etfw">Tweets by roguelike_cel</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-height="600" data-theme="dark"
+            href="https://twitter.com/roguelike_cel?ref_src=twsrc%5Etfw">Tweets by roguelike_cel</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-            <!--End mc_embed_signup-->
+          <!--End mc_embed_signup-->
 
-            <h1>Why?</h1>
+          <h1>Why?</h1>
 
-            <p>Roguelike games have been part of gaming culture for over 30 years! They have a deep and special place in our hearts. There are so many fans across age groups and around the world that there should be a place for all of them to get together and celebrate these unique games.</p>
-            <p>We were inspired to do this by the <a href="http://www.roguebasin.com/index.php?title=IRDC">International Roguelike Development Conference</a> — and instead of a focus on development, this was for all of us — the players!</p>
+          <p>Roguelike games have been part of gaming culture for over 30 years! They have a deep and special place in
+            our hearts. There are so many fans across age groups and around the world that there should be a place for
+            all of them to get together and celebrate these unique games.</p>
+          <p>We were inspired to do this by the <a href="http://www.roguebasin.com/index.php?title=IRDC">International
+              Roguelike Development Conference</a> — and instead of a focus on development, this was for all of us — the
+            players!</p>
 
-            <p><img src="ticket-front-19.png" alt="ticket image" style="max-width: 100%;" /></p>
+          <p><img src="ticket-front-19.png" alt="ticket image" style="max-width: 100%;" /></p>
 
-            <p><img src="ticket-back.png" alt="ticket image back" style="max-width: 100%;" /></p>
+          <p><img src="ticket-back.png" alt="ticket image back" style="max-width: 100%;" /></p>
 
-      <!--<h1 id="cfp" class="cover-heading">Call for presenters</h1>
+          <!--<h1 id="cfp" class="cover-heading">Call for presenters</h1>
 
             <p>We have a lot of exciting presenters, but we'd like everyone to feel welcome to contribute! Are you interested in giving a talk (whether 2 minutes or 20 minutes), teaching a workshop, mentoring new players, or sharing something else? No speaking experience required; we would love to hear from you.</p>
 
             <p class="lead"><a href="/cfp.html"><strong>Learn more and send your idea or talk proposal to us. →</strong></a></p>-->
 
-            <h1 id="policies" class="cover-heading">Our guidelines</h1>
-            <p>Roguelike Celebration is a friendly and respectful celebration that welcomes players of all levels of experience (including no experience) and of all ages (people with kids welcome).</p>
+          <h1 id="policies" class="cover-heading">Our guidelines</h1>
+          <p>Roguelike Celebration is a friendly and respectful celebration that welcomes players of all levels of
+            experience (including no experience) and of all ages (people with kids welcome).</p>
 
-            <p>We have a code of conduct for all participants, since we're dedicated to a harassment-free conference experience for everyone. <a href="code.html">Our code of conduct.</a></p>
+          <p>We have a code of conduct for all participants, since we're dedicated to a harassment-free conference
+            experience for everyone. <a href="code.html">Our code of conduct.</a></p>
 
-            <p>We also recommend <a href="https://www.recurse.com/manual#sub-sec-social-rules">Recurse Center style social rules</a>.</p>
+          <p>We also recommend <a href="https://www.recurse.com/manual#sub-sec-social-rules">Recurse Center style social
+              rules</a>.</p>
 
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
 
     </div>
 
-    <!-- Bootstrap core JavaScript
+  </div>
+
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script> -->
-    <script src="/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+  <script src="/dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
 </html>
