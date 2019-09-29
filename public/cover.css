@@ -77,6 +77,10 @@ body {
   transition: opacity 1s ease-in-out;
 }
 
+.scheduleTable td {
+  padding-right: 20px;
+}
+
 
 /*
  * Header
