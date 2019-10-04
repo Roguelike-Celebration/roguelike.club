@@ -77,6 +77,21 @@
       }
     }
   </script>
+
+  <script>
+    var currentBio;
+    function bio(val) {
+      if (currentBio) {
+        $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+      }
+      if (currentBio != val) {
+        currentBio = val;
+        $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+      } else {
+        currentBio = undefined;
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -140,61 +155,193 @@
           <p>
 
           <p>All talks will have live captions provided by <a href="https://whitecoatcaptioning.com">White Coat Captioning</a>.</p>
-    
-          <h3>Friday, October 4</h3>
+  
+          <h3>Friday, October 4th</h3>
           <table class="scheduleTable">
             <tr><td><em>7:00</em></td><td>Opening party hosted by <a href="https://backerkit.com">BackerKit</a>, 1265 Folsom St</td></tr>
           </table>
 
           <h3>Saturday, October 5th</h3>
           <table class="scheduleTable">
-            <tr><td><em>9:00</em></td><td>Doors Open and Breakfast (pastries from <a href="https://www.arizmendibakery.com">Arizmendi</a> and coffee)</td></tr>
+            <tr><td><em>9:00</em></td><td>Doors Open</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>9:45</em></td><td>Kickoff</td></tr>
-            <tr><td><em>10:00</em></td><td><A HREF="https://twitter.com/ampepers" TARGET="_blank" REL="nofollow noopener noreferrer">Alexei Pepers</A> - A Guide to Proc Gen Practitioners</td></tr>
-            <tr><td><em>10:30</em></td><td><A HREF="https://twitter.com/proc_gen" TARGET="_blank" REL="nofollow noopener noreferrer">Isaac Karth</A> - Why Do You Want to Generate That? A Vocabulary For Talking About Procedural Generation</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>10:00</em></td><td><A HREF="https://twitter.com/ampepers" TARGET="_blank" REL="nofollow noopener noreferrer">Alexei Pepers</A> - A Guide to Proc Gen Practitioners
+            <a href="javascript:bio(1);">(bio)</a></td></tr>
+            <tr id="bio_1" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>I am a game designer, programmer, and roguelike fanatic - starting with a love for Nethack and D&D, and leading to a broad passion for all things procedural that I love to encourage in others.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>10:30</em></td><td><A HREF="https://twitter.com/proc_gen" TARGET="_blank" REL="nofollow noopener noreferrer">Isaac Karth</A> - Why Do You Want to Generate That? A Vocabulary For Talking About Procedural Generation
+            <a href="javascript:bio(2);">(bio)</a></td></tr>
+            <tr id="bio_2" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Isaac Karth has been interested in roguelikes and procedural generation since playing NetHack and Elite. He is currently a PhD student at the University of California Santa Cruz, researching procedural generation. He has escaped with the Orb of Zot in Dungeon Crawl Stone Soup once."</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>11:00</em></td><td><i>- break -</i></td></tr>
-            <tr><td><em>11:15</em></td><td><A HREF="https://twitter.com/maxkreminski" TARGET="_blank" REL="nofollow noopener noreferrer">Max Kreminski</A> - Designing AI systems to support player storytelling.</td></tr>
-            <tr><td><em>11:45</em></td><td><A HREF="https://twitter.com/spenceregart" TARGET="_blank" REL="nofollow noopener noreferrer">Spencer Egart</A> - Procedurally Generated Ritual Spell Systems</td></tr>
-            <tr><td><em>12:00</em></td><td><A HREF="https://twitter.com/adrianherbez" TARGET="_blank" REL="nofollow noopener noreferrer">Adrian Herbez</A> - Let's get Physical: 3d Printing for Roguelikes</td></tr>
-            <tr><td><em>12:15</em></td><td><A HREF="https://twitter.com/andreintg" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea Interguglielmi</A> - Designing a turn based roguelike inside a real time simulated environment, and the many headaches that come after</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>11:15</em></td><td><A HREF="https://twitter.com/maxkreminski" TARGET="_blank" REL="nofollow noopener noreferrer">Max Kreminski</A> - Designing AI systems to support player storytelling.
+            <a href="javascript:bio(3);">(bio)</a></td></tr>
+            <tr id="bio_3" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Max Kreminski is a PhD student in the Expressive Intelligence Studio at UC Santa Cruz, studying how artificial intelligence and generative methods can be used to support human creativity.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>11:45</em></td><td><A HREF="https://twitter.com/spenceregart" TARGET="_blank" REL="nofollow noopener noreferrer">Spencer Egart</A> - Procedurally Generated Ritual Spell Systems
+            <a href="javascript:bio(4);">(bio)</a></td></tr>
+            <tr id="bio_4" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>I currently work at Monomi Park as a Game Engineer.  Outside of work, I like to dabble in procedural generation, game tooling, and roguelike development.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>12:00</em></td><td><A HREF="https://twitter.com/adrianherbez" TARGET="_blank" REL="nofollow noopener noreferrer">Adrian Herbez</A> - Let's get Physical: 3d Printing for Roguelikes
+            <a href="javascript:bio(5);">(bio)</a></td></tr>
+            <tr id="bio_5" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Adrian Herbez has been working in the game and virtual worlds industries for over a decade. He also runs a side business, Zanzas Toys (zanzastoys.com) creating and selling 3d printed action figure accessories. In his free time, he keeps busy with various side projects, usually related to game programming and/or 3d printing. His various experiments are documented at adrianherbez.net.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>12:15</em></td><td><A HREF="https://twitter.com/andreintg" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea Interguglielmi</A> - Designing a turn based roguelike inside a real time simulated environment, and the many headaches that come after
+            <a href="javascript:bio(6);">(bio)</a></td></tr>
+            <tr id="bio_6" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Andrea Interguglielmi has been around the game industry long enough to remember his first title published on a gameboy! His curiosity led him astray for a few years, working around the globe in VFX and animation studios, only to be eventually back to where he started. Making games with a bit of a vintage flavor. He’s not that old though.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>12:30</em></td><td>Lunch (<a href="https://palmyrasanfrancisco.com">Palmyra</a>) </td></tr>
-            <tr><td><em>2:00</em></td><td><A HREF="https://twitter.com/mrj_games" TARGET="_blank" REL="nofollow noopener noreferrer">Mark R Johnson</A> - Speech Generation in a Procedurally Generated World</td></tr>
-            <tr><td><em>2:30</em></td><td><A HREF="https://twitter.com/everestpipkin" TARGET="_blank" REL="nofollow noopener noreferrer">Everest Pipkin</A> - Corpora as medium: on the work of curating a poetic textual dataset</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>2:00</em></td><td><A HREF="https://twitter.com/mrj_games" TARGET="_blank" REL="nofollow noopener noreferrer">Mark R Johnson</A> - Speech Generation in a Procedurally Generated World
+            <a href="javascript:bio(7);">(bio)</a></td></tr>
+            <tr id="bio_7" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>I'm a game studies academic and roguelike developer. In my academic life I currently work at the University of Alberta where I study live streaming, esports, gamification, and loot boxes. I'm particularly known for my research on live streaming and Twitch, while my first book - The Unpredictability of Gameplay - has just been released, and explores roguelikes in a lot of detail! As a game developer I'm known for making Ultima Ratio Regum, a huge world-building / culture-generation roguelike project, which is finally back in development after something of a hiatus. I have also run a game design and game studies blog for the last eight years, I'm a co-host of the Roguelike Radio podcast, and I used to be a professional online poker player.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>2:30</em></td><td><A HREF="https://twitter.com/everestpipkin" TARGET="_blank" REL="nofollow noopener noreferrer">Everest Pipkin</A> - Corpora as medium: on the work of curating a poetic textual dataset
+            <a href="javascript:bio(8);">(bio)</a></td></tr>
+            <tr id="bio_8" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Everest Pipkin is a drawing and software artist from Bee Caves, Texas, who produces intimate work with large data sets, archives, and other resources for digital information. They hold a BFA from University of Texas at Austin, a MFA from Carnegie Mellon University, and are currently based in Pittsburgh, Pennsylvania.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>3:00</em></td><td><i>- break -</i></td></tr>
-            <tr><td><em>3:15</em></td><td><A HREF="https://maxhawkins.me" TARGET="_blank" REL="nofollow noopener noreferrer">Max Hawkins</A> - Mapping Activity Space - Adventures in Randomized Living</td></tr>
-            <tr><td><em>3:45</em></td><td><A HREF="https://twitter.com/robinsloan" TARGET="_blank" REL="nofollow noopener noreferrer">Robin Sloan</A> - Writing with the machine: GPT-2 and text generation</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>3:15</em></td><td><A HREF="https://maxhawkins.me" TARGET="_blank" REL="nofollow noopener noreferrer">Max Hawkins</A> - Mapping Activity Space - Adventures in Randomized Living
+            <a href="javascript:bio(9);">(bio)</a></td></tr>
+            <tr id="bio_9" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Max Hawkins is an artist and computer scientist based in Los Angeles. For two years he let a randomized computer algorithm make all of his decisions including where to live, what to wear, who to talk to, and what to eat.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>3:45</em></td><td><A HREF="https://twitter.com/robinsloan" TARGET="_blank" REL="nofollow noopener noreferrer">Robin Sloan</A> - Writing with the machine: GPT-2 and text generation
+            <a href="javascript:bio(10);">(bio)</a></td></tr>
+            <tr id="bio_10" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Robin Sloan is the author of the novels Mr. Penumbra's 24-Hour Bookstore and Sourdough. He also regularly publishes digital experiments.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>4:15</em></td><td><i>- break -</i></td></tr>
-            <tr><td><em>4:30</em></td><td><A HREF="https://twitter.com/toddfurmanski" TARGET="_blank" REL="nofollow noopener noreferrer">Todd Furmanski</A> - 1 Button, 2 sprites, 4 directions, 8 Creatures, 16 Kilobytes: Experiences Making "Dragon's Descent," a Roguelike Action Game for the Atari 2600</td></tr>
-            <tr><td><em>4:45</em></td><td><A HREF="https://twitter.com/schemafactor" TARGET="_blank" REL="nofollow noopener noreferrer">Leif Bloomquist</A> - Updates to Commodore 64 and Retro Multiplayer Roguelike Development</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>4:30</em></td><td><A HREF="https://twitter.com/toddfurmanski" TARGET="_blank" REL="nofollow noopener noreferrer">Todd Furmanski</A> - 1 Button, 2 sprites, 4 directions, 8 Creatures, 16 Kilobytes: Experiences Making "Dragon's Descent," a Roguelike Action Game for the Atari 2600
+            <a href="javascript:bio(11);">(bio)</a></td></tr>
+            <tr id="bio_11" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Todd Furmanski is a researcher with a focus in interactive digital environments and procedural content generation.  Todd has a PhD in Media Arts and Practice, as well as an MFA in Interactive Media, both from the University of Southern California School of Cinematic Arts.  His focuses include emergent algorithms as applied to interactivity, as well as the developing history of games and virtual spaces.  While acting as the lead programmer on projects like "The Night Journey" and "Walden, a game," he has developed several other experimental works, such as "Forska" and "Dragon's Descent."  Todd works with several platforms, from old consoles like the Atari 2600 to current Virtual and Augmented Reality devices.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>4:45</em></td><td><A HREF="https://twitter.com/schemafactor" TARGET="_blank" REL="nofollow noopener noreferrer">Leif Bloomquist</A> - Updates to Commodore 64 and Retro Multiplayer Roguelike Development
+            <a href="javascript:bio(12);">(bio)</a></td></tr>
+            <tr id="bio_12" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Leif Bloomquist has been experimenting with technology, games, and music since the days of the Commodore 64.  He dabbles in retrocomputing, wearable technology, open-source hardware, and gaming.    By day he is a senior engineer at MDA, a Canadian aerospace company developing the future of space robotics.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>5:00</em></td><td><i>- break -</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>6:00</em></td><td>Dinner (<a href="https://www.curryupnow.com">Curry Up Now</a>)</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>7:00</em></td><td>Arcade and Party (themed alcoholic + non-alcoholic cocktails from GitHub's bartenders)</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>10:00</em></td><td>Go Home</td></tr>
           </table>
 
 
           <h3>Sunday, October 6th</h3>
           <table class="scheduleTable">
-            <tr><td><em>9:00</em></td><td>Doors Open and Breakfast (pastries from <a href="https://www.arizmendibakery.com">Arizmendi</a> and coffee)</td></tr>
+            <tr><td><em>9:00</em></td><td>Doors Open</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>9:45</em></td><td>Kickoff</td></tr>
-            <tr><td><em>10:00</em></td><td><A HREF="https://twitter.com/adom_dev" TARGET="_blank" REL="nofollow noopener noreferrer">Thomas Biskup</A> - Thoughts about modern roguelike user interfaces</td></tr>
-            <tr><td><em>10:30</em></td><td><A HREF="https://twitter.com/vectorpoem" TARGET="_blank" REL="nofollow noopener noreferrer">JP LeBreton</A> - All Possible Glyphs: Playscii, an ASCII art, animation, and game creation tool</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>10:00</em></td><td><A HREF="https://twitter.com/adom_dev" TARGET="_blank" REL="nofollow noopener noreferrer">Thomas Biskup</A> - Thoughts about modern roguelike user interfaces
+            <a href="javascript:bio(13);">(bio)</a></td></tr>
+            <tr id="bio_13" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>I am the developer and maintainer of ADOM (Ancient Domains Of Mystery), Ultimate ADOM (its sequel and our attempt at creating the ultimate fantasy roguelike) and in real life one of three CEOs of QuinScape GmbH.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>10:30</em></td><td><A HREF="https://twitter.com/vectorpoem" TARGET="_blank" REL="nofollow noopener noreferrer">JP LeBreton</A> - All Possible Glyphs: Playscii, an ASCII art, animation, and game creation tool
+            <a href="javascript:bio(14);">(bio)</a></td></tr>
+            <tr id="bio_14" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>JP is a veteran game creator. He's worked on "immersive sims" like Bioshock, adventure games like The Cave, and has deep connections to Doom and related mod communities. He believes a more diverse range of tools are key to making games a better medium.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>11:00</em></td><td><i>- break -</i></td></tr>
-            <tr><td><em>11:15</em></td><td><A HREF="http://www.benberman.com/" TARGET="_blank" REL="nofollow noopener noreferrer">Benjamin Berman</A> - Tips, Tricks and History for Card Game Roguelike Design</td></tr>
-            <tr><td><em>11:45</em></td><td><A HREF="https://twitter.com/pdev110" TARGET="_blank" REL="nofollow noopener noreferrer">Patrick Devine</A> - 2D Sprites with Unicode and Golang</td></tr>
-            <tr><td><em>12:00</em></td><td>Evan Ovadia - ASCII, Sprites, and Symbolic Graphics</td></tr>
-            <tr><td><em>12:15</em></td><td><A HREF="https://twitter.com/standardcombo" TARGET="_blank" REL="nofollow noopener noreferrer">Gabriel Santos</A> - ASCII Art Techniques & Animation</td></tr>
-            <tr><td><em>12:30</em></td><td>Lunch (TBD)</td></tr>
-            <tr><td><em>2:00</em></td><td><A HREF="https://twitter.com/unormal" TARGET="_blank" REL="nofollow noopener noreferrer">Brian Bucklew</A> - Dungeon Generation via Wave Function Collapse</td></tr>
-            <tr><td><em>2:30</em></td><td><A HREF="http://cutfree.net" TARGET="_blank" REL="nofollow noopener noreferrer">Scott Kovach</A> - Managing Game Logic With Rule Systems - Using Relational Programming to Build Games</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>11:15</em></td><td><A HREF="http://www.benberman.com/" TARGET="_blank" REL="nofollow noopener noreferrer">Benjamin Berman</A> - Tips, Tricks and History for Card Game Roguelike Design
+            <a href="javascript:bio(15);">(bio)</a></td></tr>
+            <tr id="bio_15" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Creator of Spellsource, a community authored card game, and MonsterMatch, a monster dating game. Former MIT Media Lab games researcher.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>11:45</em></td><td><A HREF="https://twitter.com/pdev110" TARGET="_blank" REL="nofollow noopener noreferrer">Patrick Devine</A> - 2D Sprites with Unicode and Golang
+            <a href="javascript:bio(16);">(bio)</a></td></tr>
+            <tr id="bio_16" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Long time roguelike player, lead Functional Architect at Docker.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>12:00</em></td><td>Evan Ovadia - ASCII, Sprites, and Symbolic Graphics
+            <a href="javascript:bio(17);">(bio)</a></td></tr>
+            <tr id="bio_17" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>I'm a roguelike player and developer, raised on ADOM. In my free time I like to program, snowboard, and refer to roguelites as a roguelikes where purists can overhear me. I'm currently a software engineer at Google, specializing in application architecture, working on Google Earth. I'm the developer of the 7DRL 2019 game Incendian Falls.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>12:15</em></td><td><A HREF="https://twitter.com/standardcombo" TARGET="_blank" REL="nofollow noopener noreferrer">Gabriel Santos</A> - ASCII Art Techniques & Animation
+            <a href="javascript:bio(18);">(bio)</a></td></tr>
+            <tr id="bio_18" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Gabriel is a life-long developer who loves games, ASCII-art and dogs, and respects the Sun more than usual.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>12:30</em></td><td><i>Lunch (TBD)</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>2:00</em></td><td><A HREF="https://twitter.com/unormal" TARGET="_blank" REL="nofollow noopener noreferrer">Brian Bucklew</A> - Dungeon Generation via Wave Function Collapse
+            <a href="javascript:bio(19);">(bio)</a></td></tr>
+            <tr id="bio_19" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>I made part of caves of qud and sproggiwood.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>2:30</em></td><td><A HREF="http://cutfree.net" TARGET="_blank" REL="nofollow noopener noreferrer">Scott Kovach</A> - Managing Game Logic With Rule Systems - Using Relational Programming to Build Games
+            <a href="javascript:bio(20);">(bio)</a></td></tr>
+            <tr id="bio_20" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>"I'm a big fan of DCSS and puzzle games, and I'm interested in ideas that help people make programs that are simple and easy to understand. I work as a software engineer at Airtable."</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>3:00</em></td><td><i>- break -</i></td></tr>
-            <tr><td><em>3:15</em></td><td><A HREF="https://twitter.com/kawaiidragoness" TARGET="_blank" REL="nofollow noopener noreferrer">Kawa</A> - Yet Another Conduct Conversation: a history of conducts in roguelikes</td></tr>
-            <tr><td><em>3:45</em></td><td><A HREF="https://twitter.com/madjackmcmad" TARGET="_blank" REL="nofollow noopener noreferrer">Jim Shepard</A> - Blooming on the Battlefield: Relationships, Rivals, and Romance in Gameplay</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>3:15</em></td><td><A HREF="https://twitter.com/kawaiidragoness" TARGET="_blank" REL="nofollow noopener noreferrer">Kawa</A> - Yet Another Conduct Conversation: a history of conducts in roguelikes
+            <a href="javascript:bio(21);">(bio)</a></td></tr>
+            <tr id="bio_21" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Kawa is a roguelike expert and advocate who has been contributing analysis, rubber duck services, audiovisuals, the occasional convention-running, and general enthusiasm to the roguelike community since 2012. When not failing to ascend, they are crunching numbers, exploring cities, and making delicious food in New York City.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>3:45</em></td><td><A HREF="https://twitter.com/madjackmcmad" TARGET="_blank" REL="nofollow noopener noreferrer">Jim Shepard</A> - Blooming on the Battlefield: Relationships, Rivals, and Romance in Gameplay
+            <a href="javascript:bio(22);">(bio)</a></td></tr>
+            <tr id="bio_22" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Jim's spent the last 15 years making games about crushing monsters and taking their stuff. He believes that roguelikes can be a powerful vessel for sharing adventures and telling stories without losing the crunch and focus that makes the genre what it is.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>4:15</em></td><td><i>- break -</i></td></tr>
-            <tr><td><em>4:30</em></td><td><A HREF="https://twitter.com/TanookiFruit" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea Roberts</A> - That's the Way the Ball Bounces: Using Physics to Manifest Chance in Roundguard.</td></tr>
-            <tr><td><em>4:45</em></td><td><A HREF="https://twitter.com/RobinsonSRL" TARGET="_blank" REL="nofollow noopener noreferrer">Aaron Santos</A> - Optimizing procgen parameters using mini-batch gradient descent</td></tr>
-            <tr><td><em>5:00</em></td><td><A HREF="https://twitter.com/StellaMazeika" TARGET="_blank" REL="nofollow noopener noreferrer">Stella Mazeika</A> - Is This Even Randomized?: Turning Classic Games Into Multiplayer Roguelike Experiences</td></tr>
-            <tr><td><em>5:00</em></td><td>Roguelike Trivia Game Show</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>4:30</em></td><td><A HREF="https://twitter.com/TanookiFruit" TARGET="_blank" REL="nofollow noopener noreferrer">Andrea Roberts</A> - That's the Way the Ball Bounces: Using Physics to Manifest Chance in Roundguard.
+            <a href="javascript:bio(23);">(bio)</a></td></tr>
+            <tr id="bio_23" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Andrea is the co-founder of Wonderbelly Games, a tiny studio working on a bouncy physics-based roguelike called Roundguard. Before that, she spent a decade in Narrative, UX, and Game Design at Microsoft. She splits her days between making games and raising her three-year-old, and on any given afternoon, Andrea may be a princess, a triceratops, or a triceratops-princess.</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>4:45</em></td><td><A HREF="https://twitter.com/RobinsonSRL" TARGET="_blank" REL="nofollow noopener noreferrer">Aaron Santos</A> - Optimizing procgen parameters using mini-batch gradient descent
+            <a href="javascript:bio(24);">(bio)</a></td></tr>
+            <tr id="bio_24" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>Hobby roguelike developer who works on Robinson</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>5:00</em></td><td><A HREF="https://twitter.com/StellaMazeika" TARGET="_blank" REL="nofollow noopener noreferrer">Stella Mazeika</A> - Is This Even Randomized?: Turning Classic Games Into Multiplayer Roguelike Experiences
+            <a href="javascript:bio(25);">(bio)</a></td></tr>
+            <tr id="bio_25" class="bio hidden"><td></td><td style="padding-left: 20px;"><i>"Stella is a now graduated Doctor of Computer Science from UCSC; she's now working on Proxi making interesting things out of memories. In her free time, she's a twitch streamer, speedrunner, and randomizer developer/community leader."</i></td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
+            <tr><td><em>5:15</em></td><td>Roguelike Trivia Game Show</td></tr>
+            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
+
             <tr><td><em>6:00</em></td><td>Head Out</td></tr>
           </table>
           </p>
@@ -354,8 +501,8 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
   <script src="/dist/js/bootstrap.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>

@@ -81,6 +81,11 @@ body {
   padding-right: 20px;
 }
 
+.scheduleTable tr {
+  border-top-color: #ffffff;
+  border-width: 1px;
+}
+
 
 /*
  * Header
@@ -224,4 +229,9 @@ hr:after {
   padding: 0 16px 16px;
   margin-top: 16px;
   margin-bottom: 24px;
+}
+
+/* Animations */
+
+.anim {
 }
