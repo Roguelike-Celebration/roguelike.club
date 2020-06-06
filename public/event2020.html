@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Roguelike Celebration - Event 2020</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      var currentBio;
+      function bio(val) {
+        if (currentBio) {
+          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+        }
+        if (currentBio != val) {
+          currentBio = val;
+          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+        } else {
+          currentBio = undefined;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Roguelike Celebration @@@</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="./">Intro</a></li>
+                  <li class="active"><a href="./event2020.html">2020</a></li>
+                  <li><a href="./event2019.html">2019</a></li>
+                  <li><a href="./event2018.html">2018</a></li>
+                  <li><a href="./event2017.html">2017</a></li>
+                  <li><a href="./event.html">2016</a></li>
+                  <li><a href="./who.html">About us</a></li>
+                  <li><a href="./roguelikes.html">Roguelikes?</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+
+            <h1 id="seealso" class="cover-heading">Celebration 2020</h1>
+
+            <p>Roguelike Celebration 2020 is scheduled for Saturday and Sunday <strong>October 3rd and 4th, 2020</strong> as a <strong>virtual event</strong>.</p>
+
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSew9PprqVPNReiMS3V5KrwR3FajzvzK47w6pFxKcjzJuvgeOQ/viewform"
+              class="btn btn-primary btn-lg" role="button">Submit a talk proposal</a></p>
+
+            <p>Roguelike Celebration is going entirely digital this year, which opens up a unique opportunity for community participation in a more freeform format than just the traditional talks/performances!</p>
+
+            <p>We're currently <strong>accepting submissions for virtual content of many kinds</strong>. We have some suggestions below for ways you can take part with a smaller time commitment than a full talk. We also welcome whatever zany ideas you'd like to put forward &mdash; just email us at contact@roguelike.club!</p>
+
+            <h2>Share and sell your work</h2>
+
+              <h3>Vendor Bazaar</h3>
+
+              <p>We want to highlight community creators and encourage attendees to buy swag from you directly! If you make and sell (or share) art, printable zines, physical products, 3D printing patterns, or any other kind of item that is roguelike or procedural generation related, we'd love to host a link to your work via our future Vendor Bazaar on the Roguelike Celebration website.</p>
+
+              <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScPcwbp1lXqU4hWNvi2Fy9h0NkuyYMewBubOvol2i4WBaPXNQ/viewform?usp=sf_link"
+              class="btn btn-primary btn-lg" role="button">Apply for Vendor Bazaar</a></p>
+
+              <h3>Games Showcase</h3>
+
+              <p>We're also doing a games showcase. If you're a developer and you'd like your game to be showcased, drop us a line!</p>
+
+              <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfpbsGqU7O4HYgecrxy72hr-GYdozaiyLYGWndNA5HHPh7c9w/viewform?usp=sf_link"
+              class="btn btn-primary btn-lg" role="button">Apply for Games Showcase</a></p>
+
+            <h2>Participate in storytelling</h2>
+
+            <h3>Campfire Stories</h3>
+
+            <p>Part of the joy of Roguelike Celebration is hearing the funny, poignant, or strange stories people have from their own experiences with roguelikes. We'd like to gather some of those stories and share them live during the conference. If you have an interesting story about your most shameful death, or how you got your dad to try Dwarf Fortress, or why your favorite roguelike is your favorite, we'd love to hear from you!</p>
+
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDmgvFlt-CjhPUdJ8NTKKZhoubD9fpBpQPStFe1ySbbaybDQ/viewform?usp=sf_link"
+              class="btn btn-primary btn-lg" role="button">Tell a story!</a></p>
+
+            <h3>Roguelike Cookbook</h3>
+
+            <p>One of the fun touches we had at past Celebrations was themed and named drinks (including non-alcoholic drinks). Since we're digital now, we thought it would be fun to compile a Roguelike Cookbook, including food and drink. If you'd like to craft a recipe, submit it and we'll compile it into a cookbook, to be released during the Celebration.</p>
+
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeSi8q29XLpFcPVH5b29Ro8-OVIiFcJE0T6Be_UQc6ouPBpmw/viewform?usp=sf_link"
+              class="btn btn-primary btn-lg" role="button">Send in a recipe!</a></p>
+
+              <h3>Monster Manual</h3>
+
+              <p>Last year's Roguelike Celebration introduced the notion of proc gen spellcasting classes &mdash; but what monsters would these adventurers be facing? Submit your own ideas for the kind of beasts that roguelike developers and players face, to be collected into a Monster Manual!</p>
+
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScEodqfgGI7BOFeWioYHPT9jaw6Ms5q-ru-fII6AWN8oAPIqw/viewform?usp=sf_link"
+              class="btn btn-primary btn-lg" role="button">Share a procgen monster!</a></p>
+
+          </div>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
