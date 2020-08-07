@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Roguelike Celebration - Code of Conduct</title>
+    <title>Roguelike Celebration - Event 2020 Preview</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,6 +25,21 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script>
+      var currentBio;
+      function bio(val) {
+        if (currentBio) {
+          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+        }
+        if (currentBio != val) {
+          currentBio = val;
+          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+        } else {
+          currentBio = undefined;
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -41,7 +56,7 @@
               <nav>
                 <ul class="nav masthead-nav">
                   <li><a href="./">Intro</a></li>
-                  <li><a href="./event2020preview.html">2020 Preview</a></li>
+                  <li class="active"><a href="./event2020preview.html">2020 Preview</a></li>
                   <li><a href="./event2020.html">2020</a></li>
                   <li><a href="./event2019.html">2019</a></li>
                   <li><a href="./event2018.html">2018</a></li>
@@ -56,16 +71,24 @@
 
           <div class="inner cover">
 
-            <h1 id="seealso" class="cover-heading">Code of conduct</h1>
+            <h1 id="seealso" class="cover-heading">Celebration 2020 Preview</h1>
 
-            <p>Our goal is to have a really fun and welcoming celebration of roguelike games, so we have a formalized code of conduct that sets these expectations.</p>
+            <p>
+              <a href="https://www.eventbrite.com/e/roguelike-celebration-preview-event-tickets-116047957565"
+                 class="btn btn-primary btn-lg" role="button">Sign up for the preview!</a>
+              <a href="https://www.eventbrite.com/e/roguelike-celebration-2020-tickets-115662964039"
+                 class="btn btn-primary btn-lg" role="button">Get your ticket to the Celebration!</a>
+            </p>
 
-            <p>We follow the GitHub Code of Conduct. You can <a href="/github-coc.html">read it here.</a></p>
+            <p>Roguelike Celebration 2020 Preview is scheduled Sunday <strong>August 30 2020 4:00 PM - 7:00 PM Pacific Time</strong> as a <strong>virtual event</strong>. It is free for all attendees, and all you need is a web browser!</p>
 
-            <p>For this event, if you're being harrassed, notice someone being harrassed, or have any other concerns related to the code of conduct, <strong>you can contact one of this event's organizers.</strong> Those are specifically the people listed on the <a href="/who.html">About us page.</a></p>
+            <p>Roguelike games have been part of gaming culture for over 30 years and they have a deep and special place in our hearts. We'd love to get to spend some time with you all learning about roguelikes and socializing together.</p>
+
+            <p>While the full Roguelike Celebration conference isn’t happening until October, we wanted to provide a space for the community to gather before then. This will be an opportunity to catch up with old friends, meet new ones, and explore our exciting custom-built multiplayer game/chat space! All you’ll need to attend is a web browser.</p>
+
+            <p>We're still finalizing the schedule, but we'll also have some of our speakers giving brief sneak peeks of what you'll get to see at the main Roguelike Celebration, October 3-4!</p>
 
           </div>
-
           <div class="mastfoot">
             <div class="inner">
               <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
@@ -73,8 +96,6 @@
           </div>
 
         </div>
-
-      </div>
 
     </div>
 
