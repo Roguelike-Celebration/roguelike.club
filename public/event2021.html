@@ -7,9 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="cache-control" content="max-age=3600" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Roguelike Celebration - What are roguelikes?</title>
+    <title>Roguelike Celebration - Event 2020</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,16 +26,30 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script>
+      var currentBio;
+      function bio(val) {
+        if (currentBio) {
+          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+        }
+        if (currentBio != val) {
+          currentBio = val;
+          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+        } else {
+          currentBio = undefined;
+        }
+      }
+    </script>
   </head>
 
   <body>
-
     <div class="masthead clearfix">
       <h3 class="masthead-brand">Roguelike Celebration</h3>
       <nav>
         <ul class="nav masthead-nav">
           <li><a href="./">Intro</a></li>
-          <li><a href="./event2021.html">2021</a></li>
+          <li class="active"><a href="./event2021.html">2021</a></li>
           <li class="dropdown">  
               <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Previous Years
@@ -50,7 +65,7 @@
           </li>
           <li><a href="./who.html">About us</a></li>
           <li><a href="./code.html">CoC</a></li>
-          <li class="active"><a href="./roguelikes.html">Roguelikes?</a></li>
+          <li><a href="./roguelikes.html">Roguelikes?</a></li>
         </ul>
       </nav>
     </div>
@@ -62,26 +77,11 @@
         <div class="cover-container">
 
           <div class="inner cover">
-
-            <h1 id="seealso" class="cover-heading">What are roguelikes?</h1>
-
-            <p>Roguelike games (<a href="https://en.wikipedia.org/wiki/Roguelike">Wikipedia</a>) are intricate and fun computer games that have a history back to 1980 &mdash; and they've influenced many games along the way (including Diablo, Spelunky, and Dwarf Fortress). The most famous roguelike is probably <a href="http://www.nethack.org/">Nethack</a>, which looks like this:</p>
-
-            <p><a href="https://commons.wikimedia.org/wiki/File:Nethack_screenshot.png"><img src="screenshot.png" alt="screenshot of Nethack" style="max-width: 100%;" /></a></p>
-
-            <p>Find out more about roguelikes:</p>
-
-            <ul>
-                <li><a href="http://www.roguebasin.com/index.php?title=Berlin_Interpretation"><em>The Berlin Interpretation</em></a>, a definition of roguelikes</li>
-                <li><a href="https://www.reddit.com/r/roguelikes"><em>Roguelike sub-reddit</em></a></li>
-                <li><a href="https://en.wikipedia.org/wiki/List_of_roguelikes"><em>List of Roguelikes</em></a></li>
-              <li><a href="http://www.amazon.com/Dungeon-Hacks-NetHack-Angband-Roguelikes/dp/069250186X/"><em>Dungeon Hacks: How NetHack, Angband, and Other Roguelikes Changed the Course of Video Games</em></a>, a book by David Craddock</li>
-              <li><a href="http://www.roguelikeradio.com/">Roguelike Radio: a podcast about roguelikes</a>, organized by Darren Grey</li>
-              <li><a href="http://rodneylives.blogspot.com/">@Play articles</a>, by John Harris</li>
-            </ul>
-
+            <div class="lead">October 16th-17th, 2021
+              <strong>online</strong>
+              <a href="./cfp.html"><button>submit a talk proposal</button></a>
+            </div>
           </div>
-
           <div class="mastfoot">
             <div class="inner">
               <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
@@ -90,8 +90,6 @@
 
         </div>
 
-      </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -99,7 +97,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>

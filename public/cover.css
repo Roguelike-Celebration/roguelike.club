@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: cyan;
+  color: greenyellow;
 }
 
 /* Custom default button */
@@ -43,6 +43,7 @@ body {
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  padding-top: 100px;
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -54,9 +55,9 @@ body {
 }
 
 /* Padding for spacing */
-.inner {
+/* .inner {
   padding: 20px;
-}
+} */
 
 .slidesContainer {
   position: relative;
@@ -90,9 +91,20 @@ body {
 /*
  * Header
  */
+
+.masthead {
+  background-color: black;
+  height: 64px;
+  box-shadow: 0 0 6px greenyellow;
+  position: fixed;
+  z-index: 2;
+}
 .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.masthead-nav {
+  height: 64px;
+  padding: 16px 0;
 }
 
 .masthead-nav > li {
@@ -101,14 +113,14 @@ body {
 .masthead-nav > li + li {
   margin-left: 20px;
 }
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
+.masthead-nav > li > a,
+.dropdown-menu > li > a {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
+  padding: 9px 15px 14px;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
@@ -121,6 +133,19 @@ body {
 .masthead-nav > .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.masthead-nav > .dropdown.open > a {
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+
+.masthead-nav > .dropdown.open > .dropdown-menu {
+  background-color: black;
+  text-align: right;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -143,6 +168,33 @@ body {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+}
+
+/*
+* Lead
+*/
+
+.lead {
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 12px greenyellow;
+  font-size: 5rem;
+  padding: 24px;
+  text-align: center;
+}
+
+.lead button {
+  border: none;
+  border-radius: 4px;
+  background-color: greenyellow;
+  color: black;
+  box-shadow: 0 0 12px greenyellow;
+  margin:8px;
+}
+
+.lead button:hover,
+.lead button:focus {
+  background-color: #87c925;  
 }
 
 
@@ -183,7 +235,6 @@ body {
 }
 
 @media (min-width: 992px) {
-  .masthead,
   .mastfoot,
   .cover-container {
     width: 700px;

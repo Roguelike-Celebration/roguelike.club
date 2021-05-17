@@ -97,32 +97,40 @@
 
 <body>
   <!-- gini was here -->
+  <div class="masthead clearfix">
+    <h3 class="masthead-brand">Roguelike Celebration</h3>
+    <nav>
+      <ul class="nav masthead-nav">
+        <li class="active"><a href="./">Intro</a></li>
+        <li><a href="./event2021.html">2021</a></li>
+        <li class="dropdown">  
+            <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Previous Years
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="drop1">
+              <li><a class="dropdown-item" href="./event2020.html">2020</a></li>
+              <li><a class="dropdown-item" href="./event2019.html">2019</a></li>
+              <li><a class="dropdown-item" href="./event2018.html">2018</a></li>
+              <li><a class="dropdown-item" href="./event2017.html">2017</a></li>
+              <li><a class="dropdown-item" href="./event.html">2016</a></li>
+            </ul>
+        </li>
+        <li><a href="./who.html">About us</a></li>
+        <li><a href="./code.html">CoC</a></li>
+        <li><a href="./roguelikes.html">Roguelikes?</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="site-wrapper">
-
     <div class="site-wrapper-inner">
-
       <div class="cover-container">
-
-        <div class="masthead clearfix">
-          <div class="inner">
-            <h3 class="masthead-brand">Roguelike Celebration @@@</h3>
-            <nav>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="./">Intro</a></li>
-                <li><a href="./event2020.html">2020</a></li>
-                <li><a href="./event2019.html">2019</a></li>
-                <li><a href="./event2018.html">2018</a></li>
-                <li><a href="./event2017.html">2017</a></li>
-                <li><a href="./event.html">2016</a></li>
-                <li><a href="./who.html">About us</a></li>
-                <li><a href="./code.html">CoC</a></li>
-                <li><a href="./roguelikes.html">Roguelikes?</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
         <div class="inner cover">
+
+          <div class="lead">October 16th-17th, 2021
+            <strong>online</strong>
+            <a href="./cfp.html"><button>submit a talk proposal</button></a>
+          </div>
 
           <div class="slidesContainer" id="slidesContainer">
             <img class="mySlides" src="./photos/slideshow/1.jpg">
@@ -132,12 +140,7 @@
           </div>
 
           <h1 id="thing" class="cover-heading">A celebration of roguelike games</h1>
-          <!--<p class="lead">The Roguelike Celebration is happening on Saturday and Sunday <strong>October 5th and 6th,
-              2019</strong> at the <strong><a
-                href="https://www.google.com/maps/place/88+Colin+P+Kelly+Jr+St,+San+Francisco,+CA+94107/@37.7822671,-122.3934366,17z/data=!3m1!4b1!4m5!3m4!1s0x80858077fe6ae953:0x1cf829f1248fb8f4!8m2!3d37.7822671!4d-122.3912479">GitHub
-                office</a></strong> in <strong>San Francisco</strong>.</p>-->
-
-          <p>
+          
             <!--<a href="https://www.eventbrite.com/e/roguelike-celebration-2020-tickets-115662964039"
               class="btn btn-primary btn-lg" role="button">Get your ticket to the Celebration!</a>-->
 
@@ -282,7 +285,7 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="/dist/js/bootstrap.min.js"></script>
+  <script src="./dist/js/bootstrap.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
