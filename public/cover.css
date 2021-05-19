@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: greenyellow;
+  color: cyan;
 }
 
 /* Custom default button */
@@ -93,18 +93,34 @@ body {
  */
 
 .masthead {
+  align-items: center;
   background-color: black;
+  display: inline-flex;
   height: 64px;
-  box-shadow: 0 0 6px greenyellow;
+  justify-content: space-between;
+  box-shadow: 0 0 6px cyan;
   position: fixed;
+  width: 100%;
   z-index: 2;
 }
+
+.masthead .glyphicon-menu-hamburger {
+  font-size: 24px;
+}
+
 .masthead-brand {
+  flex-grow: 1;
   padding-left: 20px;
 }
 .masthead-nav {
   height: 64px;
   padding: 16px 0;
+}
+
+.masthead-nav.visible-xs-inline-block {
+  flex-grow: 0;
+  margin-top: 12px;
+  padding-right: 20px;
 }
 
 .masthead-nav > li {
@@ -142,7 +158,8 @@ body {
   font-weight: bold;
 }
 
-.masthead-nav > .dropdown.open > .dropdown-menu {
+.masthead-nav > .dropdown.open > .dropdown-menu,
+.masthead-nav > .dropdown.open .dropdown-menu {
   background-color: black;
   text-align: right;
   color: #fff;
@@ -171,30 +188,47 @@ body {
 }
 
 /*
-* Lead
+* Front Page box
 */
 
-.lead {
+.giant-callout {
   background-color: black;
   border-radius: 4px;
-  box-shadow: 0 0 12px greenyellow;
+  box-shadow: 0 0 12px cyan;
   font-size: 5rem;
   padding: 24px;
   text-align: center;
 }
 
-.lead button {
+button,
+.button,
+.btn.btn-primary,
+.btn-success {
   border: none;
   border-radius: 4px;
-  background-color: greenyellow;
+  background-color: #03caca;
   color: black;
-  box-shadow: 0 0 12px greenyellow;
+  text-shadow: none;
+  box-shadow: 0 0 2px cyan;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn-success:hover,
+.btn-success:focus {
+  background-color: cyan;
+  color: black;
+}
+
+.giant-callout button {
+  background-color: cyan;
+  box-shadow: 0 0 12px cyan;
   margin:8px;
 }
 
-.lead button:hover,
-.lead button:focus {
-  background-color: #87c925;  
+.giant-callout button:hover,
+.giant-callout button:focus {
+  background-color: #03caca;  
 }
 
 

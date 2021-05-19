@@ -99,7 +99,7 @@
   <!-- gini was here -->
   <div class="masthead clearfix">
     <h3 class="masthead-brand">Roguelike Celebration</h3>
-    <nav>
+    <nav class="hidden-xs hidden-sm">
       <ul class="nav masthead-nav">
         <li class="active"><a href="./">Intro</a></li>
         <li><a href="./event2021.html">2021</a></li>
@@ -121,14 +121,29 @@
         <li><a href="./roguelikes.html">Roguelikes?</a></li>
       </ul>
     </nav>
+    <nav class="masthead-nav visible-xs-inline-block visible-sm-inline-block">
+      <div class="dropdown">
+        <a id="hamburger" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="hamburger">
+          <li><a href="./who.html">About us</a></li>
+          <li><a href="./code.html">CoC</a></li>
+          <li><a href="./roguelikes.html">Roguelikes?</a></li>
+          <li><a class="dropdown-item" href="./event2020.html">2020</a></li>
+          <li><a class="dropdown-item" href="./event2019.html">2019</a></li>
+          <li><a class="dropdown-item" href="./event2018.html">2018</a></li>
+          <li><a class="dropdown-item" href="./event2017.html">2017</a></li>
+          <li><a class="dropdown-item" href="./event.html">2016</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
         <div class="inner cover">
 
-          <div class="lead">October 16th-17th, 2021
-            <strong>online</strong>
+          <div class="giant-callout">October 16th-17th, 2021<br>
+            <strong>online</strong><br>
             <a href="./cfp.html"><button>submit a talk proposal</button></a>
           </div>
 
@@ -178,11 +193,6 @@
               font: 14px Helvetica, Arial, sans-serif;
               color: #fff;
               margin-bottom: 1em;
-            }
-
-            #mc_embed_signup .button {
-              background-color: #337ab7;
-              border-color: #2e6da4;
             }
 
             /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.

@@ -31,12 +31,12 @@
         background-color: black;
       }
 
-      .pitfalls .col-sm-6 {
+      .pitfalls .col-xs-6 {
         padding: 8px;
       }
 
       .pitfalls .header{
-        color:greenyellow;
+        color:cyan;
         font-size: 20px;
         font-weight: bold;
         margin: auto;
@@ -48,7 +48,7 @@
       }
 
       h4 {
-        color: greenyellow;
+        color: cyan;
       }
 
       .row {
@@ -61,9 +61,9 @@
   <body>
     <div class="masthead clearfix">
       <h3 class="masthead-brand">Roguelike Celebration</h3>
-      <nav>
+      <nav class="hidden-xs hidden-sm">
         <ul class="nav masthead-nav">
-          <li class="active"><a href="./">Intro</a></li>
+          <li><a href="./">Intro</a></li>
           <li><a href="./event2021.html">2021</a></li>
           <li class="dropdown">  
               <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -83,6 +83,21 @@
           <li><a href="./roguelikes.html">Roguelikes?</a></li>
         </ul>
       </nav>
+      <nav class="masthead-nav visible-xs-inline-block visible-sm-inline-block">
+        <div class="dropdown">
+          <a id="hamburger" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="hamburger">
+            <li><a href="./who.html">About us</a></li>
+            <li><a href="./code.html">CoC</a></li>
+            <li><a href="./roguelikes.html">Roguelikes?</a></li>
+            <li><a class="dropdown-item" href="./event2020.html">2020</a></li>
+            <li><a class="dropdown-item" href="./event2019.html">2019</a></li>
+            <li><a class="dropdown-item" href="./event2018.html">2018</a></li>
+            <li><a class="dropdown-item" href="./event2017.html">2017</a></li>
+            <li><a class="dropdown-item" href="./event.html">2016</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
@@ -93,7 +108,11 @@
             <p>Technical talks, game design lessons, creative uses of procedural generation, interactive roguelike performances - we want to hear about it all!
             </p>
 
-            <p class="lead"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7lgMsrp5N20to6p8S6r0_fEomiPfW6blRhzotDg1uwTjheQ/viewform"><strong>Send us your idea!</strong></a></p>
+            <div class="giant-callout">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7lgMsrp5N20to6p8S6r0_fEomiPfW6blRhzotDg1uwTjheQ/viewform">
+                <button>Send us your idea!</button>
+              </a>
+            </div>
 
             <h2>Tips For a Successful Proposal</h2>
             <p>
@@ -106,73 +125,73 @@
             <h3>Common Pitfalls in a Talk Proposal</h3>
             <div class="pitfalls">
             <div class="row header">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Some reasons why<br>we’ve declined a proposal
               </div>
-              <div class="col-sm-6"><br>
+              <div class="col-xs-6"><br>
                 Possible ways to improve
               </div>
             </div>
             
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 It’s just a general retrospective about making your game or telling a straightforward story about what your game is.
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Better to focus more on a specific theme, insight, or design ethos - give your talk a unique frame.
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Sounds like you’re trying to pitch / sell your game. 
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Try to focus more on teaching a topic, sharing something you learned, or telling a story. Trust that people will check out your game!
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Your game or ideas are still in development and still vague.
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Sometimes this is ok when there’s a unique aspect, but sometimes it's better to propose it again next year after you’ve developed it further or shipped.
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Talk theme sounds harsh or unkind about some kind of game pattern/technique, a game or group of games, etc.
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Critique is great, but try to frame it in a positive and constructive way.
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Proposal isn’t on topic enough, especially a technical topic that’s not quite on topic.
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Consider an unconference session instead, or write a blog post and share it with the community. Or refocus on something more related to roguelikes and procedural generation.
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Your proposal is about open ended discussion of a topic, but it’s not clear what new information you’re adding, or what conclusion you’re looking to present.
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 If you want to share thoughts and feelings on a topic, an unconference session can be great, or bring it up during breaks. If you do have a specific point you want to make, be clear about what it is.
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 Your proposal is very similar to past talks.
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 The more similar your proposal is to a past talk, the more you should talk about what makes *your* take different. We like different angles on similar topics but variety is also important!
               </div>
             </div>
