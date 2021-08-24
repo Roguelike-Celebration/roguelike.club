@@ -1,0 +1,40 @@
+.speakers {
+    padding: 0 20px;
+}
+
+.speaker {
+    margin-bottom: 1rem;
+}
+
+.speaker a, .speaker > div {
+    display: inline-flex;
+    width: 100%;
+}
+
+.speaker-name {
+    padding-right: 2rem;
+    text-align: right;
+    width: 25%;
+}
+
+.talk-title {
+    color: white;
+    width: 75%;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .speaker {
+        margin-bottom: 3rem;
+    }
+    .speaker a, .speaker > div {
+        display: block;
+    }
+
+    .speaker-name {
+        text-align: left;
+        width: 100%;
+    }
+}

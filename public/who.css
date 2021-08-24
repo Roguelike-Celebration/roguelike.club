@@ -1,0 +1,17 @@
+.headshot {
+    display: inline-block;
+    height: 8rem;
+    margin-right: 1rem;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+    width: 8rem;
+}
+
+.inner h3 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.intro {
+    padding-bottom: 3rem;
+}
