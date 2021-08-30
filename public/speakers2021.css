@@ -1,0 +1,75 @@
+.cover-container {
+    padding: 0 20px;
+}
+
+h1 {
+    margin-bottom: 5rem;
+}
+
+.speakers {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.talk-title {
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-style: italic;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .headshot {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 0.75rem;
+        width: 100%;
+    }
+
+    .talk {
+        width: 85%;
+    }
+
+    .speaker {
+        display: inline-flex;
+        margin-bottom: 2rem;
+        padding-top: 68px;
+    }
+
+    .link {
+        margin-right: 1rem;
+        min-width: 15%;
+        width: 15%;
+    }
+
+    .speaker-name {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .speaker {
+        margin-bottom: 4rem;
+    }
+    .link, .link a {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    .headshot {
+        margin-bottom: 0.75rem;
+        width: 33%;
+        max-width: 33%;
+        min-width: 33%;
+        margin-right: 17%;
+    }
+    .speaker-name {
+        width: 66%;
+    }
+}

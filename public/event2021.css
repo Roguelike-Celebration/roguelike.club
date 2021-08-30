@@ -1,40 +1,77 @@
-.speakers {
+
+h1 {
+    padding-left: 20px;
+}
+
+h2 {
+    display: inline-block;
+    padding-right: 2rem;
+}
+.speakers, .schedule {
     padding: 0 20px;
 }
 
-.speaker {
-    margin-bottom: 1rem;
-}
-
-.speaker a, .speaker > div {
+.when, .what {
     display: inline-flex;
-    width: 100%;
+    padding-left: 0.5rem;
 }
 
-.speaker-name {
-    padding-right: 2rem;
-    text-align: right;
-    width: 25%;
+.what {
+    flex-direction: column;
+    width:75%;
 }
 
-.talk-title {
+.when {
+    width: 8%;
+}
+
+.social::before {
+    content: "S";
+    color: cyan;
+    font-family: monospace;
+}
+
+.full::before {
+    content: "F";
+    color: orange;
+    font-family: monospace;
+}
+
+.lightning::before {
+    content: "L";
+    color: yellow;
+    font-family: monospace;
+}
+
+.unconferencing::before {
+    content: "U";
     color: white;
-    width: 75%;
+    font-family: monospace;
+}
+
+.block.header .what{
+    font-family: monospace;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.block.header {
+    padding-left: 14px;
+}
+
+.block {
+    border-bottom: 1px dotted white;
+    padding: 2rem 0;
 }
 
 
 
 @media (max-width: 767px) {
 
-    .speaker {
-        margin-bottom: 3rem;
+    .what {
+        max-width: 60%;
     }
-    .speaker a, .speaker > div {
-        display: block;
-    }
-
-    .speaker-name {
-        text-align: left;
-        width: 100%;
+    .when {
+        width: 15%;
     }
 }
