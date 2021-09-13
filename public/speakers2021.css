@@ -55,6 +55,7 @@ h1 {
 
     .speaker {
         margin-bottom: 4rem;
+        padding-top: 72px;
     }
     .link, .link a {
         display: inline-flex;
