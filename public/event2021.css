@@ -43,6 +43,11 @@ h2 {
     font-family: monospace;
 }
 
+.kickoff::before {
+    content: "k";
+    font-family: monospace;
+}
+
 .unconferencing::before {
     content: "U";
     color: white;
