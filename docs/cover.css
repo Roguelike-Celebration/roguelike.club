@@ -320,3 +320,8 @@ hr:after {
 
 .anim {
 }
+
+/* mailchimp signup */
+#mc_embed_signup input {
+  color: #333;
+}
