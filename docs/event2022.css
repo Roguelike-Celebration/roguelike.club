@@ -87,3 +87,8 @@ h2 {
   margin-top: -50vh; /*same height as header*/
   visibility: hidden;
 }
+
+.bio {
+    margin-top: 12px;
+    margin-left: 12px;
+}
