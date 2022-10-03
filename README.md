@@ -8,3 +8,8 @@ A previous version of this README noted this code was based on http://v4-alpha.g
 The website is automatically deployed whenever new commits are pushed to the `main` branch via GitHub Pages.
 
 A note for future maintainers: the `docs` folder was previously called `public`, but GH Pages will only let you deploy the root folder or the "docs" folder. Eventually, we could set up a GitHub Actions script to auto-deploy an arbitrary folder to another branch, but that seems like overkill as long as this remains static HTML with no need for a pre-processing/compilation step.
+
+## Travis' Temporary 2022 Schedule/Bio Update Notes
++ Should I put Blair Salzman/Hannah Blair Salzman? Defaulting to "Blair Salzman".
++ Go double-check everybody's emails after you're through.
++ Email Adam Newgas about his "working on this" thing

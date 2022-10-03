@@ -20,7 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-    <link href="event2021.css" rel="stylesheet">
+    <link href="event2022.css" rel="stylesheet">
 
 
 
@@ -33,6 +33,7 @@
     <script>
       var currentBio;
       function bio(val) {
+        console.log(val, currentBio);
         if (currentBio) {
           $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
         }
@@ -111,67 +112,663 @@
           <p>
             Roguelike Celebration 2022 will be held on Saturday and Sunday <strong>October 22nd and 23rd, 2022</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks will also be streamed to Twitch and YouTube.
           </p>
-          <h1>2022 Talks & Speakers</h1>
-          <table style="margin-left: 2em; margin-right: 2em;">
-          <tr><th>Talk</th><th>Speaker</th></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Roguelikes and Neurodiversity</td><td>Blair Salzman</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Telnet, a New Session, and transsexualizing the past</td><td>Cara Esten Hurtle</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Object Biographies: An Archaeological Approach to PCG</td><td>Florence Smith Nicholls</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>The Baltimore Orioles Effect: Hey! Stop poisoning my image prompt!</td><td>Janelle Shane</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>This is too hard! How to broaden your game’s target audience with smart difficulty tricks</td><td>Philomena Schwab</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Persistence and Resistence: How narrative in roguelikes is currently underutilized</td><td>Sherveen Uduwana</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Remembering Moria - a roguelike before the roguelikes</td><td>Santiago Zapata</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Procedural Music Generator for Tea Graden</td><td>Sonat Uzun </td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>How hard can it be to create a non-violent rogue-lite dungeon crawler?</td><td>Tabea Iseli</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>"La Horde du Contrevent": A Novel That Didn't Know It Was A Roguelike</td><td>Younès Rabii</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Constraint Based Generation is a swiss army knife</td><td>Adam Newgas</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Causal Graphs for Procedural Generation</td><td>Alex Byaly</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Seeking Treasure in the Tangled Bank: Biological Inspiration for Roguelike Mechanics</td><td>Benet Devereux</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>How To Let Your Players Take The Wheel (without crashing the car)</td><td>Chris King</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Simulating History as You’re Living Through It AKA Everyone is a Bunch of Concerns in a Trench Coat</td><td>Dustin Freeman</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Perfect Synergy: How Roguelike Developers and Streamers Form the Perfect Ecosystem</td><td>Dylan Gedig</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Smoothing the Sharp Edges of RNG</td><td>Evan Debenham</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Creating a Modding System for Roguelikes</td><td>George Moromisato</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>This Puzzle Is Secretly A Dungeon</td><td>Jack Schlesinger </td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>The Hitchhiker's Guide to the Cataclysm</td><td>Jeremy Rose</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>A Small Clump of Pixels: Creating the Sil-Q Tileset</td><td>Joel Ryan / Microchasm</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>A Million Little Players: Monte Carlo Simulations for Game Design</td><td>Phenry Ewing</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Tips and Tricks in Procedural Generation</td><td>Pierre Vigier</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Common "Pitfalls" of Roguelike Traps and How to Circumvent Them</td><td>Reed Lockwood</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Procedural 3D environments on a budget</td><td>Sergio Garces</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Choice Design in Roguelikes</td><td>Sersa Victory  </td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Prototyping your games with spreadsheets</td><td>Tyler Robertson</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-            <tr><td>Controlling your generator using Expressive Range Analysis</td><td>Abdelrahman Madkour</td></tr>
-            <tr style="height: 1px;"><td colspan="2" style="background-color: #888;"></div></td></tr>
-          </table>
+          <h1>Schedule</h1>
+          <article class="schedule" id="saturday">
+            <h2>Saturday, Oct 22</h2> <a href="#sunday">Sunday</a>
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>
+
+            <div class="block social">
+              <div class="when">09:00</div>
+              <div class="when">18:00</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block kickoff">
+              <div class="when">09:15</div>
+              <div class="when">18:15</div>
+              <div class="what">
+                <div class="talk-title">kickoff
+                </div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">09:30</div>
+              <div class="when">18:30</div>
+
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="younes-rabii"></span>
+                  "La Horde du Contrevent": A Novel That Didn't Know It Was A Roguelike
+                  <a href="javascript:bio(1);">(more)</a>
+                  <div id="bio_1" class="bio hidden">
+                    <p>I'd like to present to the audience a science-fiction novel named "La Horde du Contrevent" and how it actually borrows code from roguelikes, without even realising it. The fiction's universe, its story, its characters and even the way it uses the "screen" of a book has a lot in common with traditional roguelikes; while being developed absolutely independently.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#younes-rabii">Younès Rabii</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">09:45</div>
+              <div class="when">18:45</div>
+
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="sherveen-uduwana"></span>
+                  Persistence and Resistence: How narrative in roguelikes is currently underutilized
+                  <a href="javascript:bio(2);">(more)</a>
+                  <div id="bio_2" class="bio hidden">
+                    <p>I have always really been excited about the roguelike genre's potential as narrative vehicles! I've always thought the genre seemed incredibly well suited to telling stories about systemic change, about communities, about daily lived struggles. I'm often surprised that the genre isn't more saturated with games like this. With more popular examples of narrative driven roguelikes in recent memory like Hades, I think now is a really cool time to talk about what exactly makes roguelikes such a cool medium for these types of stories, in the hope of more people being inspired to make games like that!</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#sherveen-uduwana">Sherveen Uduwana</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">10:00</div>
+              <div class="when">19:00</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="florence-smith-nicholls"></span>
+                  Object Biographies: An Archaeological Approach to PCG
+                  <a href="javascript:bio(3);">(more)</a>
+                  <div id="bio_3" class="bio hidden">
+                    <p>Through my doctoral studies I have coined the term generative archaeology games to refer to games with procedurally generated content that a player is encouraged to interpret and record archaeologically. In this talk, I will focus on the archaeological concept of object biographies, which broadly refers to the life cycle of an object through its interactions with other people and things.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#florence-smith-nicholls">Florence Smith Nicholls</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">10:15</div>
+              <div class="when">19:15</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="tyler-robertson"></span>
+                  Prototyping your games in Google Sheets
+                  <a href="javascript:bio(4);">(more)</a>
+                  <div id="bio_4" class="bio hidden">
+                    <p>Like a lot of us, I often get an itch to create a new game, but rarely want to spend the effort <em>actually making that game a reality</em>. During the 2020 lockdown that itch struck again, so I reached for the tool closest at hand: Google Sheets. Here are some of the tricks I've learned over the last two years of making games in Google Sheets, and how you can use it to prototype all sorts of roguelike experiences.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#tyler-robertson">Tyler Robertson</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">10:30</div>
+              <div class="when">19:30</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">11:00</div>
+              <div class="when">20:00</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="sonat-uzun"></span>
+                  Procedural Music of Tea Garden
+                  <a href="javascript:bio(5);">(more)</a>
+                  <div id="bio_5" class="bio hidden">
+                    <p>Join me on my journey of programming music for generated dream worlds of Tea Garden. I’ll talk about my approach and process, and we will listen to a bunch of procedural music. I use pico8 for this project and will also talk about how technical restrictions affect my decisions.</p>
+                    <p>Procedural music is a fresh territory that is explored very little. So I hope this talk will provide you with some ideas to make cool generators of your own.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#sonat-uzun">Sonat Uzun</a></div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">11:30</div>
+              <div class="when">20:30</div>
+
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="janelle-shane"></span>
+                  The Baltimore Orioles Effect: Hey! Stop poisoning my image prompt!
+                  <a href="javascript:bio(6);">(more)</a>
+                  <div id="bio_6" class="bio hidden">
+                    <p>When the Baltimore Orioles are both a baseball team and a species of bird, online-trained image generating algorithms like DALL-E tend to get confused. Through funny images of a baseball team buying huge bags of oranges at the grocery store, or birds flying to Florida in an airplane, I explore what happens when AI has seen your phrase in another sense online.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#janelle-shane">Janelle Shane</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">12:00</div>
+              <div class="when">21:00</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">13:00</div>
+              <div class="when">22:00</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="dylan-gedig"></span>
+                  Perfect Synergy: How Roguelike Developers and Streamers Form the Perfect Ecosystem
+                  <a href="javascript:bio(7);">(more)</a>
+                  <div id="bio_7" class="bio hidden">
+                    <p>Peglin's Early Access release was a massive success, almost entirely due to the incredible streamers and YouTubers that focus on Roguelike games. This talk will be a focused post-mortem on how our relationships with streamers were the cornerstone to Peglin's success, how Roguelike developers and Roguelike streamers have formed the perfect conditions to work together as a healthy industry, and what developers can do to better work with streamers for their own roguelike games.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#dylan-gedig">Dylan Gedig</a></div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">13:30</div>
+              <div class="when">22:30</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="george-moromisato"></span>
+                  Creating a Modding System for Roguelikes
+                  <a href="javascript:bio(8);">(more)</a>
+                  <div id="bio_8" class="bio hidden">
+                    <p>Creating a modding system for a Roguelike is not for the faint of heart, but it's truly worthwhile. Players love modding systems, and they usually improve engagement and replayability. After working on Transcendence, and studying other modding systems, I've got some tips and tricks for getting the most out of them.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#george-moromisato">George Moromisato</a></div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">14:00</div>
+              <div class="when">23:00</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="jeremy-rose"></span>
+                  The Hitchhiker's Guide to the Cataclysm
+                  <a href="javascript:bio(9);">(more)</a>
+                  <div id="bio_9" class="bio hidden">
+                    <p>Last year I created an encyclopedic guide for the deeply complex post-apocalyptic roguelike, Cataclysm: Dark Days Ahead, called The Hitchhiker's Guide to the Cataclysm. This talk is about how I went about making it, what the challenges and successes have been, and the reasons why I made it. So-called “spoilers” are sometimes frowned upon or thought of as a bit dirty in the roguelike community, but our relationship with them is more complex than that. Spoilers help the player to immerse themselves, especially in simulationist games like Cataclysm. And often, spoilers are the only plausible way to win. I'll talk about the line I walk with the Guide between being a complete resource for the game's data and inadvertently giving away "surprise" content in the game. I’ll also talk about the incredible open-source community that works to build and maintain the game, and why, personally, building the Guide while caring for my newborn daughter helped me to reassess my relationship with creativity and productivity.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#jeremy-rose">Jeremy Rose</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">14:30</div>
+              <div class="when">23:30</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">15:00</div>
+              <div class="when">00:00 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="reed-lockwood"></span>
+                  Common "Pitfalls" of Roguelike Traps and How to Circumvent Them
+                  <a href="javascript:bio(10);">(more)</a>
+                  <div id="bio_10" class="bio hidden">
+                    <p>Traps are an ever-present but often overlooked and under-designed mechanic in traditional roguelikes. This talk will examine the design considerations that go into a satisfying trap, with the goal of making the dungeon itself a deadly and memorable part of the adventure.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#reed-lockwood">Reed Lockwood</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">15:15</div>
+              <div class="when">00:15 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="chris-king"></span>
+                  How To Let Your Players Take The Wheel (without crashing the car)
+                  <a href="javascript:bio(11);">(more)</a>
+                  <div id="bio_11" class="bio hidden">
+                    <p>Hey! I'd love to talk about iterative game development and balance via community input, using examples from 30XX's time so far in Early Access (about a year and a half, so far. Not quite through yet!)</p>
+                    <p>Vibe checking with our playerbase to identify fun points and pain points, maintaining groups of superfans that see some early early content even earlier, and open chats with our players have been instrumental components of 20XX and now 30XX's development, and I'd love to dig into some of our strategies for managing and acting on (or not acting on) fan feedback specifically in the context of replayable roguelites. My relationship with 20XX/30XX's players has been a major factor in both games' success, so I'm usually pretty excited to talk about it!</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#chris-king">Chris King</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">15:30</div>
+              <div class="when">00:30 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="benet-devereux"></span>
+                  Seeking Treasure in the Tangled Bank: Biological Inspiration for Roguelike Mechanics
+                  <a href="javascript:bio(12);">(more)</a>
+                  <div id="bio_12" class="bio hidden">
+                    <p>Living organisms have an immense range of strategies and strengths that they use to stay alive as long as possible. If you find yourself, as I did, wanting to try something without traditional combat, while still aiming to preserve a feeling of constant danger and looming death, the natural world can be a useful source of ideas. I'll talk very briefly about my experience creating mechanics for a tardigrade as a PC, and present a first iteration of extracting some general principles from the experience.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#benet-devereux">Benet Devereux</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">15:45</div>
+              <div class="when">00:45 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="blair-salzman"></span>
+                  Roguelikes, Neurodiversity, and Mental Illness
+                  <a href="javascript:bio(13);">(more)</a>
+                  <div id="bio_13" class="bio hidden">
+                    <p>As an autistic adult with adhd, I've struggled to keep interest in games in a way that I didn't when I was younger. My mental health mixed with the increasing amount of time games demand of their players often makes it difficult for me to get invested in video games, but roguelikes are a different story. I would like to explore this, and tell the game devs in the audience about how their game design is helping people like me enjoy games more.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#blair-salzman">Blair Salzman</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">16:00</div>
+              <div class="when">01:00 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+            
+            <div class="block full">
+              <div class="when">16:30</div>
+              <div class="when">01:30 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="jack-schlesinger"></span>
+                  Your Puzzle Is A Secret Dungeon
+                  <a href="javascript:bio(14);">(more)</a>
+                  <div id="bio_14" class="bio hidden">
+                    <p>I've made a lot of puzzle generators - the ones that make the puzzles for Knotwords, Good Sudoku, and Spelltower, to name a few.  It turns out there are more than a few similarities between creating  a procedurally generated puzzle, and a procedurally generated roguelike. Once myself and Zach Gage had that insight, we began to treat the problem of creating a puzzle generator for a new problem like creating the player of a roguelike.  This oppositional approach to puzzle design allowed us to create ways of assessing the difficulty of a puzzle, a framework for hints and tutorialization, and a more human approach to procedural generation.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#jack-schlesinger">Jack Schlesinger</a></div>
+              </div>
+            </div>
+            
+            <div class="block full">
+              <div class="when">17:00</div>
+              <div class="when">02:00 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="sersa-victory"></span>
+                  Choice Design in Roguelikes
+                  <a href="javascript:bio(15);">(more)</a>
+                  <div id="bio_15" class="bio hidden">
+                    <p>Meaningful player choice is essential to games of all genres, and this short talk provides an overview of the major choice types that appear in games: mutually exclusive actions, risk versus reward, now versus later, resource trade, and dilemma.</p>
+                    <p>To help illustrate each choice type, this talk highlights examples from popular games in the genre such as NetHack, Brogue, Forays into Norrendrin, Dungeon Crawl Stone Soup, and the original Rogue. This talk also touches on choice-driven elements I added to my own reimagining of Rogue and suggests ideas for choices developers might experiment with in their projects.</p>
+                    <p>Ultimately, this talk aims to give developers a vocabulary for designing choices that can help make their roguelikes more challenging, dramatic, and engaging.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#sersa-victory">Sersa Victory</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">17:30</div>
+              <div class="when">02:30 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block unconferencing">
+              <div class="when">18:00</div>
+              <div class="when">03:00 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">unconferencing
+                </div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">19:00</div>
+              <div class="when">04:00 (Sun)</div>
+              <div class="what">
+                <div class="talk-title">social space closes
+                </div>
+              </div>
+            </div>
+
+          </article>
+          <article class="schedule" id="sunday">
+            <h2>Sunday, Oct 23</h2>  <a href="#saturday">Saturday</a>
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>
+
+            <div class="block social">
+              <div class="when">09:00</div>
+              <div class="when">18:00</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block kickoff">
+              <div class="when">09:15</div>
+              <div class="when">18:15</div>
+              <div class="what">
+                <div class="talk-title">kickoff
+                </div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">09:30</div>
+              <div class="when">18:30</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="tabea-iseli"></span>
+                  How hard can it be to create a non-violent rogue-lite dungeon crawler?
+                  <a href="javascript:bio(16);">(more)</a>
+                  <div id="bio_16" class="bio hidden">
+                    <p>I would love to create a talk about the journey of our non-violent rogue-lite dungeon crawler, Grimoire Groves. In the talk, I'd like to explore which implications a non-violent concept has on game design, the stunning challenges of creating an audio-visual language for such a game, and why we even came up with such a concept.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#tabea-iseli">Tabea Iseli</a></div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">10:00</div>
+              <div class="when">19:00</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="dustin-freeman"></span>
+                  Simulating History as You’re Living Through It AKA Everyone is a Bunch of Concerns in a Trench Coat
+                  <a href="javascript:bio(17);">(more)</a>
+                  <div id="bio_17" class="bio hidden">
+                    <p>In procgen games, we often make simulated histories, or when the player dies, have them wake up in the world a generation later as another character. My struggle was how to make world changes feel meaningful. During the deep isolation of the pandemic, I came across a model used in therapy called Internal Family Systems, a technique to view oneself as a being of several parts, each of which have their own needs.</p>
+                    <p>I’ve translated this notion of parts into an AI system called Concerns, where each being in the world is a body with a collection of concerns with individual weights. From this talk, my hope is we can expand our idea of how we can make simulated histories feel playable, and the implementation of AI behaviour in immersive sims, aiming for empathizable and interesting instead of optimal.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#dustin-freeman">Dustin Freeman</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">10:30</div>
+              <div class="when">19:30</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block unconferencing">
+              <div class="when">11:00</div>
+              <div class="when">20:00</div>
+              <div class="what">
+                <div class="talk-title">unconferencing
+                </div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">10:30</div>
+              <div class="when">19:30</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">12:30</div>
+              <div class="when">21:30</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="philomena-schwab"></span>
+                  This is too hard! How to broaden your game’s target audience with smart difficulty tricks
+                  <a href="javascript:bio(18);">(more)</a>
+                  <div id="bio_18" class="bio hidden">
+                    <p>Some games do a very good job at defining their target audience. Darkest Dungeon or Dark Souls are great examples for this. You take one look at their screenshots and there is no doubt that this is a hardcore game with high difficulty. Our studio also makes hardcore games, but they have cute, colourful graphics. And so it often happens that all kinds of different players pick them up, often hoping for a relaxing experience. This puts our team in a though spot when it comes to balancing and game difficulty. Our studio is now working on its third simulation/rougelike PC game facing this challenge and we have come up with quite a few tipps and tricks to solve it. I’d love to share our learnings regarding difficulty settings, narrator-defined and adaptable difficulty with you all.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#philomena-schwab">Philomena Schwab</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">12:45</div>
+              <div class="when">21:45</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="adam-newgas"></span>
+                  Constraint Based Generation is a swiss army knife
+                  <a href="javascript:bio(19);">(more)</a>
+                  <div id="bio_19" class="bio hidden">
+                    <p>Constraint based generation, such as WaveFunctionCollapse, has seen some interest, but not a lot of updake beyond Caves of Qud. It's under-appreciated, imho, as it can do so much without much effort.</p>
+                    <p>I propose a whistle stop tour to inspire people with some of the things you can do these algorithms, which covers a range of applications, including several forms of map design, puzzle design, generating history, stories and relationship networks.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#adam-newgas">Adam Newgas</a></div>
+              </div>
+            </div>            
+
+            <div class="block lightning">
+              <div class="when">13:00</div>
+              <div class="when">22:00</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="pierre-vigier"></span>
+                  Room Generation using Constraint Satisfaction
+                  <a href="javascript:bio(20);">(more)</a>
+                  <div id="bio_20" class="bio hidden">
+                    <p>There is a lot of tutorials on how to generate all sort of structures. But one question often remains unanswered: how to populate these structures with objects and monsters. In this talk, I will show how a CSP (Constraint Satisfaction Problem) solver can be used to achieve this.</p>
+                    <p>I will start by giving the definition of a CSP and how to implement a simple solver that is suitable for creating a procedural generator. Then, I will give details on how it can be turned into a room generator with illustrations and examples based on my game Vagabond. Finally, I will show that such generators may suffer from the "10,000 bowls of oatmeal problem" and provide ways to avoid it.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#pierre-vigier">Pierre Vigier</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">13:15</div>
+              <div class="when">22:15</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="evan-debenham"></span>
+                  Smoothing the Sharp Edges of RNG
+                  <a href="javascript:bio(21);">(more)</a>
+                  <div id="bio_21" class="bio hidden">
+                    <p>Roguelike games involve a huge number of random calculations, from item and level generation to damage values in combat. We love this randomness because of the excitement and variety it brings to the Roguelike genre, but it can also bring unfairness and frustration.</p>
+                    <p>In this talk I'll go over some techniques I've used to 'smooth off' some of the more extreme and frustrating results randomness can provide. These adjustments can make the game experience feel much more consistent and fair without perceptibly affecting the things we like about RNG.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#evan-debenham">Evan Debenham</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">13:30</div>
+              <div class="when">22:30</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">14:00</div>
+              <div class="when">23:00</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="alexander-byaly" id="alexander-byaly"></span>
+                  Causal Graphs for Procedural Generation
+                  <a href="javascript:bio(22);">(more)</a>
+                  <div id="bio_22" class="bio hidden">
+                    <p>Causal graphs are models that describe possible causal relationships between things. They're typically used during inference: given some source of data, how can we explain the patterns we see? This talk is about doing the opposite. Instead of using them to learn about data, we'll generate it.</p>
+                    <p>This is useful because a natural-seeming choice when procedurally generating data leads to something really strange. Imagine you roll some attributes independently, say hometown and favorite food. If you look at the results in Seattle, the favorite foods end up the same as for Tokyo. There is no relationship between the attributes. In the real world scientific studies have to be careful so their results aren't undermined by selection bias. If you only survey middle aged women in Nebraska your results might not generalize. A causal graph can introduce these kinds of relationships into generated content.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#alexander-byaly">Alexander Byaly</a></div>
+              </div>
+            </div>
+            
+            <div class="block full">
+              <div class="when">14:30</div>
+              <div class="when">23:30</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="abdelrahman-madkour"></span>
+                  Controlling your generator using Expressive Range Analysis
+                  <a href="javascript:bio(23);">(more)</a>
+                  <div id="bio_23" class="bio hidden">
+                    <p>The talk will be a more industry/practical look at a paper I am going to present at the Foundation of Digital Games 2022 this summer. The paper details an approach and a interface that allows novice designers to control an established graph grammar for dungeon generation. I am planning to demo the tool I built, and discuss how it can be used as both exploration and specification of the generator.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#abdelrahman-madkour">Abdelrahman Madkour</a></div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">15:00</div>
+              <div class="when">00:00 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="phenry-ewing"></span>
+                  A Million Little Players: Monte Carlo Simulations for Game Design
+                  <a href="javascript:bio(24);">(more)</a>
+                  <div id="bio_24" class="bio hidden">
+                    <p>This will be a fun & gentle, but hopefully immediately useful, introduction to Monte Carlo simulations. I'll draw from my experiences using them in various design capacities, such as:</p>
+                    <ul>
+                      <li>Coding a simple sim to analyze an existing physical game (Mafia/Werewolf) to understand its balance and improve how it's played</li>
+                      <li>Writing a bot to play a huge, sprawling visual novel game (Neo Cab) to explore every nook and cranny of the story, finding dead content, balancing the in-game economy, and fixing dead ends we didn't know we had.</li>
+                      <li>Combining real user research data from thousands of playerson an in-development trivia game (Cat Burglar) with Monte Carlo techniques to translate a loose creative goal into a fine-tuned, robust difficulty curve that works for potentially millions of players at different skill levels.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#phenry-ewing">Phenry Ewing</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">15:30</div>
+              <div class="when">00:30 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">16:00</div>
+              <div class="when">01:00 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="sergio-garces"></span>
+                  Procedural 3D environments on a budget
+                  <a href="javascript:bio(25);">(more)</a>
+                  <div id="bio_25" class="bio hidden">
+                    <p>I will discuss how to populate a procedurally-generated roguelike with 3D art, when you don't have millions to spend on 3D artists or years to code advanced techniques (this is not No Man's Sky).</p>
+                    <p>What content do you need and where do you find it? How do you incorporate it into your game? How do you make it look good and perform well?</p>
+                    <p>My experience releasing Mech Armada using Unreal Engine will serve as a guide to find answers.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#sergio-garces">Sergio Garces</a></div>
+              </div>
+            </div>
+
+            <div class="block full">
+              <div class="when">16:30</div>
+              <div class="when">01:30 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="joel-ryan"></span>
+                  A Small Clump of Pixels: Creating the Sil-Q Tileset
+                  <a href="javascript:bio(26);">(more)</a>
+                  <div id="bio_26" class="bio hidden">
+                    <p>When the developer, half, forked Angband to make Sil, he made major changes to the codebase to create something elegant, thematic, and fundamentally new. Although Angband has tiles, Sil was developed without much regard for the tile display system.</p>
+                    <p>I worked with Quirk to create and implement a new, custom tileset for his variant, Sil-Quirk (Sil-Q). I would like to discuss the process of creating the tileset for Sil-Q, as well as my thoughts on tilesets in general: the balance of representative vs symbolic tiles, the role of visual clarity in roguelikes, the challenges of drawing with individual pixels, the visual tools that a tileset artist has to communicate information, and the lessons I learned along the way. Finally, I would like to emphasize that my experience in creating a tileset was both enjoyable and fulfilling, and I encourage anyone interested in tilesets to try their hand at making their own.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#joel-ryan">Joel Ryan</a></div>
+              </div>
+            </div>
+            
+            <div class="block social">
+              <div class="when">17:00</div>
+              <div class="when">02:00 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">17:30</div>
+              <div class="when">02:30 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="cara-esten-hurtle"></span>
+                  Telnet, a New Session, and transsexualizing the past
+                  <a href="javascript:bio(27);">(more)</a>
+                  <div id="bio_27" class="bio hidden">
+                    <p>In 2021, myself and my co-editor Lo Ferris published two issues of New Session, a literary magazine designed to be accessed over Telnet. In the 80s and 90s, Telnet was a technology that became synonymous with BBSs and MUDs, but has since largely been forgotten by the average computer user. The core of the motivation for New Session was to revisit the past using a specifically queer and trans lens, recasting this system outside of pure nostalgia and instead as a tool to be used for telling new stories.</p>
+                    <p>Between this and the release of "Body Out Of Time", an erotic Hypercard stack, I've found old technology to be a poignant tool for reimagining the past. This talk will focus on avoiding the allure of nostalgia-for-nostalgia's sake, and how the constraints of outdated systems and aesthetics can be used as a springboard for something new.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#cara-esten-hurtle">Cara Esten Hurtle</a></div>
+              </div>
+            </div>
+
+            <div class="block lightning">
+              <div class="when">17:45</div>
+              <div class="when">02:45 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="santiago-zapata"></span>
+                  Celebrating Moria - a roguelike before the roguelikes
+                  <a href="javascript:bio(28);">(more)</a>
+                  <div id="bio_28" class="bio hidden">
+                    <p>The year is 1981, over one decade before the concept of "roguelike" would come to exist. It's the dark times of the prohibition of "rogue" (at least in the computer labs of the University of Oklahoma), and a young programming enthusiast called Robert Koeneke sets on a journey to create his very own version of the game to circumvent the interdiction. His work would ultimately become foundational for a genre of computer games, inspire many developers to build upon it, and provide endless hours of fun to thousands of players all around the world. 41 years later, Robert has abandoned this earthly plane, so let's take some time to celebrate his great contribution.</p>
+                  </div>
+                </div>
+                <div class="speaker"><a href="speakers2022.html#santiago-zapata">Santiago Zapata</a></div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">18:15</div>
+              <div class="when">03:15 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">social time
+                </div>
+              </div>
+            </div>
+            <div class="block social">
+              <div class="when">19:00</div>
+              <div class="when">04:00 (Mon)</div>
+              <div class="what">
+                <div class="talk-title">social space closes
+                </div>
+              </div>
+            </div>
+          </article>
 
           <div class="mastfoot">
             <div class="inner">
