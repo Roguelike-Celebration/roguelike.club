@@ -92,3 +92,9 @@ h2 {
     margin-top: 12px;
     margin-left: 12px;
 }
+
+#preview_schedule table, td, th {
+  border: 1px solid #fff;
+  padding: 1em;
+  white-space: nowrap;
+}
