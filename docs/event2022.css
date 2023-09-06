@@ -37,8 +37,20 @@ h2 {
     font-family: monospace;
 }
 
+.fireside::before {
+    content: "F";
+    color: orange;
+    font-family: monospace;
+}
+
 .lightning::before {
     content: "L";
+    color: yellow;
+    font-family: monospace;
+}
+
+.preview_talk::before {
+    content: "T";
     color: yellow;
     font-family: monospace;
 }
