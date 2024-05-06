@@ -10,7 +10,7 @@
     <meta http-equiv="cache-control" content="max-age=3600" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Roguelike Celebration - Code of Conduct</title>
+    <title>Roguelike Celebration - Event 2024</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,12 +20,31 @@
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+    <link href="event2022.css" rel="stylesheet">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script>
+      var currentBio;
+      function bio(val) {
+        console.log(val, currentBio);
+        if (currentBio) {
+          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+        }
+        if (currentBio != val) {
+          currentBio = val;
+          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+        } else {
+          currentBio = undefined;
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -34,7 +53,7 @@
       <nav class="hidden-xs hidden-sm">
         <ul class="nav masthead-nav">
           <li><a href="./">Intro</a></li>
-          <li><a href="./event2024.html">2024</a></li>
+          <li class="active"><a href="./event2024.html">2024</a></li>
           <li class="dropdown">
               <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Previous Years
@@ -52,7 +71,7 @@
               </ul>
           </li>
           <li><a href="./who.html">About us</a></li>
-          <li class="active"><a href="./code.html">CoC</a></li>
+          <li><a href="./code.html">CoC</a></li>
           <li><a href="./roguelikes.html">Roguelikes?</a></li>
         </ul>
       </nav>
@@ -83,60 +102,25 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
+          <h1>Roguelike Celebration 2024</h1>
 
           <div class="inner cover">
+            <section class="giant-callout">
+              <span>Oct 19-20, 2024</span><br/>
+              <span>Online</span>
+              <div><a href="https://buttondown.email/RoguelikeCelebration" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Join the mailing list!</a></div>
+              <div><a href="./cfp.html" class="btn btn-success btn-lg" role="button">Submit a talk proposal!</a></div>
+            </section>
+          </div>
 
-            <h1 id="seealso" class="cover-heading">Code of Conduct</h1>
-
-            <p>Our goal is to have a fun and welcoming celebration of roguelike games for everyone, so we have a formalized Code of Conduct that sets these expectations.</p>
-
-            <p>Everyone includes: people of any age, gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, ethnicity, race, religion, or level of experience.</p>
-
-            <p>We do not tolerate harassment of participants in any form.</p>
-
-           <h2>How to report</h2>
-
-            <ul>
-            <li>Email <strong>contact at roguelike.club</strong> to report a Code of Conduct problem or any concerns or questions.</li>
-            <li>Or if you're in our social/chat space, you can use the <strong>/mod</strong> command to send us a message.</li>
-            </ul>
-
-            <p>Both of these methods reach the organizing team listed on the <a href="./who.html">About us page</a>, as well as the day-of moderation team. Our primary CoC responders for our 2022 event are <strong>Britta Gustafson</strong>, <strong>Sydney Roberts</strong>, <strong>Jessee Raccio</strong>, and <strong>Travis Moy</strong>.</p>
-
-            <p>If you're not sure whether something is a Code of Conduct problem, please reach out &mdash; we want to hear your concerns and do our best to reduce harm to this community.</p>
-
-            <p>We will acknowledge your message ASAP, work quickly to determine an appropriate response, and let you know our response. For example, if an event attendee harasses or disrupts people, we may revoke their event ticket and ban them from future events.</p>
-
-            <p>If you have a report or concern related to an organizer, please contact a different organizer directly, such as by emailing brittag@gmail.com, Syd.Lor.Rob@gmail.com, jpraccio@gmail.com, or moytravis@gmail.com.</p>
-
-           <h2>Definitions</h2>
-
-             <p>Unacceptable behavior includes:</p>
-
-            <ul>
-              <li>The use of sexualized language or imagery and sexual attention or advances</li>
-              <li>Racist, sexist, or transphobic jokes</li>
-              <li>Deliberate or persistent misgendering</li>
-              <li>Offensive comments related to age, gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, ethnicity, race, or religion</li>
-              <li>Support for fascist, neo-nazi, white supremacist, white nationalist, or conspiracy theory groups/movements</li>
-              <li>Personal insults or attacks</li>
-              <li>Harassment of any kind, even in a joking or ironic manner</li>
-              <li>Sustained disruption of discussion</li>
-              <li>Continued one-on-one communication after requests to cease</li>
-              <li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
-            </ul>
-
-            <p>We prioritize the safety and wellness of marginalized people over the comfort of privileged people. We do not consider complaints of "reverse racism" or "reverse sexism" to be valid.</p>
-
-           <h2>Scope</h2>
-
-            <p>This applies to all Roguelike Celebration virtual and physical spaces, including chat and talk content.</p>
-
-            <p>If you're proactively concerned about a person participating in Roguelike Celebration (such as a speaker, organizer, or attendee) based on previous harm they have done, we want to hear that report as well.</p>
-
-            <p>&nbsp;</p>
-
-            </div>
+         <h1>When and Where?</h1>
+         <p>
+           Roguelike Celebration 2024 will be held on Saturday and Sunday <strong>October 19 - October 20, 2024</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks will also be streamed to Twitch and YouTube.
+         </p>
+         <h1>Our call for presenters is now open!</h1>
+         <p>
+           Technical talks, game design lessons, creative uses of procedural generation, interactive roguelike performances - we want to hear about it all! Submit a talk proposal <a href="./cfp.html">here</a>. The deadline for proposals is <strong>June 30, 2024.</strong>
+         </p>
 
           <div class="mastfoot">
             <div class="inner">
@@ -145,8 +129,6 @@
           </div>
 
         </div>
-
-      </div>
 
     </div>
 
