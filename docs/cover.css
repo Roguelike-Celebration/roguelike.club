@@ -298,16 +298,6 @@ hr {
   border-top: 1px dashed #8c8b8b;
   text-align: center;
 }
-hr:after {
-  content: '@';
-  display: inline-block;
-  position: relative;
-  top: -15px;
-  padding: 0 10px;
-  background: #333;
-  color: #8c8b8b;
-  font-size: 18px;
-}
 
 .track {
   border: 1px dotted #8c8b8b;
