@@ -10,7 +10,7 @@
     <meta http-equiv="cache-control" content="max-age=3600" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Roguelike Celebration - Event 2024</title>
+    <title>Roguelike Celebration - Event 2023</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-    <link href="event2022.css" rel="stylesheet">
+    <link href="event2024.css" rel="stylesheet">
 
 
 
@@ -33,13 +33,13 @@
     <script>
       var currentBio;
       function bio(val) {
-        console.log(val, currentBio);
+        //console.log(val, currentBio);
         if (currentBio) {
-          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+          $(currentBio).addClass("hidden").removeClass("anim");
         }
         if (currentBio != val) {
           currentBio = val;
-          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+          $(currentBio).removeClass("hidden").addClass("anim");
         } else {
           currentBio = undefined;
         }
@@ -47,14 +47,32 @@
     </script>
   </head>
 
+  <template id="timeslot_template"> 
+     <div class="block">
+      <div class="when">  </div>
+      <div class="when"></div>
+      <div class="what">
+        <div class="talk-title">
+          <span class="anchor" ></span>
+          <span class="title-text"> </span>
+          <a class="more-link">(more)</a>
+          <div class="bio hidden">
+            <p class="description-text"></p>
+          </div>
+        </div>
+        <div class="speakers"></div>
+      </div>
+    </div>
+  </template>
+
   <body>
     <div class="masthead clearfix">
       <h3 class="masthead-brand">Roguelike Celebration</h3>
       <nav class="hidden-xs hidden-sm">
         <ul class="nav masthead-nav">
           <li><a href="./">Intro</a></li>
-          <li class="active"><a href="./event2024.html">2024</a></li>
-          <li class="dropdown">
+          <li><a href="./event2024.html">2024</a></li>
+          <li class="active dropdown">
               <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Previous Years
                 <span class="caret"></span>
@@ -117,25 +135,64 @@
               <span>Oct 19-20, 2024</span><br/>
               <span>Online</span>
               <div><a href="https://buttondown.email/RoguelikeCelebration" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Join the mailing list!</a></div>
+
             </section>
           </div>
 
-         <h1>When and Where?</h1>
-         <p>
-           Roguelike Celebration 2024 will be held on Saturday and Sunday <strong>October 19 - October 20, 2024</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks will also be streamed to Twitch and YouTube.
-         </p>
-         <p>
-           There will also be a free preview event <strong>September 8, 2023, 1pm Pacific</strong> in the same social space, with talks streamed to Twitch and YouTube:
-         </p>
-         <ul>
-           <li>James Cartlidge will be joining us in a fireside chat style discussion about the subjects of his upcoming book, <i>The Rise of the Roguelite: Inside a Gaming Phenomenon</i>!</li>
-           <li>Andrew Cedotal will be presenting a talk: "Literary Origins of the Rogue Archetype"!</li>
-         </ul>
-         <p>Check back here for more details and a schedule as the event approaches.</p>
-         <h1>Our call for presenters has closed.</h1>
-         <p>
-            The deadline for proposals was <strong>July 14, 2024.</strong>
-         </p>
+          <h1>When and Where?</h1>
+          <p>
+            Roguelike Celebration 2024 was held on Saturday and Sunday <strong>October 19th and 20th, 2023</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks were also streamed to Twitch and YouTube. 
+            
+           There was a <strong>pre-event social</strong> on the evening of Friday, <strong>October 18th</strong> in the same social space.
+          </p>
+           <!--<p>
+             There was also a preview event held on <strong>September 10, 2023</strong> with the talks streamed on Twitch and YouTube. 
+          </p>-->
+
+          <h1>Schedule</h1>
+
+          <article class="schedule" id="friday">  
+          <h2>FRIDAY DATE</h2>
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time</div>
+            </div>
+
+          </article>
+          
+          <article class="schedule" id="saturday"> 
+          <h2>Saturday, October 19th 2024</h2><a href="#sunday">go to Sunday</a>
+                    <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>
+
+          </article>
+          
+          
+          <article class="schedule" id="sunday"> 
+          <h2>Sunday, October 20th 2024</h2><a href="#saturday">go to Saturday</a>
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>          
+          </article>
+
+          <h1>Preview Event</h1>
+          <article class="schedule" id="preview">
+          <h2>September 8, 2024</h2>
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: fireside chat; <span style="color:yellow">T</span>: talk; <span style="color:lavender">P</span>: panel</div>
+            </div>
+          </article>
+          <br/>
+
+
 
           <div class="mastfoot">
             <div class="inner">
@@ -155,5 +212,136 @@
     <script src="./dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script> // script to autofill schedule articles
+    
+        
+    function tsvToScheduleBlocks(tsv){
+      let string = tsv
+      let blocks = [];
+      let data =  string.split(/\r?\n/)
+      let headers = data[0].split(/\t/);
+      for (let row = 1; row < data.length; row++){
+        let entry = data[row].split(/\t/);
+        //console.log(entry)
+        let block = {};
+        for (let d in headers){
+          //console.log(headers[d])
+          block[ headers[d] ] = entry[d]
+        }
+          blocks.push(block)
+      }
+      
+      return blocks;
+    
+    }
+        
+    function tsvToSpeakerData(tsv){
+    
+      let string = tsv
+      let speakers = [];
+      let data =  string.split(/\r?\n/)
+      for (let row = 1; row < data.length; row++){
+        let entry = data[row].split(/\t/)
+        speakers.push({id: entry[0], name: entry[1], social_media_link: entry[2], headshot: entry[3], title:entry[4], description: entry[5], biography:entry[6]})
+      }
+      
+      return speakers;
+    
+    }
+
+    var speaker_data = null;
+
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "./speakers2024.tsv", false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+          result = xmlhttp.responseText;
+          
+        speaker_data =  tsvToSpeakerData(result)
+
+        }
+  
+
+    function appendBlockInfoToSchedule(blocks, container){  
+      let template  = document.querySelector("#timeslot_template");
+      blocks.forEach(function(time_block){
+        let block_element = template.content.cloneNode(true);
+        block_element.querySelector(".block").classList.add(time_block.type)
+        block_element.querySelectorAll(".when")[0].innerHTML = (time_block["start(PST)"])
+        block_element.querySelectorAll(".when")[1].innerHTML = (time_block["start(CST)"])
+        
+        let title_element = block_element.querySelector(".talk-title")
+        title_element.querySelector(".anchor").id = time_block.id;
+        title_element.querySelector(".title-text").innerHTML = time_block.title;
+        if (time_block.id !== ""){
+          title_element.querySelector(".more-link").href = "javascript:bio('#" + time_block.id + "_description');"
+          title_element.querySelector(".description-text").innerHTML = time_block.description;
+          title_element.querySelector(".bio").id = time_block.id + "_description";
+          let speakers_container = block_element.querySelector(".speakers");
+          let speaker_ids = time_block.speakers.split(", ")
+          for (s in speaker_ids){
+            let speaker_id = speaker_ids[s] 
+            speaker = speaker_data.filter(function(speaker){ return speaker.id === speaker_id})[0]
+            if (speaker === undefined) { console.log(speaker_ids + " of talk " +  time_block.title + " is not defined in speaker table"); return}
+            else {
+              let speaker_link = document.createElement("a");
+              speaker_link.href = "speakers2024.html#" + speaker.id;
+              speaker_link.innerHTML = speaker.name;
+              if (s+1 < speaker_ids.length && speaker_ids.length > 2 ) speaker_link.innerHTML += ", "
+              else if (s+1 < speaker_ids.length) speaker_link.innerHTML += " ";
+              speakers_container.append(speaker_link); 
+              if (s+2 == speaker_ids.length) { 
+                let and = document.createElement("span"); 
+                and.innerHTML = "and "
+                speakers_container.append(and); 
+              }
+            }
+          }
+        }
+        else {
+          title_element.querySelector(".more-link").remove();
+          title_element.querySelector(".bio").remove();
+          block_element.querySelector(".speakers").remove();
+        }
+        //console.log(container)
+        container.appendChild(block_element);
+      })
+    }
+        
+      let event_blocks = null
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "./schedule2024.tsv", false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+          result = xmlhttp.responseText;
+          event_blocks = tsvToScheduleBlocks(result)
+         // console.log(event_blocks)
+          let block_groups = [
+            event_blocks.filter(function(block){return block.date === "0"}),
+            event_blocks.filter(function(block){return block.date === "1"}),
+            event_blocks.filter(function(block){return block.date === "2"}),
+            event_blocks.filter(function(block){return block.date === "preview"})
+            ]
+          
+          let containers = [
+            document.querySelector("#friday"), 
+            document.querySelector("#saturday"), 
+            document.querySelector("#sunday"), 
+            document.querySelector("#preview")
+            ]
+          
+          for (b in block_groups){
+         //   console.log (block_groups[b], containers[b])
+            appendBlockInfoToSchedule(block_groups[b], containers[b])
+              
+          }
+
+
+        
+        }
+    </script>
   </body>
 </html>

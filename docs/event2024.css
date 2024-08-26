@@ -1,0 +1,118 @@
+
+h1 {
+    padding-left: 20px;
+}
+
+h2 {
+    display: inline-block;
+    padding-right: 2rem;
+}
+.speakers, .schedule {
+    padding: 0 20px;
+}
+
+.when, .what {
+    display: inline-flex;
+    padding-left: 0.5rem;
+}
+
+.what {
+    flex-direction: column;
+    width:75%;
+}
+
+.when {
+    width: 8%;
+}
+
+.guest-panel::before {
+    content: "P";
+    color: lavender;
+    font-family: monospace;
+}
+
+.social::before {
+    content: "S";
+    color: cyan;
+    font-family: monospace;
+}
+
+.full::before {
+    content: "F";
+    color: orange;
+    font-family: monospace;
+}
+
+.fireside::before {
+    content: "F";
+    color: orange;
+    font-family: monospace;
+}
+
+.lightning::before {
+    content: "L";
+    color: yellow;
+    font-family: monospace;
+}
+
+.preview_talk::before {
+    content: "T";
+    color: yellow;
+    font-family: monospace;
+}
+
+.kickoff::before {
+    content: "k";
+    font-family: monospace;
+}
+
+.unconferencing::before {
+    content: "U";
+    color: white;
+    font-family: monospace;
+}
+
+.block.header .what{
+    font-family: monospace;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.block.header {
+    padding-left: 14px;
+}
+
+.block {
+    border-bottom: 1px dotted white;
+    padding: 2rem 0;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .what {
+        max-width: 60%;
+    }
+    .when {
+        width: 15%;
+    }
+}
+
+.anchor{
+  display: block;
+  height: 50vh; /*same height as header*/
+  margin-top: -50vh; /*same height as header*/
+  visibility: hidden;
+}
+
+.bio {
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+#preview_schedule table, td, th {
+  border: 1px solid #fff;
+  padding: 1em;
+  white-space: nowrap;
+}
