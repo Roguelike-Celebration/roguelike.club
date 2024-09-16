@@ -126,11 +126,6 @@
 
           <div class="inner cover">
             <section class="giant-callout">
-              <span>Preview Event</span><br/>
-              <span>September 8, 2024</span><br>
-              <span>1pm Pacific, Online</span>
-              <div><a href="https://ti.to/roguelike-celebration/preview-event-2024" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Get a free ticket!</a></div>
-              <hr/>
               <span>Main Event</span><br/>
               <span>Oct 19-20, 2024</span><br/>
               <span>Online</span>
@@ -148,6 +143,28 @@
             There will also be a free preview event <strong>September 8, 2023, 1pm Pacific</strong> in the same social space, with talks streamed to Twitch and YouTube:
           </p>
 
+
+
+          <!-- <article class="schedule" id="saturday">
+          <h2>Saturday, October 19th 2024</h2><a href="#sunday">go to Sunday</a> -->
+          <article class="schedule" id="saturday">
+          <h2>Saturday, October 19 2024</h2>
+              <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>
+          </article>
+
+          <article class="schedule" id="sunday"> 
+          <h2>Sunday, October 20th 2024</h2><a href="#saturday">go to Saturday</a>
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>          
+          </article>
+
           <h1>Preview Event</h1>
           <article class="schedule" id="preview">
           <h2>September 8, 2024</h2>
@@ -157,26 +174,6 @@
               <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: fireside chat; <span style="color:yellow">T</span>: talk; <span style="color:lavender">P</span>: panel</div>
             </div>
           </article>
-
-          <!-- <article class="schedule" id="saturday">
-          <h2>Saturday, October 19th 2024</h2><a href="#sunday">go to Sunday</a> -->
-          <article class="schedule" id="saturday">
-          <h2>October 19 - October 20, 2024</h2>
-              <div class="block header">
-              <div class="when">PDT</div>
-              <div class="when">CEST</div>
-              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
-            </div>
-          </article>
-
-          <!-- <article class="schedule" id="sunday"> 
-          <h2>Sunday, October 20th 2024</h2><a href="#saturday">go to Saturday</a>
-            <div class="block header">
-              <div class="when">PDT</div>
-              <div class="when">CEST</div>
-              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
-            </div>          
-          </article> -->
 
           <br/>
           <div class="mastfoot">
@@ -269,7 +266,7 @@
           for (s in speaker_ids){
             let speaker_id = speaker_ids[s] 
             speaker = speaker_data.filter(function(speaker){ return speaker.id === speaker_id})[0]
-            if (speaker === undefined) { console.log(speaker_ids + " of talk " +  time_block.title + " is not defined in speaker table"); return}
+            if (speaker === undefined) { console.log(speaker_ids + " of talk " +  time_block.title + " is not defined in speaker table");}
             else {
               let speaker_link = document.createElement("a");
               speaker_link.href = "speakers2024.html#" + speaker.id;
@@ -307,14 +304,14 @@
           let block_groups = [
             // event_blocks.filter(function(block){return block.date === "0"}),
             event_blocks.filter(function(block){return block.date === "1"}),
-            // event_blocks.filter(function(block){return block.date === "2"}),
+            event_blocks.filter(function(block){return block.date === "2"}),
             event_blocks.filter(function(block){return block.date === "preview"})
             ]
           
           let containers = [
             // document.querySelector("#friday"), 
             document.querySelector("#saturday"), 
-            // document.querySelector("#sunday"), 
+            document.querySelector("#sunday"), 
             document.querySelector("#preview")
             ]
           
