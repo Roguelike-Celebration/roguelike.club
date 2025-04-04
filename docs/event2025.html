@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="cache-control" content="max-age=3600" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Roguelike Celebration - Event 2025</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+    <link href="event2022.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      var currentBio;
+      function bio(val) {
+        console.log(val, currentBio);
+        if (currentBio) {
+          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+        }
+        if (currentBio != val) {
+          currentBio = val;
+          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+        } else {
+          currentBio = undefined;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="masthead clearfix">
+      <h3 class="masthead-brand">Roguelike Celebration</h3>
+      <nav class="hidden-xs hidden-sm">
+        <ul class="nav masthead-nav">
+          <li><a href="./">Intro</a></li>
+          <li class="active"><a href="./event2025.html">2025</a></li>
+          <li class="dropdown">
+              <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Previous Years
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a class="dropdown-item" href="./event2023.html">2023</a></li>
+                <li><a class="dropdown-item" href="./event2022.html">2022</a></li>
+                <li><a class="dropdown-item" href="./event2021.html">2021</a></li>
+                <li><a class="dropdown-item" href="./event2020.html">2020</a></li>
+                <li><a class="dropdown-item" href="./event2019.html">2019</a></li>
+                <li><a class="dropdown-item" href="./event2018.html">2018</a></li>
+                <li><a class="dropdown-item" href="./event2017.html">2017</a></li>
+                <li><a class="dropdown-item" href="./event.html">2016</a></li>
+              </ul>
+          </li>
+          <li><a href="./who.html">About us</a></li>
+          <li><a href="./code.html">CoC</a></li>
+          <li><a href="./roguelikes.html">Roguelikes?</a></li>
+        </ul>
+      </nav>
+      <nav class="masthead-nav visible-xs-inline-block visible-sm-inline-block">
+        <div class="dropdown">
+          <a id="hamburger" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="hamburger">
+            <li><a href="./">Intro</a></li>
+            <li><a href="./event2025.html">2025</a></li>
+            <li><a href="./who.html">About us</a></li>
+            <li><a href="./code.html">CoC</a></li>
+            <li><a href="./roguelikes.html">Roguelikes?</a></li>
+            <li><a class="dropdown-item" href="./event2023.html">2023</a></li>
+            <li><a class="dropdown-item" href="./event2022.html">2022</a></li>
+            <li><a class="dropdown-item" href="./event2021.html">2021</a></li>
+            <li><a class="dropdown-item" href="./event2020.html">2020</a></li>
+            <li><a class="dropdown-item" href="./event2019.html">2019</a></li>
+            <li><a class="dropdown-item" href="./event2018.html">2018</a></li>
+            <li><a class="dropdown-item" href="./event2017.html">2017</a></li>
+            <li><a class="dropdown-item" href="./event.html">2016</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+          <h1>Roguelike Celebration 2025</h1>
+
+          <div class="inner cover">
+            <section class="giant-callout">
+              <span>Oct 25-26, 2025</span><br/>
+              <span>Online</span>
+              <div><a href="https://buttondown.email/RoguelikeCelebration" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Join the mailing list!</a></div>
+            </section>
+          </div>
+
+         <h1>When and Where?</h1>
+         <p>
+           Roguelike Celebration 2025 will be held on Saturday and Sunday <strong>October 25 - October 26, 2025</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks will also be streamed to Twitch and YouTube.
+         </p>
+         <h1>Our call for presenters will open in early May!</h1>
+         <p>
+           Technical talks, game design lessons, creative uses of procedural generation, interactive roguelike performances - we want to hear about it all!
+           <br/>If you have a roguelike-related topic you want to present, you can sign up to our mailing list to be notified when the call for presenters opens.
+         </p>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
