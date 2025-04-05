@@ -10,7 +10,7 @@
     <meta http-equiv="cache-control" content="max-age=3600" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Roguelike Celebration - Speakers 2024</title>
+    <title>Roguelike Celebration - Event 2025</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,8 @@
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-    <link href="speakers2022.css" rel="stylesheet">
+    <link href="event2024.css" rel="stylesheet">
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,35 +30,31 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script>
+      var currentBio;
+      function bio(val) {
+        console.log(val, currentBio);
+        if (currentBio) {
+          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+        }
+        if (currentBio != val) {
+          currentBio = val;
+          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+        } else {
+          currentBio = undefined;
+        }
+      }
+    </script>
   </head>
 
   <body>
-  
-  <template id="speaker_template"> 
-    <div class="speaker" >
-      <div class="link">
-        <a target="_blank" class="social_media_link">
-          <img class="headshot" />
-        </a>
-      </div>
-      <div class="talk">
-        <a target="_blank" class="social_media_link">
-          <div class="speaker-name"></div>
-        </a>
-        <div><a class="talk_link"></a></div>
-        <div class="bio"></div>
-      </div>
-    </div>
-    <hr>
-  </template>
-  
     <div class="masthead clearfix">
       <h3 class="masthead-brand">Roguelike Celebration</h3>
       <nav class="hidden-xs hidden-sm">
         <ul class="nav masthead-nav">
           <li><a href="./">Intro</a></li>
-          <li><a href="./event2025.html">2025</a></li>
-          <li class="active dropdown">
+          <li class="active"><a href="./event2025.html">2025</a></li>
+          <li class="dropdown">
               <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Previous Years
                 <span class="caret"></span>
@@ -103,20 +100,36 @@
     </div>
 
     <div class="site-wrapper">
+
       <div class="site-wrapper-inner">
+
         <div class="cover-container">
-          <h1>2024 Speakers</h1>
-          <div class="speakers">
-                     </div> <!-- speakers-->
+          <h1>Roguelike Celebration 2025</h1>
+
+          <div class="inner cover">
+            <section class="giant-callout">
+              <span>Oct 25-26, 2025</span><br/>
+              <span>Online</span>
+              <div><a href="https://buttondown.email/RoguelikeCelebration" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Join the mailing list!</a></div>
+            </section>
+          </div>
+
+         <h1>When and Where?</h1>
+         <p>
+           Roguelike Celebration 2025 will be held on Saturday and Sunday <strong>October 25 - October 26, 2025</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks will also be streamed to Twitch and YouTube.
+         </p>
+         <h1>Our call for presenters will open in early May!</h1>
+         <p>
+           Technical talks, game design lessons, creative uses of procedural generation, interactive roguelike performances - we want to hear about it all!
+           <br/>If you have a roguelike-related topic you want to present, you can sign up to our mailing list to be notified when the call for presenters opens.
+         </p>
 
           <div class="mastfoot">
             <div class="inner">
               <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
             </div>
           </div>
-
         </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -127,60 +140,5 @@
     <script src="./dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./docs/assets/js/ie10-viewport-bug-workaround.js"></script>
-    
-    <script> // script to autofill speaker list
-        
-    function tsvToSpeakerData(tsv){
-    
-      let string = tsv
-      let speakers = [];
-      let data =  string.split(/\r?\n/)
-      for (let row = 1; row < data.length; row++){
-        let entry = data[row].split(/\t/)
-        speakers.push({id: entry[0], name: entry[1], social_media_link: entry[2], headshot: entry[3], title:entry[4], description: entry[5], biography:entry[6], talk_id:entry[7]})
-      }
-      console.log(speakers)
-      console.log(speakers.length)
-      let sorted = speakers.sort(function(speaker_1, speaker_2){  return speaker_1.name.localeCompare(speaker_2.name)});
-      return sorted
-    
-    }
-
-    var speaker_data = null;
-
-        var result = null;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "./speakers2024.tsv", false);
-        xmlhttp.send();
-        if (xmlhttp.status==200) {
-          result = xmlhttp.responseText;
-          
-        speaker_data =  tsvToSpeakerData(result)
-        
-        let container = document.querySelector(".speakers")
-        let template = document.querySelector("#speaker_template");
-        
-        speaker_data.forEach(function(speaker){
-          let speaker_element = template.content.cloneNode(true);
-          speaker_element.querySelector(".speaker").id = speaker.id;
-          speaker_element.querySelector(".headshot").src = ("./photos/2024/" + speaker.headshot);
-          speaker_element.querySelector(".speaker-name").innerHTML = speaker.name ;
-          speaker_element.querySelector(".talk_link").href = "event2024.html#"+ speaker.talk_id ;
-          speaker_element.querySelector(".talk_link").innerHTML = speaker.title;
-          speaker_element.querySelector(".bio").innerHTML = speaker.biography;
-          
-          let td = speaker_element.querySelectorAll(".social_media_link").href = speaker.social_media_link;
-          
-          
-          speaker_element.querySelectorAll(".social_media_link").forEach( (element) => {element.href = speaker.social_media_link});
-          container.appendChild(speaker_element);
-        })
-  
-
-
-        
-        }
-    </script>
-
   </body>
 </html>
