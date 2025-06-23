@@ -30,12 +30,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <nav><a href="https://roguelike.club">Roguelike Celebration</a></nav>
     <h1>The Obelisk: 2023 Links and Resources</h1>
     <p>The 2023 event took place in the virtual "Mall of Moria." People could share links for further reading on the "map obelisk" in the southern hallway. These are those notes, in order of upvotes.</p>
     <p><strong>Warning!</strong> These links have not been vetted. They are being passed directly from the obelisk to you. Click at your own risk.</p>
-    
   </body>
   
   <script>
@@ -45,16 +45,16 @@
     
     const parseLinks = (msg) =>  msg.replaceAll(/(https?:\/\/[^\s]+)/g, "<a href=\"$1\">$1</a>");
 
-  rawObeliskData.forEach(({message, author}) => {
-    const article = document.createElement("article");
-    const contents = document.createElement("p");
-    const authorElement = document.createElement("span");
-    authorElement.innerHTML = author;
-    contents.innerHTML = parseLinks(message);
-    contents.appendChild(document.createElement("br"));
-    contents.appendChild(authorElement);
-    article.appendChild(contents);
-    document.getElementsByTagName("body")[0].appendChild(article);
-  })
+    rawObeliskData.forEach(({message, author}) => {
+      const article = document.createElement("article");
+      const contents = document.createElement("p");
+      const authorElement = document.createElement("span");
+      authorElement.innerHTML = author;
+      contents.innerHTML = parseLinks(message);
+      contents.appendChild(document.createElement("br"));
+      contents.appendChild(authorElement);
+      article.appendChild(contents);
+      document.getElementsByTagName("body")[0].appendChild(article);
+    })
   </script>
-  </html>
+</html>

@@ -33,23 +33,23 @@
 
   <body>
   
-  <template id="speaker_template"> 
-    <div class="speaker" >
-      <div class="link">
-        <a target="_blank" class="social_media_link">
-          <img class="headshot" />
-        </a>
+    <template id="speaker_template"> 
+      <div class="speaker" >
+        <div class="link">
+          <a target="_blank" class="social_media_link">
+            <img class="headshot" />
+          </a>
+        </div>
+        <div class="talk">
+          <a target="_blank" class="social_media_link">
+            <div class="speaker-name"></div>
+          </a>
+          <div><a class="talk_link"></a></div>
+          <div class="bio"></div>
+        </div>
       </div>
-      <div class="talk">
-        <a target="_blank" class="social_media_link">
-          <div class="speaker-name"></div>
-        </a>
-        <div><a class="talk_link"></a></div>
-        <div class="bio"></div>
-      </div>
-    </div>
-    <hr>
-  </template>
+      <hr>
+    </template>
   
     <div class="masthead clearfix">
       <h3 class="masthead-brand">Roguelike Celebration</h3>
@@ -107,16 +107,14 @@
         <div class="cover-container">
           <h1>2024 Speakers</h1>
           <div class="speakers">
-                     </div> <!-- speakers-->
+          </div> <!-- speakers-->
 
           <div class="mastfoot">
             <div class="inner">
               <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
             </div>
           </div>
-
         </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -130,37 +128,34 @@
     
     <script> // script to autofill speaker list
         
-    function tsvToSpeakerData(tsv){
-    
-      let string = tsv
-      let speakers = [];
-      let data =  string.split(/\r?\n/)
-      for (let row = 1; row < data.length; row++){
-        let entry = data[row].split(/\t/)
-        speakers.push({id: entry[0], name: entry[1], social_media_link: entry[2], headshot: entry[3], title:entry[4], description: entry[5], biography:entry[6], talk_id:entry[7]})
+      function tsvToSpeakerData(tsv) {
+        let string = tsv
+        let speakers = [];
+        let data =  string.split(/\r?\n/)
+        for (let row = 1; row < data.length; row++) {
+          let entry = data[row].split(/\t/)
+          speakers.push({id: entry[0], name: entry[1], social_media_link: entry[2], headshot: entry[3], title:entry[4], description: entry[5], biography:entry[6], talk_id:entry[7]})
+        }
+        console.log(speakers)
+        console.log(speakers.length)
+        let sorted = speakers.sort(function(speaker_1, speaker_2){ return speaker_1.name.localeCompare(speaker_2.name) });
+        return sorted
       }
-      console.log(speakers)
-      console.log(speakers.length)
-      let sorted = speakers.sort(function(speaker_1, speaker_2){  return speaker_1.name.localeCompare(speaker_2.name)});
-      return sorted
-    
-    }
 
-    var speaker_data = null;
+      var speaker_data = null;
 
-        var result = null;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "./speakers2024.tsv", false);
-        xmlhttp.send();
-        if (xmlhttp.status==200) {
-          result = xmlhttp.responseText;
-          
+      var result = null;
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("GET", "./speakers2024.tsv", false);
+      xmlhttp.send();
+      if (xmlhttp.status==200) {
+        result = xmlhttp.responseText;
         speaker_data =  tsvToSpeakerData(result)
         
         let container = document.querySelector(".speakers")
         let template = document.querySelector("#speaker_template");
-        
-        speaker_data.forEach(function(speaker){
+      
+        speaker_data.forEach(function(speaker) {
           let speaker_element = template.content.cloneNode(true);
           speaker_element.querySelector(".speaker").id = speaker.id;
           speaker_element.querySelector(".headshot").src = ("./photos/2024/" + speaker.headshot);
@@ -170,16 +165,11 @@
           speaker_element.querySelector(".bio").innerHTML = speaker.biography;
           
           let td = speaker_element.querySelectorAll(".social_media_link").href = speaker.social_media_link;
-          
-          
           speaker_element.querySelectorAll(".social_media_link").forEach( (element) => {element.href = speaker.social_media_link});
           container.appendChild(speaker_element);
         })
   
-
-
-        
-        }
+      }
     </script>
 
   </body>
