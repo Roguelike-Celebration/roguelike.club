@@ -24,17 +24,35 @@
       function bio(val) {
         console.log(val, currentBio);
         if (currentBio) {
-          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+          $(currentBio).addClass("hidden").removeClass("anim");
         }
         if (currentBio != val) {
           currentBio = val;
-          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+          $(currentBio).removeClass("hidden").addClass("anim");
         } else {
           currentBio = undefined;
         }
       }
     </script>
   </head>
+
+  <template id="timeslot_template">
+    <div class="block">
+      <div class="when">  </div>
+      <div class="when"></div>
+      <div class="what">
+        <div class="talk-title">
+          <span class="anchor" ></span>
+          <span class="title-text"> </span>
+          <a class="more-link">(more)</a>
+          <div class="bio hidden">
+            <p class="description-text"></p>
+          </div>
+        </div>
+        <div class="speakers"></div>
+      </div>
+    </div>
+  </template>
 
   <body>
     <div class="masthead clearfix">
