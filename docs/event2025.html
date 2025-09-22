@@ -24,17 +24,35 @@
       function bio(val) {
         console.log(val, currentBio);
         if (currentBio) {
-          $("#bio_" + currentBio).addClass("hidden").removeClass("anim");
+          $(currentBio).addClass("hidden").removeClass("anim");
         }
         if (currentBio != val) {
           currentBio = val;
-          $("#bio_" + currentBio).removeClass("hidden").addClass("anim");
+          $(currentBio).removeClass("hidden").addClass("anim");
         } else {
           currentBio = undefined;
         }
       }
     </script>
   </head>
+
+  <template id="timeslot_template">
+    <div class="block">
+      <div class="when">  </div>
+      <div class="when"></div>
+      <div class="what">
+        <div class="talk-title">
+          <span class="anchor" ></span>
+          <span class="title-text"> </span>
+          <a class="more-link">(more)</a>
+          <div class="bio hidden">
+            <p class="description-text"></p>
+          </div>
+        </div>
+        <div class="speakers"></div>
+      </div>
+    </div>
+  </template>
 
   <body>
     <div class="masthead clearfix">
@@ -116,121 +134,50 @@
            Roguelike Celebration 2025 will be held on Saturday and Sunday <strong>October 25 - October 26, 2025</strong> as a <strong>virtual event</strong> in our custom-built multiplayer game/chat space. Talks will also be streamed to Twitch and YouTube.
          </p>
          <p>
-           Our call for presenters closed on July 20, 2025. We will respond to all submissions by mid-August.
+           There was also be a free preview event <strong>September 7, 2025, 3pm Pacific</strong> in the same social space, with talks streamed to Twitch and YouTube.
          </p>
-         <p>
-           There will also be a free preview event <strong>September 7, 2025, 3pm Pacific</strong> in the same social space, with talks streamed to Twitch and YouTube:
-         </p>
-         <ul>
-           <li>An exclusive fireside chat with Jon Perry about game design and his contributions to <i>UFO 50</i> such as <i>Planet Zoldath</i>, <i>Party House</i>, and <i>Mini & Max</i>!</li>
-           <li>A talk from Alexei Pepers, <i>Designing for System Suspense</i>, which she had previously given for GDC but which is trapped within the vault.</li>
-           <li>Ezra Szanton will present a talk: "Building Synergy Webs in Roguelike Deckbuilders"!</li>
-         </ul>
-         <p>Check back here for more details and a schedule as the event approaches.</p>
          <h1>Get Updates</h1>
          <p>
            For updates leading up to the conference, you can sign up to our <a href="https://buttondown.email/RoguelikeCelebration">mailing list</a>.
          </p>
 
-          <h1>Preview Schedule</h1>
-          <h2>September 7, 2023</h2>
-          <article class="schedule" id="preview">
+          <article class="schedule" id="saturday">
+          <h2>Saturday, October 25, 2025</h2>
+              <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>
+          </article>
+
+          <article class="schedule" id="sunday"> 
+          <h2>Sunday, October 26, 2025</h2><a href="#saturday">go to Saturday</a>
             <div class="block header">
               <div class="when">PDT</div>
-              <div class="when">CEST (Mon)</div>
-              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: fireside chat; <span style="color:yellow">T</span>: talk</div>
-            </div>
-
-            <div class="block social">
-              <div class="when">14:45</div>
-              <div class="when">23:45</div>
-              <div class="what">
-                <div class="talk-title">doors open</div>
-              </div>
-            </div>
-
-            <div class="block kickoff">
-              <div class="when">15:10</div>
-              <div class="when">00:10</div>
-              <div class="what">
-                <div class="talk-title">kickoff</div>
-              </div>
-            </div>
-
-            <div class="block fireside">
-              <div class="when">15:15</div>
-              <div class="when">00:15</div>
-              <div class="what">
-                <div class="talk-title">
-                  <span class="anchor" id="jon-perry"></span>
-                  Fireside chat with Jon Perry (UFO 50)
-                  <a href="javascript:bio(100);">(more)</a>
-                  <div id="bio_100" class="bio hidden">
-                    <p>Host Alexei Pepers and Jon Perry will chat about game design and his contributions to <i>UFO 50</i> such as <i>Planet Zoldath</i>, <i>Party House</i>, and <i>Mini & Max</i>!</p>
-                  </div>
-                </div>
-                <div class="speaker">Jon Perry</a></div>
-              </div>
-            </div>
-
-            <div class="block preview_talk">
-              <div class="when">16:00</div>
-              <div class="when">01:00</div>
-              <div class="what">
-                <div class="talk-title">
-                  <span class="anchor" id="ezra-szanton"></span>
-                  Building Synergy Networks for better Roguelike Deckbuilders
-                  <a href="javascript:bio(101);">(more)</a>
-                  <div id="bio_101" class="bio hidden">
-                    <p>Roguelike Deckbuilders live or die on the quality of the drafting decisions they present. When a player chooses between 3 cards, what is going through their head? This talk is about how to achieve deep but accessible drafting decisions which result in memorable games that excite players. Synergy Networks are a helpful lens for creating sets of cards that achieve these aims. Modeling the synergies between cards as a network allows us to use ideas from network theory like path length, density and hubs. Digressions will include characteristics of synergies, broad types of synergies useful for brainstorming, and why anti-synergy is just as important as synergy itself. This talk is informed by my work designing Hellscaper and Mr Magpie's Harmless Card Game, two roguelike deckbuilders.</p>
-                  </div>
-                </div>
-                <div class="speaker">Ezra Szanton</div>
-              </div>
-            </div>
-
-            <div class="block fireside">
-              <div class="when">16:30</div>
-              <div class="when">01:30</div>
-              <div class="what">
-                <div class="talk-title">
-                  <span class="anchor" id="aron-pietron"></span>
-                  <span class="anchor" id="michal-oglozinski"></span>
-                  Designing for System Suspense
-                  <a href="javascript:bio(102);">(more)</a>
-                  <div id="bio_102" class="bio hidden">
-                    <p>Host Alexei Pepers will give a talk, Designing for System Suspense, which she gave at GCD and had previously been trapped inside the GDC Vault.<p>
-                  </div>
-                </div>
-                <div class="speaker">Alexei Pepers</div>
-              </div>
-            </div>
-
-            <div class="block social">
-              <div class="when">17:15</div>
-              <div class="when">02:15</div>
-              <div class="what">
-                <div class="talk-title">social time</div>
-              </div>
-            </div>
-
-            <div class="block social">
-              <div class="when">17:30</div>
-              <div class="when">02:30</div>
-              <div class="what">
-                <div class="talk-title">space closes</div>
-              </div>
-            </div>
-
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk; <span style="color:yellow">L</span>: lightning talk; U: unconferencing</div>
+            </div>          
           </article>
-          <br/>
 
+          <h1>Preview Event</h1>
+          <article class="schedule" id="preview">
+          <h2>September 7, 2025</h2>
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">CEST</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: fireside chat; <span style="color:yellow">T</span>: talk; <span style="color:lavender">P</span>: panel</div>
+            </div>
+          </article>
+
+          <br/>
           <div class="mastfoot">
             <div class="inner">
               <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
             </div>
           </div>
+
         </div>
+
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -239,5 +186,136 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./dist/js/jquery.min.js"><\/script>')</script>
     <script src="./dist/js/bootstrap.js"></script>
+    
+    <script> // script to autofill schedule articles
+    
+        
+    function tsvToScheduleBlocks(tsv){
+      let string = tsv
+      let blocks = [];
+      let data =  string.split(/\r?\n/)
+      let headers = data[0].split(/\t/);
+      for (let row = 1; row < data.length; row++){
+        let entry = data[row].split(/\t/);
+        //console.log(entry)
+        let block = {};
+        for (let d in headers){
+          //console.log(headers[d])
+          block[ headers[d] ] = entry[d]
+        }
+          blocks.push(block)
+      }
+      
+      return blocks;
+    
+    }
+        
+    function tsvToSpeakerData(tsv){
+    
+      let string = tsv
+      let speakers = [];
+      let data =  string.split(/\r?\n/)
+      for (let row = 1; row < data.length; row++){
+        let entry = data[row].split(/\t/)
+        speakers.push({id: entry[0], name: entry[1], social_media_link: entry[2], headshot: entry[3], title:entry[4], description: entry[5], biography:entry[6]})
+      }
+      
+      return speakers;
+    
+    }
+
+    var speaker_data = null;
+
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "./speakers2025.tsv", false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+          result = xmlhttp.responseText;
+          
+        speaker_data =  tsvToSpeakerData(result)
+
+        }
+  
+
+    function appendBlockInfoToSchedule(blocks, container){  
+      let template  = document.querySelector("#timeslot_template");
+      blocks.forEach(function(time_block){
+        let block_element = template.content.cloneNode(true);
+        block_element.querySelector(".block").classList.add(time_block.type)
+        block_element.querySelectorAll(".when")[0].innerHTML = (time_block["start(PST)"])
+        block_element.querySelectorAll(".when")[1].innerHTML = (time_block["start(CST)"])
+        
+        let title_element = block_element.querySelector(".talk-title")
+        title_element.querySelector(".anchor").id = time_block.id;
+        title_element.querySelector(".title-text").innerHTML = time_block.title;
+        if (time_block.id !== ""){
+          title_element.querySelector(".more-link").href = "javascript:bio('#" + time_block.id + "_description');"
+          title_element.querySelector(".description-text").innerHTML = time_block.description;
+          title_element.querySelector(".bio").id = time_block.id + "_description";
+          let speakers_container = block_element.querySelector(".speakers");
+          let speaker_ids = time_block.speakers.split(", ")
+          for (s in speaker_ids){
+            let speaker_id = speaker_ids[s] 
+            speaker = speaker_data.filter(function(speaker){ return speaker.id === speaker_id})[0]
+            if (speaker === undefined) { console.log(speaker_ids + " of talk " +  time_block.title + " is not defined in speaker table");}
+            else {
+              let speaker_link = document.createElement("a");
+              speaker_link.href = "speakers2025.html#" + speaker.id;
+              speaker_link.innerHTML = speaker.name;
+              if (s+1 < speaker_ids.length && speaker_ids.length > 2 ) speaker_link.innerHTML += ", "
+              else if (s+1 < speaker_ids.length) speaker_link.innerHTML += " ";
+              speakers_container.append(speaker_link); 
+              if (s+2 == speaker_ids.length) { 
+                let and = document.createElement("span"); 
+                and.innerHTML = "and "
+                speakers_container.append(and); 
+              }
+            }
+          }
+        }
+        else {
+          title_element.querySelector(".more-link").remove();
+          title_element.querySelector(".bio").remove();
+          block_element.querySelector(".speakers").remove();
+        }
+        //console.log(container)
+        container.appendChild(block_element);
+      })
+    }
+        
+      let event_blocks = null
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "./schedule2025.tsv", false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+          result = xmlhttp.responseText;
+          event_blocks = tsvToScheduleBlocks(result)
+         // console.log(event_blocks)
+          let block_groups = [
+            // event_blocks.filter(function(block){return block.date === "0"}),
+            event_blocks.filter(function(block){return block.date === "1"}),
+            event_blocks.filter(function(block){return block.date === "2"}),
+            event_blocks.filter(function(block){return block.date === "preview"})
+            ]
+          
+          let containers = [
+            // document.querySelector("#friday"), 
+            document.querySelector("#saturday"), 
+            document.querySelector("#sunday"), 
+            document.querySelector("#preview")
+            ]
+          
+          for (b in block_groups){
+         //   console.log (block_groups[b], containers[b])
+            appendBlockInfoToSchedule(block_groups[b], containers[b])
+              
+          }
+
+
+        
+        }
+    </script>
   </body>
 </html>
