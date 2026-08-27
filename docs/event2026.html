@@ -19,21 +19,26 @@
     <link href="cover.css" rel="stylesheet">
     <link href="event2024.css" rel="stylesheet">
 
-    <script>
-      var currentBio;
-      function bio(val) {
-        console.log(val, currentBio);
-        if (currentBio) {
-          $(currentBio).addClass("hidden").removeClass("anim");
-        }
-        if (currentBio != val) {
-          currentBio = val;
-          $(currentBio).removeClass("hidden").addClass("anim");
-        } else {
-          currentBio = undefined;
-        }
+    <style>
+      details>summary {
+        list-style: none;
       }
-    </script>
+      details>summary::marker {
+        content: none;
+      }
+      details>summary::after {
+        content: "(more)";
+        color: cyan;
+        cursor: pointer;
+        padding-left: 0.5ch;
+      }
+      details[open]>summary::after {
+        content: "(hide)";
+      }
+      details>summary:hover::after {
+        text-decoration: underline;
+      }
+    </style>
   </head>
 
   <body>
@@ -103,8 +108,8 @@
             <section class="giant-callout">
               <span>Preview Event</span><br/>
               <span>September 13, 2026</span><br>
-              <span>Online</span>
-              <!-- <div><a href="#" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Get a free ticket!</a></div> -->
+              <span><time datetime="2026-09-13T14:00:00-07:00">2pm Pacific</time>, Online</span>
+              <div><a href="https://ti.to/roguelike-celebration/preview-event-2026" class="btn btn-success btn-lg" role="button" target="_blank" rel="nofollow noopener noreferrer">Get a free ticket!</a></div>
               <hr/>
               <span>Main Event</span><br/>
               <span>Oct 17&ndash;18, 2026</span><br/>
@@ -121,15 +126,116 @@
 
          <p>Our call for presenters closed on July 19, 2026. We will respond to all submissions by mid-August.</p>
          <p>
-           There will also be a free preview event <strong>September 13, 2026</strong> in the same social space, with talks streamed to Twitch and YouTube.
+           There will also be a free preview event <strong>September 13, 2026</strong> in the same social space, with talks streamed to Twitch and YouTube:
          </p>
+         <ul>
+           <li>"Ancient Roguelikes: The Pre-History of Roguelike Games" by Martin Pichlmair</li>
+           <li>"Bitwise Black Magic: How to Computer, Better Faster Stronger" by Greg L</li>
+           <li>"Don't Save The @: What Roguelikes Teach Us About Story Structure" by Jamie Brittain</li>
+         </ul>
          <p>Check back here for more details and a schedule as the event approaches.</p>
 
          <h1>Get Updates</h1>
          <p>
            For updates leading up to the conference, you can sign up to our <a href="https://buttondown.email/RoguelikeCelebration">mailing list</a>.
          </p>
-         
+
+          <h1>Preview Schedule</h1>
+          <h2>September 13, 2026</h2>
+          <article class="schedule" id="preview">
+            <div class="block header">
+              <div class="when">PDT</div>
+              <div class="when">UTC</div>
+              <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:yellow">T</span>: talk</div>
+            </div>
+
+            <div class="block social">
+              <div class="when">13:45</div>
+              <div class="when">20:45</div>
+              <div class="what">
+                <div class="talk-title">space opens</div>
+              </div>
+            </div>
+
+            <div class="block kickoff">
+              <div class="when">14:00</div>
+              <div class="when">21:00</div>
+              <div class="what">
+                <div class="talk-title">kickoff</div>
+              </div>
+            </div>
+
+            <div class="block preview_talk">
+              <div class="when">14:15</div>
+              <div class="when">21:15</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="martin-pichlmair"></span>
+                  <details name="talks">
+                    <summary>Ancient Roguelikes: The Pre-History of Roguelike Games</summary>
+                    <div class="bio">
+                      <p>Roguelikes existed before Rogue. How can that be? You see, all inventions are just manifestations of ideas that are already in the room. Rogue was the culmination of a lot of previous ideas in the shape of a digital artefact. This talk takes you on a worldwide journey back in time to ancient forms of procedurally generation, tracing some roots of the games we play nowadays.</p>
+                    </div>
+                  </details>
+                </div>
+                <div class="speakers"><a href="speakers2026.html#martin-pichlmair">Martin Pichlmair</a></div>
+              </div>
+            </div>
+
+            <div class="block preview_talk">
+              <div class="when">14:45</div>
+              <div class="when">21:45</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="greg-l"></span>
+                  <details name="talks">
+                  <summary>Bitwise Black Magic: How to Computer, Better Faster Stronger</summary>
+                  <div class="bio">
+                    <p>There's a famous wtf moment in Quake 3 Arena's source code, involving the use of "evil floating point bit level hacking"... but what is that? Hidden inside computer math are a secret set of tools that can help your game run much faster, if you learn the magic behind all of those magic numbers. This talk will be a theme park ride through some of the most impressive optimization techniques I've found or created myself, so math enthusiasts at any level can learn something new. Whether it's using only 1 bit of save data per collectible in huge, randomly generated maps, or using x&-x to instantly find pixel gaps for things like fluid simulations, the hidden math of computers lets you accomplish much more than you probably think!</p>
+                  </div>
+                  </details>
+                </div>
+                <div class="speakers"><a href="speakers2026.html#greg-l">Greg L</a></div>
+              </div>
+            </div>
+
+            <div class="block preview_talk">
+              <div class="when">15:15</div>
+              <div class="when">22:15</div>
+              <div class="what">
+                <div class="talk-title">
+                  <span class="anchor" id="jamie-brittain"></span>
+                  Don't Save The @: What Roguelikes Teach Us About Story Structure
+                  <!-- <details name="talks">
+                  <summary>Don't Save The @: What Roguelikes Teach Us About Story Structure</summary>
+                  <div class="bio">
+                    <p>(talk description coming soon!)<p>
+                  </div>
+                  </details> -->
+                </div>
+                <div class="speakers">Jamie Brittain</div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">15:45</div>
+              <div class="when">22:45</div>
+              <div class="what">
+                <div class="talk-title">social time</div>
+              </div>
+            </div>
+
+            <div class="block social">
+              <div class="when">16:30</div>
+              <div class="when">23:30</div>
+              <div class="what">
+                <div class="talk-title">space closes</div>
+              </div>
+            </div>
+
+          </article>
+          <br/>
+
           <div class="mastfoot">
             <div class="inner">
               <p>| ! % . . @ . @ . . @ . . . @ @ . \ \ \ \ \ . |</p>
