@@ -21,8 +21,8 @@
   </head>
 
   <body>
-  
-    <template id="speaker_template"> 
+
+    <template id="speaker_template">
       <div class="speaker" >
         <div class="link">
           <a target="_blank" class="social_media_link">
@@ -39,14 +39,14 @@
       </div>
       <hr>
     </template>
-  
+
     <div class="masthead clearfix">
       <h3 class="masthead-brand">Roguelike Celebration</h3>
       <nav class="hidden-xs hidden-sm">
         <ul class="nav masthead-nav">
           <li><a href="./">Intro</a></li>
-          <li><a href="./event2026.html">2026</a></li>
-          <li class="active dropdown">
+          <li class="active"><a href="./event2026.html">2026</a></li>
+          <li class="dropdown">
               <a id="drop1" class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Previous Years
                 <span class="caret"></span>
@@ -116,15 +116,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./dist/js/jquery.min.js"><\/script>')</script>
     <script src="./dist/js/bootstrap.js"></script>
-    
+
     <script> // script to autofill speaker list
-        
+
       function tsvToSpeakerData(tsv) {
         let string = tsv
         let speakers = [];
         let data =  string.split(/\r?\n/)
         for (let row = 1; row < data.length; row++) {
-          let entry = data[row].split(/\t/)
+          const rowText = data[row];
+          if (rowText === "") {
+            continue;
+          }
+          let entry = rowText.split(/\t/)
           speakers.push({id: entry[0], name: entry[1], social_media_link: entry[2], headshot: entry[3], title:entry[4], description: entry[5], biography:entry[6], talk_id:entry[7]})
         }
         console.log(speakers)
@@ -142,24 +146,31 @@
       if (xmlhttp.status==200) {
         result = xmlhttp.responseText;
         speaker_data =  tsvToSpeakerData(result)
-        
+
         let container = document.querySelector(".speakers")
         let template = document.querySelector("#speaker_template");
-      
+
         speaker_data.forEach(function(speaker) {
           let speaker_element = template.content.cloneNode(true);
           speaker_element.querySelector(".speaker").id = speaker.id;
-          speaker_element.querySelector(".headshot").src = ("./photos/2026/" + speaker.headshot);
+
+          const speaker_image = speaker_element.querySelector(".headshot");
+          speaker_image.onerror = (e) => {
+            e.target.src = "./photos/2025/placeholder.png"
+            e.target.onerror = undefined;
+          };
+          speaker_image.src = ("./photos/2026/" + speaker.headshot);
+
           speaker_element.querySelector(".speaker-name").innerHTML = speaker.name ;
           speaker_element.querySelector(".talk_link").href = "event2026.html#"+ speaker.talk_id ;
           speaker_element.querySelector(".talk_link").innerHTML = speaker.title;
           speaker_element.querySelector(".bio").innerHTML = speaker.biography;
           if (speaker.social_media_link) {
             speaker_element.querySelectorAll(".social_media_link").forEach( (element) => {element.href = speaker.social_media_link});
-          }          
+          }
           container.appendChild(speaker_element);
         })
-  
+
       }
     </script>
 
