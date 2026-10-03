@@ -38,6 +38,22 @@
       details>summary:hover::after {
         text-decoration: underline;
       }
+      fieldset {
+        margin-top: 20px;
+      }
+      fieldset>* {
+        border: none;
+        color: white;
+        padding: 0 20px;
+      }
+      fieldset>legend {
+        display: inline-block;
+        padding-right: 2rem;
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        line-height: 1.1;
+      }
     </style>
   </head>
 
@@ -128,11 +144,25 @@
             For updates leading up to the conference, you can sign up to our <a href="https://buttondown.email/RoguelikeCelebration">mailing list</a>.
           </p>
 
+          <fieldset id="tzcontrols" style="display: none;">
+            <legend>Time zone display settings</legend>
+            <p>For the schedules, times in the PDT column will always be displayed in Pacific Daylight Time (UTC-7).</p>
+            <p>Currently, times in the <span class="current-tz-short">UTC</span> column are displayed in <span class="current-tz-long">Coordinated Universal Time</span>.  If you would like to change this, use the radio buttons below:</p>
+            <div>
+              <input type="radio" id="tzlocal" name="tz" value="local" />
+              <label for="tzlocal">Display times in <span class="user-tz-long"></span> <span style="font-weight: normal;">(this should be your computer's local time zone)</span></label>
+            </div>
+            <div>
+              <input type="radio" id="tzutc" name="tz" value="utc" checked />
+              <label for="tzutc">Display times in UTC</label>
+            </div>
+          </fieldset>
+
           <article class="schedule" id="saturday">
             <h2>Saturday, October 17, 2026</h2>
             <div class="block header">
               <div class="when">PDT</div>
-              <div class="when">UTC</div>
+              <div class="when"><span class="current-tz-short">UTC</span></div>
               <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk;
                 <span style="color:yellow">L</span>: lightning talk; U: unconferencing
               </div>
@@ -528,7 +558,7 @@
             <h2>Sunday, October 18, 2026</h2>
             <div class="block header">
               <div class="when">PDT</div>
-              <div class="when">UTC</div>
+              <div class="when"><span class="current-tz-short">UTC</span></div>
               <div class="what"><span style="color:cyan">S</span>: social time; <span style="color:orange">F</span>: full talk;
                 <span style="color:yellow">L</span>: lightning talk; U: unconferencing
               </div>
@@ -978,6 +1008,42 @@
         </div>
 
     </div>
+
+    <script>
+      function getTimeZoneName(name) {
+        const formatter = new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "numeric", timeZoneName: name });
+        const userTimeZoneIANA = formatter.resolvedOptions().timeZone;
+        const userTimeZoneShort = formatter.formatToParts(new Date()).find(x => x.type === "timeZoneName").value;
+        return [userTimeZoneIANA, userTimeZoneShort];
+      }
+      function setTimeZone(formatter, displayNameShort, displayNameLong) {
+        document.querySelectorAll(".current-tz-short").forEach(x => x.textContent = displayNameShort);
+        document.querySelectorAll(".current-tz-long").forEach(x => x.textContent = displayNameLong);
+        document.querySelectorAll("article.schedule div.when>time").forEach(x => {
+          const scheduleDateTime = Date.parse(x.attributes.datetime.value);
+          x.innerText = formatter.format(scheduleDateTime);
+        });
+      }
+      const utcFormatter = new Intl.DateTimeFormat("en", { hour: "numeric", minute: "numeric", hour12: false, timeZone: "UTC" });
+      const localFormatter = new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "numeric" });
+      const userTimeZoneIANA = localFormatter.resolvedOptions().timeZone;
+      const [ianaFromShort, userTimeZoneShort] = getTimeZoneName("short");
+      const [ianaFromLong, userTimeZoneLong] = getTimeZoneName("long");
+      const displayTimeZoneShort = (userTimeZoneIANA === ianaFromShort) ? userTimeZoneShort : "Local";
+      const displayTimeZoneLong = (userTimeZoneIANA === ianaFromLong) ? userTimeZoneLong : userTimeZoneIANA;
+      document.querySelectorAll(".user-tz-short").forEach(x => x.textContent = displayTimeZoneShort);
+      document.querySelectorAll(".user-tz-long").forEach(x => x.textContent = displayTimeZoneLong);
+      document.querySelectorAll("fieldset input[name='tz']").forEach(x => x.addEventListener("change", (e) => {
+        if (e.target.value === "local") {
+          setTimeZone(localFormatter, displayTimeZoneShort, displayTimeZoneLong);
+        }
+        else if (e.target.value === "utc") {
+          setTimeZone(utcFormatter, "UTC", "Coordinated Universal Time");
+        }
+      }));
+      document.getElementById("tzlocal").click();
+      document.getElementById("tzcontrols").style = "display: block;";
+    </script>
 
     <!-- Bootstrap core JavaScript
       ================================================== -->
