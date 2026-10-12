@@ -15,3 +15,10 @@
 .intro {
     padding-bottom: 3rem;
 }
+
+/* scale images to container size */
+.inner .procgen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
