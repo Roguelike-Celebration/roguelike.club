@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "7ac89918-b7fb-4b47-bf29-fd5f4742bed1",
+    "message": "Hacker's Delight 2ed by Hank Warren (ISBN 978-0321842688)",
+    "authorId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+    "authorUsername": "GregL",
+    "likes": [
+      {
+        "likerId": "aAqHZztmSQc98y3t9BeAR8lO7xL2",
+        "likerName": "Gexgekko"
+      }
+    ]
+  },
+  {
+    "id": "6acb73ed-eed1-40f6-aa40-d96c94b6eb6d",
+    "message": "Secret bit manipulation tools hidden from C code (x&-x, PDEP, PEXT)\r\nhttps://wikipedia.org/wiki/X86_Bit_manipulation_instruction_set#TBM_(Trailing_Bit_Manipulation)",
+    "authorId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+    "authorUsername": "GregL",
+    "likes": [
+      {
+        "likerId": "hBAVsx5I3JRWjZ3PInj0FJD6tAl1",
+        "likerName": "Veronica!🏳️‍⚧️"
+      }
+    ]
+  },
+  {
+    "id": "8fa88f20-f14f-46ac-bdbd-0eb35a107d23",
+    "message": "Bit Twiddling Hacks by Sean Eron Anderson (permutations, count zeros)\r\nhttps://graphics.stanford.edu/~seander/bithacks.html",
+    "authorId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+    "authorUsername": "GregL",
+    "likes": [
+      {
+        "likerId": "yTdRSouzR7Np8xE0bDnTTTWf6QT2",
+        "likerName": "crystalsolenoid"
+      },
+      {
+        "likerId": "hBAVsx5I3JRWjZ3PInj0FJD6tAl1",
+        "likerName": "Veronica!🏳️‍⚧️"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      }
+    ]
+  },
+  {
+    "id": "d1c74f59-0f4a-4db7-88c8-7a09a8b565d1",
+    "message": "Modern WebGPU features available in the WGSL shading language\r\nhttps://webgpufundamentals.org/webgpu/lessons/webgpu-wgsl-function-reference.html",
+    "authorId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+    "authorUsername": "GregL",
+    "likes": [
+      {
+        "likerId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+        "likerName": "Impossible"
+      }
+    ]
+  },
+  {
+    "id": "a874e8eb-968d-4d86-9e17-655015b93844",
+    "message": "Pico-8 by Joseph White for an amazing tiny console and community! https://www.pico-8.com",
+    "authorId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+    "authorUsername": "GregL",
+    "likes": [
+      {
+        "likerId": "yTdRSouzR7Np8xE0bDnTTTWf6QT2",
+        "likerName": "crystalsolenoid"
+      },
+      {
+        "likerId": "u3xzHFMbvfh3h4MCbMsvzxxPClx1",
+        "likerName": "ElfyBean"
+      }
+    ]
+  },
+  {
+    "id": "2d2f7037-488a-4ec0-bdfd-528f953a25c7",
+    "message": "Sphinx of black quartz, judge my vow",
+    "authorId": "yGXz7auotjQrXUHFtoUAPh9c1oy1",
+    "authorUsername": "NewAlexandria",
+    "likes": [
+      {
+        "likerId": "l18j5mJnJ2cPGvT7DGQc5HFrtBP2",
+        "likerName": "jmeowmeow"
+      },
+      {
+        "likerId": "aAqHZztmSQc98y3t9BeAR8lO7xL2",
+        "likerName": "Gexgekko"
+      },
+      {
+        "likerId": "8g7JSgg4OAVyOxZ7dVCbHNKWVVi1",
+        "likerName": "MC-Alexei"
+      },
+      {
+        "likerId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+        "likerName": "GregL"
+      },
+      {
+        "likerId": "CuKZ5ZWJ9mRXzfdBeL8ilimtYFH3",
+        "likerName": "soup"
+      },
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "fUaVKXl4ynYWk4Em9BnhE2aOQSC2",
+        "likerName": "SnakeLady"
+      },
+      {
+        "likerId": "dIdknlnG7LgHEP1l7fusNjBfHBN2",
+        "likerName": "adriana"
+      },
+      {
+        "likerId": "ujEXAhG7VleiZ4fKfB7BU5IHao92",
+        "likerName": "Axemred"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      },
+      {
+        "likerId": "u3xzHFMbvfh3h4MCbMsvzxxPClx1",
+        "likerName": "ElfyBean"
+      }
+    ]
+  },
+  {
+    "id": "ab931bf0-2b23-4cf8-a12b-1d286f313444",
+    "message": "https://pixiereport.com/about",
+    "authorId": "l18j5mJnJ2cPGvT7DGQc5HFrtBP2",
+    "authorUsername": "jmeowmeow"
+  },
+  {
+    "id": "382b7547-a39a-4798-a691-849cb8cb23b8",
+    "message": "intro on Autotilling by us https://www.youtube.com/watch?v=LFmTvCF_E-M",
+    "authorId": "E1znq0rhPibeDrCtFT3anhhVXgA2",
+    "authorUsername": "🎃Eleanor🎃Plural🎃She/Her🎃",
+    "likes": [
+      {
+        "likerId": "k0baCLwcIDcyqNEFK22s4GpU7zs2",
+        "likerName": "ProgramGamer"
+      },
+      {
+        "likerId": "yTdRSouzR7Np8xE0bDnTTTWf6QT2",
+        "likerName": "crystalsolenoid"
+      }
+    ]
+  },
+  {
+    "id": "6fdd79fc-fcee-44e1-a909-3474fc1790c7",
+    "message": "Shing Yin Khor's map based card prompted journaling game A MENDING https://shingkhor.com/a-mending",
+    "authorId": "l18j5mJnJ2cPGvT7DGQc5HFrtBP2",
+    "authorUsername": "jmeowmeow",
+    "likes": [
+      {
+        "likerId": "EcrV7Gu81KbgG979Awdu82C0xw63",
+        "likerName": "hjh"
+      }
+    ]
+  },
+  {
+    "id": "16f9c904-ecb5-4205-b7ca-2864b2350d91",
+    "message": "Delve: map making game with expansions, inspired by Dwarf Fortress. https://blackwellwriter.itch.io/delve-a-solo-map-drawing-game",
+    "authorId": "l18j5mJnJ2cPGvT7DGQc5HFrtBP2",
+    "authorUsername": "jmeowmeow",
+    "likes": [
+      {
+        "likerId": "aAqHZztmSQc98y3t9BeAR8lO7xL2",
+        "likerName": "Gexgekko"
+      },
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "AcNtnaqTDrSsVMqXTS9wqDHGbKT2",
+        "likerName": "royal"
+      }
+    ]
+  },
+  {
+    "id": "a9087daf-f7b9-40ac-ae2d-a07f6edf81fd",
+    "message": "Alex Jaffe 2024 GDC Talk - Player Mythologies https://gdcvault.com/play/1034601/Player",
+    "authorId": "LogHgO7uiuOREm3qcyc1mfyQOUn2",
+    "authorUsername": "RourkeBywater",
+    "likes": [
+      {
+        "likerId": "Gr8hImUbR3XWvqmd1rnW80dw8RE2",
+        "likerName": "ajh"
+      },
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "VwFzEfwIYlNpaBHHUyzTAAxBJ8X2",
+        "likerName": "Josh-G"
+      },
+      {
+        "likerId": "EcrV7Gu81KbgG979Awdu82C0xw63",
+        "likerName": "hjh"
+      },
+      {
+        "likerId": "sKA8nyjfwrcIBroWDTM85kOSTRm2",
+        "likerName": "Chronologist"
+      },
+      {
+        "likerId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+        "likerName": "Impossible"
+      }
+    ]
+  },
+  {
+    "id": "512d92ab-051c-47f2-b1e3-956cccfc31e2",
+    "message": "(Greg's talk) Derelict Star game; multiplatform library support is hard! https://gate.itch.io/derelict-star",
+    "authorId": "l18j5mJnJ2cPGvT7DGQc5HFrtBP2",
+    "authorUsername": "jmeowmeow",
+    "likes": [
+      {
+        "likerId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+        "likerName": "GregL"
+      }
+    ]
+  },
+  {
+    "id": "fa49fe39-6296-48ec-99fe-c92419e3485a",
+    "message": "The Message from Deep Space: https://store.steampowered.com/app/4080030/The_Message_from_Deep_Space/",
+    "authorId": "LogHgO7uiuOREm3qcyc1mfyQOUn2",
+    "authorUsername": "RourkeBywater",
+    "likes": [
+      {
+        "likerId": "Gr8hImUbR3XWvqmd1rnW80dw8RE2",
+        "likerName": "ajh"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      },
+      {
+        "likerId": "WIJRtT5aoMaifynJH51VIjkOiC02",
+        "likerName": "JoeSondow"
+      }
+    ]
+  },
+  {
+    "id": "0aaa3e31-b5d5-4066-a0b1-f56a8df3eb4e",
+    "message": "https://github.com/francisrstokes/githublog/blob/main/2024/5/29/fast-inverse-sqrt.md",
+    "authorId": "PV95JMMlLdSmLNQrnnkATzYZCuT2",
+    "authorUsername": "redblobgames3",
+    "likes": [
+      {
+        "likerId": "7iTzPXfVFUSlCp3nIotA4hNRBDi1",
+        "likerName": "intoverflow"
+      },
+      {
+        "likerId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+        "likerName": "GregL"
+      },
+      {
+        "likerId": "hBAVsx5I3JRWjZ3PInj0FJD6tAl1",
+        "likerName": "Veronica!🏳️‍⚧️"
+      },
+      {
+        "likerId": "dIdknlnG7LgHEP1l7fusNjBfHBN2",
+        "likerName": "adriana"
+      },
+      {
+        "likerId": "e8oLuPikY9ZYBVHSmyCghARD2Oi2",
+        "likerName": "Paul_Hembree"
+      }
+    ]
+  },
+  {
+    "id": "289d2ecb-5cf4-4df5-80dc-29854a8c0a63",
+    "message": "Computing with NaNs: https://www.youtube.com/watch?v=5TFDG-y-EHs",
+    "authorId": "NZfCew2GkvdCrGSCnr8UlNJWkT42",
+    "authorUsername": "markgritter",
+    "likes": [
+      {
+        "likerId": "Ks6STk240HSg0xXzaqDi46jVyaf1",
+        "likerName": "bubez"
+      },
+      {
+        "likerId": "Gr8hImUbR3XWvqmd1rnW80dw8RE2",
+        "likerName": "ajh"
+      },
+      {
+        "likerId": "totkRv3Z8rV7twp0iFOpsB2rVGP2",
+        "likerName": "Ness-Oxide"
+      },
+      {
+        "likerId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+        "likerName": "Niels-NTG"
+      },
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      }
+    ]
+  },
+  {
+    "id": "45f68151-0724-4905-8b33-bb1275d65c69",
+    "message": "https://nandgame.com/",
+    "authorId": "ZN6eTfwpPIXxobyOktPhYHMTj5d2",
+    "authorUsername": "rodneylives",
+    "likes": [
+      {
+        "likerId": "yTdRSouzR7Np8xE0bDnTTTWf6QT2",
+        "likerName": "crystalsolenoid"
+      },
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      }
+    ]
+  },
+  {
+    "id": "f62785cf-d5c3-4836-8bfc-679511befe4b",
+    "message": "Another example of clever use of bitwise magic from Pitfall! on Atari 2600: https://evoniuk.github.io/posts/pitfall.html",
+    "authorId": "8g7JSgg4OAVyOxZ7dVCbHNKWVVi1",
+    "authorUsername": "MC-Alexei",
+    "likes": [
+      {
+        "likerId": "cVcIL9jLAdPl1Fozt9QKk68CAUY2",
+        "likerName": "GregL"
+      }
+    ]
+  },
+  {
+    "id": "a0d7fe52-724e-4b56-a789-84246c0a5c34",
+    "message": "I sure hope no queers fall in love with each other based on their roguish way of seeing the world...",
+    "authorId": "0v6TYQTNQzLv9UiEtfYmveVx62A3",
+    "authorUsername": "Hypergardens",
+    "likes": [
+      {
+        "likerId": "FazsDo6fRzSx626aNCblFyXRwjB3",
+        "likerName": "tryagaintyler"
+      },
+      {
+        "likerId": "CuKZ5ZWJ9mRXzfdBeL8ilimtYFH3",
+        "likerName": "soup"
+      },
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "AcNtnaqTDrSsVMqXTS9wqDHGbKT2",
+        "likerName": "royal"
+      },
+      {
+        "likerId": "hBAVsx5I3JRWjZ3PInj0FJD6tAl1",
+        "likerName": "Veronica!🏳️‍⚧️"
+      },
+      {
+        "likerId": "7WOYnQndq0PNUrX8O9IaBzWY02v2",
+        "likerName": "Ragnarok-Now"
+      },
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      },
+      {
+        "likerId": "fUaVKXl4ynYWk4Em9BnhE2aOQSC2",
+        "likerName": "SnakeLady"
+      },
+      {
+        "likerId": "cjgalEpNr8SY0eRfFKOq3qATEYn1",
+        "likerName": "ms_wicker"
+      },
+      {
+        "likerId": "Ks6STk240HSg0xXzaqDi46jVyaf1",
+        "likerName": "bubez"
+      },
+      {
+        "likerId": "TmaDQB0r50cO2crpnSwHVM5Di9G2",
+        "likerName": "mayagranade"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      },
+      {
+        "likerId": "ujEXAhG7VleiZ4fKfB7BU5IHao92",
+        "likerName": "Axemred"
+      },
+      {
+        "likerId": "u3xzHFMbvfh3h4MCbMsvzxxPClx1",
+        "likerName": "ElfyBean"
+      }
+    ]
+  },
+  {
+    "id": "8d2b278a-30fa-4848-a1a8-20bb0a96bab5",
+    "message": "Playtest our co-op game about goopy shapeshifting trash animals: https://discord.gg/GQxwMbCfF 🦝🫟✊👁️",
+    "authorId": "KQze8f99TRSsEC3tYNkoJKVzZ2q1",
+    "authorUsername": "EvanB🍂",
+    "likes": [
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "36ynKxQvG0Ngbe7ivkh7WaKW1KB3",
+        "likerName": "🟣isaac_io🟠"
+      }
+    ]
+  },
+  {
+    "id": "b76f79c9-efef-4c68-8410-b148013ff414",
+    "message": "Slides from Sersa and Joris: https://www.ludomotion.com/traps",
+    "authorId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+    "authorUsername": "orionll"
+  },
+  {
+    "id": "5c703764-aa77-4b79-9423-baba55be611e",
+    "message": "I recently started running games of the Mothership TTRPG, and the Warden's Guide has some great ideas about how to \"do horror\" in a game, which are likely relevant to roguelikes: https://www.tuesdayknightgames.com/pages/mothership-rpg",
+    "authorId": "i0b03ShhUBg3QmPSmsuUrrCr66H2",
+    "authorUsername": "mbessey",
+    "likes": [
+      {
+        "likerId": "ujEXAhG7VleiZ4fKfB7BU5IHao92",
+        "likerName": "Axemred"
+      },
+      {
+        "likerId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+        "likerName": "Niels-NTG"
+      }
+    ]
+  },
+  {
+    "id": "356badfe-3d39-40e9-81d1-429c075bfa1a",
+    "message": "A Pattern Language for Game Design by Chris Barney https://patternlanguageforgamedesign.com/",
+    "authorId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+    "authorUsername": "Cliff",
+    "likes": [
+      {
+        "likerId": "q78LMfpTBvXYLYR8d89qxrlzqGx2",
+        "likerName": "eli_oat"
+      },
+      {
+        "likerId": "VwFzEfwIYlNpaBHHUyzTAAxBJ8X2",
+        "likerName": "Josh-G"
+      },
+      {
+        "likerId": "wmSxNEOF6pZ35BFJvkD1kLlS3g83",
+        "likerName": "alice"
+      },
+      {
+        "likerId": "Pc12kJV6asbDhGOoIw2KYUEZxfj1",
+        "likerName": "joomen"
+      },
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      }
+    ]
+  },
+  {
+    "id": "ba5b8a1e-0b2e-4a0d-a0d0-e2afda847120",
+    "message": "Coding stole Design Patterns from vernacular architecture's learnings from old cities and self-organized settlements. Some books: \"A Pattern Language\" and \"The Timeless Way of Building\" by Christopher Alexander \"Origins of Architectural Pleasure\" by Hildebrand",
+    "authorId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+    "authorUsername": "Cliff",
+    "likes": [
+      {
+        "likerId": "VwFzEfwIYlNpaBHHUyzTAAxBJ8X2",
+        "likerName": "Josh-G"
+      },
+      {
+        "likerId": "l18j5mJnJ2cPGvT7DGQc5HFrtBP2",
+        "likerName": "jmeowmeow"
+      },
+      {
+        "likerId": "f21uQhODjBYkdsrczFq61EfHVkG3",
+        "likerName": "shing-yin"
+      },
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      }
+    ]
+  },
+  {
+    "id": "0c761f20-0e9f-4ec1-b610-16a06ce6ee55",
+    "message": "Finding order in chaos. \"Patterns In Nature\" by Philip Ball https://press.uchicago.edu/ucp/books/book/chicago/P/bo23519431.html",
+    "authorId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+    "authorUsername": "Cliff",
+    "likes": [
+      {
+        "likerId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+        "likerName": "Niels-NTG"
+      }
+    ]
+  },
+  {
+    "id": "3c6740b2-6c4f-4b69-86d2-945110432a95",
+    "message": "Slides and Companion PDF for Traps Talk: https://www.ludomotion.com/traps/",
+    "authorId": "97QJoqZt05US8NmdjTMCu546J5F2",
+    "authorUsername": "sersavictory",
+    "likes": [
+      {
+        "likerId": "gnTcch4biBXEVrPxH5gCwIDUL5J3",
+        "likerName": "MrBones"
+      },
+      {
+        "likerId": "K57v9QVqXSO5XpHz8Hoj4NPQc9n1",
+        "likerName": "Jurie"
+      },
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "dIdknlnG7LgHEP1l7fusNjBfHBN2",
+        "likerName": "adriana"
+      },
+      {
+        "likerId": "Pc12kJV6asbDhGOoIw2KYUEZxfj1",
+        "likerName": "joomen"
+      },
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      }
+    ]
+  },
+  {
+    "id": "9e752d91-6796-4b55-aedc-f83febb7235a",
+    "message": "🦋kawamod says \"If you want great New York Feelings in Prose, I highly recommend Colson Whitehead's \"The Colossus of New York\"\"",
+    "authorId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+    "authorUsername": "Cliff",
+    "likes": [
+      {
+        "likerId": "wmSxNEOF6pZ35BFJvkD1kLlS3g83",
+        "likerName": "alice"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      }
+    ]
+  },
+  {
+    "id": "58d08038-0111-4353-8907-4f1d9103a12e",
+    "message": "Mike Cook mentioned Archaeological Game Design Video Game Archaeology as Interpretive Play and Play Preservation by Florence Smith Nicholls https://florencesmithnicholls.com/wp-content/uploads/2026/06/archaeological_game_design-1.pdf",
+    "authorId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+    "authorUsername": "orionll",
+    "likes": [
+      {
+        "likerId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+        "likerName": "Cliff"
+      },
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "f21uQhODjBYkdsrczFq61EfHVkG3",
+        "likerName": "shing-yin"
+      },
+      {
+        "likerId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+        "likerName": "Niels-NTG"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      },
+      {
+        "likerId": "Ks6STk240HSg0xXzaqDi46jVyaf1",
+        "likerName": "bubez"
+      }
+    ]
+  },
+  {
+    "id": "b74c0af0-d37a-4a41-a61b-7f4abf441f4b",
+    "message": "orionllmod says: a blog post about knowledge games and database games : https: //azhdarchid.com/against-metroidbrania-a-landscape-of-knowledge-games/",
+    "authorId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+    "authorUsername": "Cliff",
+    "likes": [
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "M8LiXXaWfQWiRvYLIRzKV6z78r93",
+        "likerName": "Aspeon"
+      },
+      {
+        "likerId": "yTdRSouzR7Np8xE0bDnTTTWf6QT2",
+        "likerName": "crystalsolenoid"
+      }
+    ]
+  },
+  {
+    "id": "0fc4fb34-fb0a-4bc6-9827-6c5d0cd61c95",
+    "message": "A book on working with p5.js (which I co-authored) \"Generative Design: Visualize, Program, and Create with JavaScript in p5.js\" http://www.generative-gestaltung.de/2/",
+    "authorId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+    "authorUsername": "Niels-NTG",
+    "likes": [
+      {
+        "likerId": "Zy9G8Oibc4esT0yBPR0disnDCJp1",
+        "likerName": "gnarf"
+      },
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      }
+    ]
+  },
+  {
+    "id": "2ce0b561-e03c-47bc-a37b-5104e23a9b23",
+    "message": "Chelsea Thompto's slides: https://docs.google.com/presentation/d/1SKIpb0ldVF6jdjOz8xMl47OHzE3omMobOi22pHGjJXU/edit?usp=sharing",
+    "authorId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+    "authorUsername": "orionll"
+  },
+  {
+    "id": "d659462f-69a7-4bd0-9b98-f90612f61da1",
+    "message": "random task",
+    "authorId": "eouhd48nQkfOse7bWnYZrgPmdJB2",
+    "authorUsername": "Yerviz"
+  },
+  {
+    "id": "2dc06fc3-781a-48cd-90d2-25595e676e40",
+    "message": "A sci-fi book for learning Postgres using astronomy data to solve a mystery https://sales.bigmachine.io/curious-moon",
+    "authorId": "cjgalEpNr8SY0eRfFKOq3qATEYn1",
+    "authorUsername": "ms_wicker",
+    "likes": [
+      {
+        "likerId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+        "likerName": "Niels-NTG"
+      },
+      {
+        "likerId": "f52qBqxRl3XzWiHdSQZrwcdlBKG2",
+        "likerName": "a-stinky-dog"
+      }
+    ]
+  },
+  {
+    "id": "32be58ab-4fe0-45c3-994a-634d7c68980f",
+    "message": "g blekkenhorst's qr code from their talk: https://openresearch.ocadu.ca/id/eprint/5061/",
+    "authorId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+    "authorUsername": "orionll"
+  },
+  {
+    "id": "8c3f2945-9f0f-4270-b1e5-c5ee76afa889",
+    "message": "Quest Giving: A Pocket Guide For Motivating People To Do Arbitrary Things!  https://www.routledge.com/Quest-Giving-A-Guide-to-Motivating-People-to-Do-Arbitrary-Things/Savant/p/book/9781041328407",
+    "authorId": "YJirCRllJgenhaD1HLsaeRyDS8e2",
+    "authorUsername": "TheBaldSavant",
+    "likes": [
+      {
+        "likerId": "ujEXAhG7VleiZ4fKfB7BU5IHao92",
+        "likerName": "Axemred"
+      }
+    ]
+  },
+  {
+    "id": "b76f0163-aa43-4e40-8d6d-0afa00489ab0",
+    "message": "Talk on the state graph of a classic sokoban puzzle: https://www.youtube.com/watch?v=rTkW4OPj5eg",
+    "authorId": "M8LiXXaWfQWiRvYLIRzKV6z78r93",
+    "authorUsername": "Aspeon",
+    "likes": [
+      {
+        "likerId": "36ynKxQvG0Ngbe7ivkh7WaKW1KB3",
+        "likerName": "🟣isaac_io🟠"
+      }
+    ]
+  },
+  {
+    "id": "208b406f-0144-47fb-be6a-54210e1c1f3d",
+    "message": "https://l5lua.org/",
+    "authorId": "LSXz7hgNixXLWqfpPnvgIVwbwEK2",
+    "authorUsername": "cthompto"
+  },
+  {
+    "id": "8a80eba1-fa06-4cac-8d6f-e801cad495be",
+    "message": "Marcel Vos explains the maze pathfinding algorithm flaws in Roller Coaster Tycoon which leads to unlikely impossible to solve mazes https://www.youtube.com/watch?v=KVgoy_a_gWI ",
+    "authorId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+    "authorUsername": "Niels-NTG",
+    "likes": [
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "ujEXAhG7VleiZ4fKfB7BU5IHao92",
+        "likerName": "Axemred"
+      }
+    ]
+  },
+  {
+    "id": "066a9ff0-b508-4b57-9d24-e04188284782",
+    "message": "\"Holes are having a moment\" -- everest pipkin, 2026",
+    "authorId": "PgGwuCJoIFdCq34aBN97Aiww8BH3",
+    "authorUsername": "mtrc",
+    "likes": [
+      {
+        "likerId": "CVxNlEWvaORzT4qj1petPrYvPsD2",
+        "likerName": "codingcrafter"
+      },
+      {
+        "likerId": "ujEXAhG7VleiZ4fKfB7BU5IHao92",
+        "likerName": "Axemred"
+      },
+      {
+        "likerId": "NomY9d69YSPt3g1GmsKP1ZF3rw63",
+        "likerName": "kawa"
+      },
+      {
+        "likerId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+        "likerName": "Niels-NTG"
+      },
+      {
+        "likerId": "AcNtnaqTDrSsVMqXTS9wqDHGbKT2",
+        "likerName": "royal"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      },
+      {
+        "likerId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+        "likerName": "Impossible"
+      },
+      {
+        "likerId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+        "likerName": "orionll"
+      },
+      {
+        "likerId": "wmSxNEOF6pZ35BFJvkD1kLlS3g83",
+        "likerName": "alice"
+      },
+      {
+        "likerId": "OzSYRQkewneLK6Po5G8SFG8H4bv1",
+        "likerName": "yoda-janke"
+      }
+    ]
+  },
+  {
+    "id": "5cc53924-3607-4c0d-aab3-bfd0b09b8916",
+    "message": "Bleed Map by F Smith Nicholls: https://florencesmithnicholls.itch.io/bleed-map",
+    "authorId": "PgGwuCJoIFdCq34aBN97Aiww8BH3",
+    "authorUsername": "mtrc",
+    "likes": [
+      {
+        "likerId": "CVxNlEWvaORzT4qj1petPrYvPsD2",
+        "likerName": "codingcrafter"
+      },
+      {
+        "likerId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+        "likerName": "Niels-NTG"
+      }
+    ]
+  },
+  {
+    "id": "8ebf7578-e329-4f32-9a09-2786b7f3de5b",
+    "message": "https://www.instagram.com/engineerkala?cplk=MXdmbnRsMnNud3V5ag==",
+    "authorId": "y0Gti4Rb7HdCdOeqJWTBsk0iN5n2",
+    "authorUsername": "7thdrxn"
+  },
+  {
+    "id": "a898dcae-0c49-4d41-8bbe-a18515355acc",
+    "message": "Andrew Plotkin's \"Shade\" is a maze and you can't tell me otherwise  https://www.eblong.com/zarf/zweb/shade/",
+    "authorId": "fUaVKXl4ynYWk4Em9BnhE2aOQSC2",
+    "authorUsername": "SnakeLady",
+    "likes": [
+      {
+        "likerId": "M8LiXXaWfQWiRvYLIRzKV6z78r93",
+        "likerName": "Aspeon"
+      },
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      }
+    ]
+  },
+  {
+    "id": "992997cf-29b6-47ab-bfdb-2950bf219969",
+    "message": "https://www.antepavilion.org/2024-shortlist Digging as art: \"Future Archaeology questions the destruction of London's council estates by excavating one of the flat's floor plans.,..\"",
+    "authorId": "NZfCew2GkvdCrGSCnr8UlNJWkT42",
+    "authorUsername": "markgritter"
+  },
+  {
+    "id": "48576473-62fe-46e2-a371-c4892ac20e87",
+    "message": "Play Telegrams from the Choir Train at https://bjeck.github.io/CRC-RITU/ ",
+    "authorId": "sKA8nyjfwrcIBroWDTM85kOSTRm2",
+    "authorUsername": "Chronologist"
+  },
+  {
+    "id": "99f41bcf-30e1-4f44-a96a-6da647bd4a57",
+    "message": "\"I want people to be miserable in exactly the way they want to be miserable\"--g. blekkenhorst",
+    "authorId": "dIdknlnG7LgHEP1l7fusNjBfHBN2",
+    "authorUsername": "adriana",
+    "likes": [
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      }
+    ]
+  },
+  {
+    "id": "95a25b31-b028-4ffa-8120-64fc0aff2481",
+    "message": "The barcode scanner music by the band ELECTRONICOS FANTASTICOS! https://www.youtube.com/watch?v=xlOjmLeQe3w",
+    "authorId": "xCO8LrXLa8afOYq9Xf9XLII4bDs1",
+    "authorUsername": "Niels-NTG",
+    "likes": [
+      {
+        "likerId": "ujEXAhG7VleiZ4fKfB7BU5IHao92",
+        "likerName": "Axemred"
+      }
+    ]
+  },
+  {
+    "id": "43cc5d4e-08a5-40ed-a642-201dc32bcdea",
+    "message": "Paul Hembree's web tool: https://www.foundobjects.org/",
+    "authorId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+    "authorUsername": "orionll",
+    "likes": [
+      {
+        "likerId": "e8oLuPikY9ZYBVHSmyCghARD2Oi2",
+        "likerName": "Paul_Hembree"
+      },
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      }
+    ]
+  },
+  {
+    "id": "ae317d2d-c480-46e6-bbc9-5bfa1d86e481",
+    "message": "I vibe coded a visualizer for the Euclidian Rhytms of Paul Hembree's talk. It shows the relationship to pixel line drawing algorithms. https://boristhebrave.com/permanent/26/10/rhythm/",
+    "authorId": "L2R8lF7iS4ZfqnSiqu6tiZzWddX2",
+    "authorUsername": "Boris-the-Brave",
+    "likes": [
+      {
+        "likerId": "e8oLuPikY9ZYBVHSmyCghARD2Oi2",
+        "likerName": "Paul_Hembree"
+      },
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      }
+    ]
+  },
+  {
+    "id": "b117eb64-cdce-4d2c-8e98-f96a064b86e5",
+    "message": "Transcription of MCTS Forest is up on https://www.dropbox.com/scl/fi/51kmzh03zytf1wcprrcoa/MCTS-Talk-Slides-Updated.pdf?rlkey=w0re44tftokcv5bdjk60nw8eu&dl=0 if you find it easier to follow along",
+    "authorId": "DNV9uM9jdbaYevnUDgkLeml4EKL2",
+    "authorUsername": "Lachlan",
+    "likes": [
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      }
+    ]
+  },
+  {
+    "id": "87c5b01f-4c22-4095-819e-25e4b6d8edfb",
+    "message": "https://bsky.app/profile/droqen.bsky.social/post/3my4apkr6gc23",
+    "authorId": "MIsJKZVOImTWIZEncsYUwMhEbLI2",
+    "authorUsername": "droqen"
+  },
+  {
+    "id": "f213f132-f480-4090-b489-910e67bf85ca",
+    "message": "\n. . . . . u . . .    \\n    \n. . . . c o u l d    \\n    \n. . . . . . p r o    \\n    \nd u c e . . . a .    \\n    \n. . . . . . . . r    \\n    \na r e . . . . . .    \\n    \n. o l d e r . . .    \\n    \n. . p l a c e . .    \\n    \n. . . . . . . . .    \\n    \n",
+    "authorId": "MIsJKZVOImTWIZEncsYUwMhEbLI2",
+    "authorUsername": "droqen",
+    "likes": [
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      }
+    ]
+  },
+  {
+    "id": "22248915-056f-4799-8404-4fec4299bbc7",
+    "message": "https://www.one-tab.com/help for keeping track of all the tabs!",
+    "authorId": "0v6TYQTNQzLv9UiEtfYmveVx62A3",
+    "authorUsername": "Hypergardens"
+  },
+  {
+    "id": "945b636e-b9ca-4db1-8dab-582d7d8be412",
+    "message": "Stealing roguelike mechanics from Microsoft Word made me remember about Rogue program ( https://slash.itch.io/rogue-program ) in which you are trapped in a 80s terminal including some vim-like levels",
+    "authorId": "95oo0uiV09Ze0j0Nj6R9Zx829aV2",
+    "authorUsername": "slashie",
+    "likes": [
+      {
+        "likerId": "mBYvCF3MpxTBv3LOixkkWKNb8ei1",
+        "likerName": "nick-bush"
+      }
+    ]
+  },
+  {
+    "id": "bd50c4ad-8c61-4b2d-95d6-6af2e5e915fa",
+    "message": "Word Processor roguelike: https://bushn.itch.io/word-processor",
+    "authorId": "mBYvCF3MpxTBv3LOixkkWKNb8ei1",
+    "authorUsername": "nick-bush"
+  },
+  {
+    "id": "2c2c1714-cf16-4bdd-b5fe-88be9953feda",
+    "message": "https://www.mcsweeneys.net/articles/faq-the-snake-fight-portion-of-your-thesis-defense",
+    "authorId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+    "authorUsername": "Cliff",
+    "likes": [
+      {
+        "likerId": "CVxNlEWvaORzT4qj1petPrYvPsD2",
+        "likerName": "codingcrafter"
+      }
+    ]
+  },
+  {
+    "id": "bb4213a1-ea3b-4e95-95a0-ce2759da7abe",
+    "message": "https://docterbuster.itch.io/bots-that-explode-most-of-the-time",
+    "authorId": "ZN6eTfwpPIXxobyOktPhYHMTj5d2",
+    "authorUsername": "rodneylives",
+    "likes": [
+      {
+        "likerId": "CVxNlEWvaORzT4qj1petPrYvPsD2",
+        "likerName": "codingcrafter"
+      }
+    ]
+  },
+  {
+    "id": "2c12c334-3014-473b-a9da-ecf741116e70",
+    "message": "great talk on dynamic language-based programming - https://www.youtube.com/watch?v=0-6-f94n_9M",
+    "authorId": "y0Gti4Rb7HdCdOeqJWTBsk0iN5n2",
+    "authorUsername": "7thdrxn"
+  },
+  {
+    "id": "9e43009c-15b6-4929-be3f-227ed7b5b765",
+    "message": "https://www.youtube.com/watch?v=0-6-f94n_9M",
+    "authorId": "ZN6eTfwpPIXxobyOktPhYHMTj5d2",
+    "authorUsername": "rodneylives"
+  },
+  {
+    "id": "c3acc60e-7925-40a7-a1e7-285d758f34d8",
+    "message": "bubez says : I recommend this talk about translating Bluesky from English to French for loc newbies : https: //ionosphere.tv/talks/zxRkxk8",
+    "authorId": "pFlC9HUNjFZXV9dsgpH6AoftI5Q2",
+    "authorUsername": "Cliff"
+  },
+  {
+    "id": "38c5f02d-1b78-4da5-af96-e35c7ee3adc8",
+    "message": "Never Eat Alone by Keith Ferrazzi was a great book on networking. It frames it not as what others can do for you, but what you can do for others. Feels much less slimy.",
+    "authorId": "VwFzEfwIYlNpaBHHUyzTAAxBJ8X2",
+    "authorUsername": "Josh-G"
+  },
+  {
+    "id": "ad545cbe-a509-4c6a-9856-a6a65f29a0a8",
+    "message": "Hack: The \"Lost Roguelike\" talk - Source code of Jay Fenlason's Hack: https://github.com/Sustainable-Games/fenlason-hack",
+    "authorId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+    "authorUsername": "SustainableGames",
+    "likes": [
+      {
+        "likerId": "hbrE8daBhmd1K5JHLgoQYY1DHD93",
+        "likerName": "librarianmage"
+      },
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      }
+    ]
+  },
+  {
+    "id": "636f67f1-fc3a-4848-8b7c-58ab5caef122",
+    "message": "Hack: The \"Lost Roguelike\" talk - GitHub repo for protoHack, critlist's restored version of Fenlason's Hack for modern computers: https://github.com/Critlist/protoHack",
+    "authorId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+    "authorUsername": "SustainableGames",
+    "likes": [
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      }
+    ]
+  },
+  {
+    "id": "da7f50a0-3bd4-4b0c-b2aa-15ff10ec1187",
+    "message": "Hack: The \"Lost Roguelike\" talk - Link to Hack 1.21 for DOS executable from Internet Archive (you'll need to run it in DOSbox, unless you have a DOS or Windows 95 machine around.): https://web.archive.org/web/20250818063403/http://www.juiblex.co.uk/nethack/source/hack121.zip",
+    "authorId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+    "authorUsername": "SustainableGames",
+    "likes": [
+      {
+        "likerId": "tPjFktUViggaCV44rLem3FQ9YHS2",
+        "likerName": "EzeBirman"
+      },
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      },
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      }
+    ]
+  },
+  {
+    "id": "58368c6b-b137-4d63-b441-6c190159d9b3",
+    "message": "Hack: The \"Lost Roguelike\" talk - Link to Don Worth's UCLA home page that contains a link to the Beneath Apple Manor executable for DOS. (Make sure your browser doesn't try to change http: to https: and ignore the scary insecure page warning. The game plays very well in DOSbox. You'll want to find a copy of the manual, as well.): http://worth.bol.ucla.edu/",
+    "authorId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+    "authorUsername": "SustainableGames",
+    "likes": [
+      {
+        "likerId": "rjVL7zpbHag0iw7w0S0LbFqCwdh2",
+        "likerName": "RobotParking"
+      }
+    ]
+  },
+  {
+    "id": "3d7468f6-3db8-474b-a90c-4f2b74aa7efc",
+    "message": "Hack: The \"Lost Roguelike\" talk - Link to presentation: https://bit.ly/hack-thelostroguelike",
+    "authorId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+    "authorUsername": "SustainableGames"
+  },
+  {
+    "id": "23a89e19-7f78-4592-ac6e-fa61bcf0bd22",
+    "message": "2D line of sight shadowcasting on arbitrary coordinate systems - short 3 part blog on itch, includes interactive desmos graphs for the math https://itch.io/blog/1614865/shadowcasting-algorithm-part-1",
+    "authorId": "cQ9BXZssrRNIgDJ564No34FRttA3",
+    "authorUsername": "tijit"
+  },
+  {
+    "id": "3c58500a-76a6-45ed-a0e5-3ba3e818b6f5",
+    "message": "Roguelite playtesters wanted for Last Hearth. Fight through a procedural forest that's different every trip. At the end of each level, go deeper or go home to train and forge, then head back out. Die, and you lose everything you were carrying. Early build on PC. We are very responsive to user feedback! contact me at oxelverse@gmail.com",
+    "authorId": "KFz4Rcq0tGSxz0PlQYJM01R7EM23",
+    "authorUsername": "batFastard"
+  },
+  {
+    "id": "90bd7e7e-64dc-4474-8143-b6e76d11cb0c",
+    "message": "https://conwaylife.com/book/ \"Conway's Game of Life: Mathematics and Construction\" the book I wish my teenaged self had had about building things in Conway Life",
+    "authorId": "NZfCew2GkvdCrGSCnr8UlNJWkT42",
+    "authorUsername": "markgritter",
+    "likes": [
+      {
+        "likerId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+        "likerName": "SustainableGames"
+      }
+    ]
+  },
+  {
+    "id": "a78a99c0-05a2-4cd8-8ffd-9fff6bc36310",
+    "message": "Benn Jordan Teaching a Bird to mimic a waveform that draws a PNG of a bird https://www.youtube.com/watch?v=hCQCP-5g5bo",
+    "authorId": "Zy9G8Oibc4esT0yBPR0disnDCJp1",
+    "authorUsername": "gnarf"
+  },
+  {
+    "id": "039b294a-633b-4b86-b6b4-d3bfa1c37c6e",
+    "message": "Benn Jordan video on a bunch of the software Aphex Twin used (includes drawing waveforms in paint) https://www.youtube.com/watch?v=5wIOBBodoic",
+    "authorId": "Zy9G8Oibc4esT0yBPR0disnDCJp1",
+    "authorUsername": "gnarf",
+    "likes": [
+      {
+        "likerId": "i0b03ShhUBg3QmPSmsuUrrCr66H2",
+        "likerName": "mbessey"
+      },
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      }
+    ]
+  },
+  {
+    "id": "1ca82f6c-7003-4e7f-b45c-0f603ea87560",
+    "message": "sonification of gravitational waves from black hole mergers (they chirp!): https://www.ligo.caltech.edu/video/ligo20160211v2",
+    "authorId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+    "authorUsername": "orionll"
+  },
+  {
+    "id": "519a349b-5263-4262-a06c-f86cef02148f",
+    "message": "https://richiejp.com/1d-reversible-automata-webgpu",
+    "authorId": "S8O4CUo59hXC1FvEcRSBPifxrMg2",
+    "authorUsername": "fwentish"
+  },
+  {
+    "id": "1e60a000-d0ee-404e-b9eb-2e661ef9d75e",
+    "message": "Exploring the Design and Tech of Noita https://youtu.be/prXuyMCgbTc",
+    "authorId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+    "authorUsername": "Impossible",
+    "likes": [
+      {
+        "likerId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+        "likerName": "SustainableGames"
+      }
+    ]
+  },
+  {
+    "id": "ec038565-7d7b-4f8c-81a1-37316348bca3",
+    "message": "Top 9 ways to make water https://youtu.be/2qfjJ-0ZeVM?is=PV3SnftpfNLK1DyI",
+    "authorId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+    "authorUsername": "Impossible"
+  },
+  {
+    "id": "b21b8736-c4b6-4f40-8912-1200e7620f76",
+    "message": "https://blog.gingerbeardman.com/2021/08/19/aquaplus-piece-vs-panic-playdate/",
+    "authorId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+    "authorUsername": "Impossible"
+  },
+  {
+    "id": "d6fd4579-6c2d-4784-86e2-4c59900d2f03",
+    "message": "Cellular Automata for physical modeling https://tomforsyth1000.github.io/papers/cellular_automata_for_physical_modelling.html",
+    "authorId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+    "authorUsername": "Impossible"
+  },
+  {
+    "id": "2cf51940-cf4f-4137-8906-0e89bad65f9a",
+    "message": "Check out this youtube playlist of C64 typeins from old magazines https://www.youtube.com/watch?v=7A-kGVxVcYg&list=PLYLDSYZUkCJsO9CAR-qpwpjW9_OQM9s27",
+    "authorId": "Zy9G8Oibc4esT0yBPR0disnDCJp1",
+    "authorUsername": "gnarf",
+    "likes": [
+      {
+        "likerId": "f52qBqxRl3XzWiHdSQZrwcdlBKG2",
+        "likerName": "a-stinky-dog"
+      },
+      {
+        "likerId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+        "likerName": "SustainableGames"
+      }
+    ]
+  },
+  {
+    "id": "0f4fc197-7d72-46b5-a09f-16355407c5fc",
+    "message": "Probablistic Cellular Automata for Granular Media in videogames https://arxiv.org/abs/2008.06341",
+    "authorId": "tRbYyKZ2aTahRxELGSa3l1K9GSM2",
+    "authorUsername": "Impossible"
+  },
+  {
+    "id": "4d681b91-3ef2-45bc-9435-6f62938d826c",
+    "message": "https://explanaria.github.io/sketches/synth A fun toy that lets you make musical samples with code and play them on a piano!",
+    "authorId": "Vbs3aTFCIfYFq2lCX7r5h5YSzWH3",
+    "authorUsername": "hillexed",
+    "likes": [
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      }
+    ]
+  },
+  {
+    "id": "92cf13bd-7bc1-48b9-83f1-bbe624d62922",
+    "message": "Hack: The \"Lost Roguelike\" talk - Rogue 5.4.4 repo (the original Rogue code that Toy and Wichman eventually open sourced. It's the closest to the original 1980 version.): https://github.com/Davidslv/rogue",
+    "authorId": "iDGzlDzDEvRYUgnjdeh6lOWBPBZ2",
+    "authorUsername": "SustainableGames"
+  },
+  {
+    "id": "1be06379-1fdc-43d0-ba06-68bcc6b4b064",
+    "message": "play and be real about it: what games could learn from kink https://www.jstor.org/stable/10.5749/j.ctt1mtz7kr.12",
+    "authorId": "ffdZRXmI6TfcK3MkCx5A3i07diD3",
+    "authorUsername": "cxli",
+    "likes": []
+  },
+  {
+    "id": "31ea8f5d-bb76-46a6-b792-bea1c93c671f",
+    "message": "Post conference survey: https://forms.gle/oZ8dGebyN94T3JnA8",
+    "authorId": "nYACLoykkRUMCJUlcgauNZrY5SO2",
+    "authorUsername": "orionll",
+    "likes": [
+      {
+        "likerId": "aex9WWHkseSX1rSQJFrxlQl40e12",
+        "likerName": "AlixTheNerdess"
+      }
+    ]
+  }
+]
