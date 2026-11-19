@@ -4,6 +4,20 @@ html {
 
 article {
     margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid #eeeeee33;
+    border-radius: 0.75rem;
+}
+
+article span {
+    margin-left: 1rem;
+}
+pre.camo {
+  background: transparent;
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 strong {
